@@ -1,0 +1,22 @@
+{
+  "AminoConfigurations": [
+    {
+      "vendorName": "TKCM",
+      "libraryVersion": "${CONFIG_PACK_VERSION}",
+      "libraryName": "${CONFIG_PACK_NAME}",
+      "sharedLibs": [
+        {
+          "path": "${CONFIG_SHARED_LIBS}",
+          "files": [
+            "${CONFIG_PACK_NAME}Ops"
+          ]
+        }
+      ],
+      "jsonLibs": [
+        {
+          "path": "${CONFIG_JSON_FILES}"
+        }
+      ]
+    }
+  ]
+}

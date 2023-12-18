@@ -1,0 +1,114 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [
+        {
+            "className": "TKCM::RBFSolver",
+            "msTypeNameMangleName": ".?AVRBFSolver@TKCM@@",
+            "itaniumTypeNameMangleName": "N4TKCM9RBFSolverE"
+        }
+    ],
+    "operators": [
+        {
+            "name": "TKCM::RBF::solve",
+            "msMangle": "?solve@TKCM@@YAXAEBV?$Ptr@VRBFSolver@TKCM@@@Amino@@AEBV?$Ptr@V?$Array@M@Amino@@@3@AEAV?$MutablePtr@V?$Array@M@Amino@@@3@AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM5solveERKN5Amino3PtrINS_9RBFSolverEEERKNS1_INS0_5ArrayIfEEEERNS0_10MutablePtrIS7_EERb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "false"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "rbf",
+                    "portDirection": "input",
+                    "portType": "TKCM::RBFSolver",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "driver",
+                    "portDirection": "input",
+                    "portType": "array<float>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "result",
+                    "portDirection": "output",
+                    "portType": "array<float>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "TKCM::RBF::Internal::setup",
+            "msMangle": "?setup@TKCM@@YAXAEBV?$Ptr@V?$Array@V?$Ptr@V?$Array@M@Amino@@@Amino@@@Amino@@@Amino@@0HAEAV?$MutablePtr@VRBFSolver@TKCM@@@3@AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM5setupERKN5Amino3PtrINS0_5ArrayINS1_INS2_IfEEEEEEEES8_iRNS0_10MutablePtrINS_9RBFSolverEEERb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "key",
+                    "portDirection": "input",
+                    "portType": "array<array<float>>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "value",
+                    "portDirection": "input",
+                    "portType": "array<array<float>>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "type",
+                    "portDirection": "input",
+                    "portType": "int",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "rbf",
+                    "portDirection": "output",
+                    "portType": "TKCM::RBFSolver",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "valid",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        }
+    ]
+}

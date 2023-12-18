@@ -1,0 +1,30 @@
+{
+  "AminoConfigurations": [
+    {
+      "vendorName": "TKCM",
+      "libraryName": "TKCM pack",
+      "libraryVersion": "0.1",
+      "libraryDependencies": [
+        "Amino"
+      ],
+      "sharedLibs": [
+        {
+          "path": "bin",
+          "files": [
+            "RBFOps"
+          ]
+        }
+      ],
+      "jsonLibs": [
+        {
+          "path": "compounds",
+          "files": [ ]
+        },
+        {
+          "path": "graphs",
+          "files": [ ]
+        }
+      ]
+    }
+  ]
+}
