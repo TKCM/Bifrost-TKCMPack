@@ -10,7 +10,7 @@ project(
     VERSION 1.0.0
     LANGUAGES CXX
 )
-include_directories( ${BIFROST_SDK_LOCATION}/sdk/include )
+include_directories( ${BIFROST_LOCATION}/sdk/include )
 include_directories( "${CMAKE_CURRENT_SOURCE_DIR}/../../eigen" )
 
 # ignore warning c4819
