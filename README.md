@@ -17,3 +17,6 @@ zipを解凍した後に以下のどちらかの方法を行ってください
 ## RBF solver
 ![image](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/3341dcf1-6db5-4398-b439-db5db9a7d2ba)
 https://vimeo.com/manage/videos/896561829
+
+## InstantMeshes
+![image](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/6d5adf5c-6be7-48fc-abd5-b906af601d4c)
