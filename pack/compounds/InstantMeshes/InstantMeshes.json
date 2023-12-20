@@ -1,0 +1,451 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "TKCM::Modeling_Toolbox::InstantMeshes",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm.png"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "38.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-600.58 -85.5635"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "mesh1"
+                                                },
+                                                {
+                                                    "metaName": "remesh_as"
+                                                },
+                                                {
+                                                    "metaName": "target_type"
+                                                },
+                                                {
+                                                    "metaName": "vertex_count"
+                                                },
+                                                {
+                                                    "metaName": "face_count"
+                                                },
+                                                {
+                                                    "metaName": "face_scale"
+                                                },
+                                                {
+                                                    "metaName": "pure_quad"
+                                                },
+                                                {
+                                                    "metaName": "smooth_iter"
+                                                },
+                                                {
+                                                    "metaName": "extrinsic"
+                                                },
+                                                {
+                                                    "metaName": "align_to_boundaries"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "mesh"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "36.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "536.452 -232.198"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-796.108 -498.586 974.643 866.844"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-22.7047 -310.319"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "34.000000"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"mesh1\"\n            },\n            {\n                \"port\": \"remesh_as\"\n            },\n            {\n                \"port\": \"target_type\"\n            },\n            {\n                \"condition\": {\n                    \"action\": \"show\",\n                    \"op\": \"==\",\n                    \"port\": \"target_type\",\n                    \"value\": \"0\"\n                },\n                \"group\": \"Show based on: target_type\",\n                \"items\": [\n                    {\n                        \"port\": \"vertex_count\"\n                    }\n                ],\n                \"unique_id\": 11\n            },\n            {\n                \"condition\": {\n                    \"action\": \"show\",\n                    \"op\": \"==\",\n                    \"port\": \"target_type\",\n                    \"value\": \"1\"\n                },\n                \"group\": \"Show based on: target_type\",\n                \"items\": [\n                    {\n                        \"port\": \"face_count\"\n                    }\n                ],\n                \"unique_id\": 22\n            },\n            {\n                \"condition\": {\n                    \"action\": \"show\",\n                    \"op\": \"==\",\n                    \"port\": \"target_type\",\n                    \"value\": \"2\"\n                },\n                \"group\": \"Show based on: target_type\",\n                \"items\": [\n                    {\n                        \"port\": \"face_scale\"\n                    }\n                ],\n                \"unique_id\": 33\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"option\",\n                \"items\": [\n                    {\n                        \"port\": \"align_to_boundaries\"\n                    },\n                    {\n                        \"port\": \"smooth_iter\"\n                    },\n                    {\n                        \"port\": \"pure_quad\"\n                    },\n                    {\n                        \"port\": \"extrinsic\"\n                    }\n                ],\n                \"unique_id\": 44\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "option",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "mesh",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "mesh1",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "remesh_as",
+                    "portDirection": "input",
+                    "portType": "int",
+                    "portDefault": "2L",
+                    "metadata": [
+                        {
+                            "metaName": "UIWidget",
+                            "metaType": "string",
+                            "metaValue": "ComboBox"
+                        },
+                        {
+                            "metaName": "UIWidgetProp",
+                            "metaType": "string",
+                            "metaValue": "items={triangles_6x6=0;quads_2x4=1;quads_4x4=2}"
+                        }
+                    ]
+                },
+                {
+                    "portName": "target_type",
+                    "portDirection": "input",
+                    "portType": "int",
+                    "portDefault": "0L",
+                    "metadata": [
+                        {
+                            "metaName": "UIWidget",
+                            "metaType": "string",
+                            "metaValue": "ComboBox"
+                        },
+                        {
+                            "metaName": "UIWidgetProp",
+                            "metaType": "string",
+                            "metaValue": "items={vertex_count=0;face_count=1;face_scale=2}"
+                        }
+                    ]
+                },
+                {
+                    "portName": "vertex_count",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portDefault": "100U",
+                    "metadata": [
+                        {
+                            "metaName": "UISoftMin",
+                            "metaType": "string",
+                            "metaValue": "10"
+                        }
+                    ]
+                },
+                {
+                    "portName": "face_count",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portDefault": "100U",
+                    "metadata": [
+                        {
+                            "metaName": "UISoftMin",
+                            "metaType": "string",
+                            "metaValue": "10"
+                        }
+                    ]
+                },
+                {
+                    "portName": "face_scale",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "1f",
+                    "metadata": [
+                        {
+                            "metaName": "UISoftMin",
+                            "metaType": "string",
+                            "metaValue": "1"
+                        }
+                    ]
+                },
+                {
+                    "portName": "pure_quad",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "smooth_iter",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portDefault": "0U",
+                    "metadata": [
+                        {
+                            "metaName": "UISoftMin",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "UISoftMax",
+                            "metaType": "string",
+                            "metaValue": "10"
+                        }
+                    ]
+                },
+                {
+                    "portName": "extrinsic",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "align_to_boundaries",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "InstantMeshes_core",
+                    "nodeType": "TKCM::Modeling_Toolbox::Internal::InstantMeshes_core",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-47.5 -262"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "construct_mesh",
+                    "nodeType": "Geometry::Mesh::construct_mesh",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "231.421 -292.1"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_mesh_structure",
+                    "nodeType": "Geometry::Mesh::get_mesh_structure",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-306.938 -343.438"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "get_mesh_structure.point_position",
+                    "target": "InstantMeshes_core.source_point_position"
+                },
+                {
+                    "source": "get_mesh_structure.face_vertex",
+                    "target": "InstantMeshes_core.source_face_vertex"
+                },
+                {
+                    "source": "get_mesh_structure.face_offset",
+                    "target": "InstantMeshes_core.source_face_offset"
+                },
+                {
+                    "source": "InstantMeshes_core.point_position",
+                    "target": "construct_mesh.point_position"
+                },
+                {
+                    "source": "InstantMeshes_core.face_vertex",
+                    "target": "construct_mesh.face_vertex"
+                },
+                {
+                    "source": "InstantMeshes_core.face_offset",
+                    "target": "construct_mesh.face_offset"
+                },
+                {
+                    "source": "construct_mesh.mesh",
+                    "target": ".mesh"
+                },
+                {
+                    "source": ".mesh1",
+                    "target": "get_mesh_structure.mesh"
+                },
+                {
+                    "source": ".remesh_as",
+                    "target": "InstantMeshes_core.remesh_as"
+                },
+                {
+                    "source": ".target_type",
+                    "target": "InstantMeshes_core.target_type"
+                },
+                {
+                    "source": ".vertex_count",
+                    "target": "InstantMeshes_core.vertex_count"
+                },
+                {
+                    "source": ".face_count",
+                    "target": "InstantMeshes_core.face_count"
+                },
+                {
+                    "source": ".face_scale",
+                    "target": "InstantMeshes_core.face_scale"
+                },
+                {
+                    "source": ".pure_quad",
+                    "target": "InstantMeshes_core.pure_quad"
+                },
+                {
+                    "source": ".smooth_iter",
+                    "target": "InstantMeshes_core.smooth_iter"
+                },
+                {
+                    "source": ".extrinsic",
+                    "target": "InstantMeshes_core.extrinsic"
+                },
+                {
+                    "source": ".align_to_boundaries",
+                    "target": "InstantMeshes_core.align_to_boundaries"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "InstantMeshes_core.vertex_count",
+                    "valueType": "uint",
+                    "value": "100U"
+                },
+                {
+                    "valueName": "InstantMeshes_core.face_count",
+                    "valueType": "uint",
+                    "value": "100U"
+                },
+                {
+                    "valueName": "InstantMeshes_core.face_scale",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "InstantMeshes_core.deterministic",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "InstantMeshes_core.extrinsic",
+                    "valueType": "bool",
+                    "value": "false"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
