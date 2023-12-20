@@ -11,7 +11,8 @@
         {
           "path": "bin",
           "files": [
-            "RBFOps"
+            "RBFOps",
+            "InstantMeshesOps"
           ]
         }
       ],
