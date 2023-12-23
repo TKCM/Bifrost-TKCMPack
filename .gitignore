@@ -4,3 +4,5 @@ src/RBF/src/out/
 eigen/Eigen/
 src/InstantMeshes/out/
 src/InstantMeshes/.vs/
+src/Tags/.vs/
+src/Tags/out/

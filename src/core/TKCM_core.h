@@ -13,9 +13,13 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 // TKCM
 #include "TKCM_export.h"
+#include "TKCM_geometry.h"
+#include "TKCM_geometry.cpp"
 
 #ifndef AMINO_PARSING_HEADERS
 //#include "eigen_convert.h"
 #endif // AMINO_PARSING_HEADERS
+
+using uInt = unsigned int;
 
 #endif // TKCM_CORE_H

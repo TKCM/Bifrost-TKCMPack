@@ -1,0 +1,343 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "operators": [
+        {
+            "name": "TKCM::Geometry::Tags::Internal::point_tag_promote",
+            "msMangle": "?point_tag_promote@TKCM@@YAXAEBIAEBV?$Ptr@V?$Array@I@Amino@@@Amino@@1AEBV?$Ptr@V?$Array@_N@Amino@@@3@AEBVString@3@0AEAV?$MutablePtr@V?$Array@_N@Amino@@@3@AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM17point_tag_promoteERKjRKN5Amino3PtrINS2_5ArrayIjEEEES8_RKNS3_INS4_IbEEEERKNS2_6StringES1_RNS2_10MutablePtrIS9_EERb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "point_count",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "in_tag_data",
+                    "portDirection": "input",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "out_component_type",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "logical_operation",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "out_tag_data",
+                    "portDirection": "output",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "TKCM::Geometry::Tags::Internal::vertex_tag_promote",
+            "msMangle": "?vertex_tag_promote@TKCM@@YAXAEBIAEBV?$Ptr@V?$Array@I@Amino@@@Amino@@1111AEBV?$Ptr@V?$Array@_N@Amino@@@3@AEBVString@3@0AEAV?$MutablePtr@V?$Array@_N@Amino@@@3@AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM18vertex_tag_promoteERKjRKN5Amino3PtrINS2_5ArrayIjEEEES8_S8_S8_S8_RKNS3_INS4_IbEEEERKNS2_6StringES1_RNS2_10MutablePtrIS9_EERb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "point_count",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacent_face",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacent_side",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacent_index",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "in_tag_data",
+                    "portDirection": "input",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "out_component_type",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "logical_operation",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "out_tag_data",
+                    "portDirection": "output",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "TKCM::Geometry::Tags::Internal::face_tag_promote",
+            "msMangle": "?face_tag_promote@TKCM@@YAXAEBIAEBV?$Ptr@V?$Array@I@Amino@@@Amino@@1AEBV?$Ptr@V?$Array@_N@Amino@@@3@AEBVString@3@AEAV?$MutablePtr@V?$Array@_N@Amino@@@3@AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM16face_tag_promoteERKjRKN5Amino3PtrINS2_5ArrayIjEEEES8_RKNS3_INS4_IbEEEERKNS2_6StringERNS2_10MutablePtrIS9_EERb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "point_count",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "in_tag_data",
+                    "portDirection": "input",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "out_component_type",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "out_tag_data",
+                    "portDirection": "output",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "TKCM::Geometry::Tags::Internal::to_face_vertex",
+            "msMangle": "?to_face_vertex@TKCM@@YAXAEAV?$Ptr@V?$Array@_N@Amino@@@Amino@@AEBV?$Ptr@V?$Array@I@Amino@@@3@1AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM14to_face_vertexERN5Amino3PtrINS0_5ArrayIbEEEERKNS1_INS2_IjEEEES9_Rb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "half_edge_vertex_tag_data",
+                    "portDirection": "input",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_vertex_tag_data",
+                    "portDirection": "output",
+                    "portType": "array<bool>",
+                    "portAssociated": "half_edge_vertex_tag_data",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "TKCM::Geometry::Tags::Internal::tag_mesh_border_core",
+            "msMangle": "?tag_mesh_border@TKCM@@YAXAEBIAEBV?$Ptr@V?$Array@I@Amino@@@Amino@@11AEBVString@3@AEAV?$MutablePtr@V?$Array@_N@Amino@@@3@AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM15tag_mesh_borderERKjRKN5Amino3PtrINS2_5ArrayIjEEEES8_S8_RKNS2_6StringERNS2_10MutablePtrINS4_IbEEEERb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "point_count",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "adjacent_face",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "out_component_type",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "tag_data",
+                    "portDirection": "output",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        }
+    ]
+}

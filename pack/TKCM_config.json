@@ -12,6 +12,7 @@
           "path": "bin",
           "files": [
             "RBFOps",
+            "TagsOps",
             "InstantMeshesOps"
           ]
         }
