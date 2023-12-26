@@ -13,6 +13,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 // TKCM
 #include "TKCM_export.h"
+#include "TKCM_math.h"
 #include "TKCM_geometry.h"
 #include "TKCM_geometry.cpp"
 

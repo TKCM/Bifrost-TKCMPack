@@ -1,0 +1,220 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "operators": [
+        {
+            "name": "TKCM::Modeling_Toolbox::Internal::snap_grid_core",
+            "msMangle": "?snap_grid@TKCM@@YAXAEAV?$Ptr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@Amino@@AEB_NAEBV?$Ptr@V?$Array@_N@Amino@@@3@1AEBUuint3@Math@Bifrost@@AEAV?$MutablePtr@V?$Array@_N@Amino@@@3@AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM9snap_gridERN5Amino3PtrINS0_5ArrayIN7Bifrost4Math6float3EEEEERKbRKNS1_INS2_IbEEEESA_RKNS4_5uint3ERNS0_10MutablePtrISB_EERb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "in_point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "out_point_position",
+                    "portDirection": "output",
+                    "portType": "array<Math::float3>",
+                    "portAssociated": "in_point_position",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "use_tag_data",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "point_tag_data_to_snap",
+                    "portDirection": "input",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "invert_tag",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "grid_scale",
+                    "portDirection": "input",
+                    "portType": "Math::uint3",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "processed_point_tag_data",
+                    "portDirection": "output",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "TKCM::Modeling_Toolbox::Internal::snap_geometry_core",
+            "msMangle": "?snap_geometry@TKCM@@YAXAEAV?$Ptr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@Amino@@AEB_NAEBV?$Ptr@V?$Array@_N@Amino@@@3@1AEBV23@AEBV?$Ptr@V?$Array@V?$Ptr@V?$Array@_J@Amino@@@Amino@@@Amino@@@3@121AEBIAEAV?$MutablePtr@V?$Array@_N@Amino@@@3@AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM13snap_geometryERN5Amino3PtrINS0_5ArrayIN7Bifrost4Math6float3EEEEERKbRKNS1_INS2_IbEEEESA_RKS7_RKNS1_INS2_INS1_INS2_IxEEEEEEEESA_SE_SA_RKjRNS0_10MutablePtrISB_EERb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "in_point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "out_point_position",
+                    "portDirection": "output",
+                    "portType": "array<Math::float3>",
+                    "portAssociated": "in_point_position",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "use_tag_data",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "point_tag_data_to_snap",
+                    "portDirection": "input",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "invert_tag",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "target_point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "target_point_indices",
+                    "portDirection": "input",
+                    "portType": "array<array<long>>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "use_target_tag_data",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "point_tag_data_of_target",
+                    "portDirection": "input",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "invert_target_tag",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "snap_using",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "processed_point_tag_data",
+                    "portDirection": "output",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "TKCM::Modeling_Toolbox::Internal::snap_grid_point",
+            "msMangle": "?snap_grid_point@TKCM@@YAXAEBV?$Ptr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@Amino@@AEBUuint3@Math@Bifrost@@AEAV?$MutablePtr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@3@@Z",
+            "itaniumMangle": "_ZN4TKCM15snap_grid_pointERKN5Amino3PtrINS0_5ArrayIN7Bifrost4Math6float3EEEEERKNS4_5uint3ERNS0_10MutablePtrIS6_EE",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "grid_scale",
+                    "portDirection": "input",
+                    "portType": "Math::uint3",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "grid_point",
+                    "portDirection": "output",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToMutablePtr"
+                }
+            ]
+        }
+    ]
+}

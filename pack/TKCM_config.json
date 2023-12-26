@@ -13,7 +13,8 @@
           "files": [
             "RBFOps",
             "TagsOps",
-            "InstantMeshesOps"
+            "InstantMeshesOps",
+            "SnapOps"
           ]
         }
       ],
