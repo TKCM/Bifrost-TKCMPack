@@ -12,7 +12,6 @@
     "compounds": [
         {
             "name": "TKCM::Modeling_Toolbox::snap_sample",
-            "uriImported": "stream:/bifrostGraphShape1",
             "metadata": [
                 {
                     "metaName": "io_nodes",
@@ -32,6 +31,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "49.4207 198.933"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -45,18 +49,18 @@
                                         {
                                             "metaName": "zValue",
                                             "metaType": "string",
-                                            "metaValue": "131.000000"
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "49.4207 198.933"
+                                            "metaValue": "35.000000"
                                         }
                                     ]
                                 }
                             ]
                         }
                     ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,TKCM::Modeling_Toolbox,snap"
                 },
                 {
                     "metaName": "_recentNode_",
@@ -79,14 +83,9 @@
                     "metaValue": "BifrostGraph,Core::Constants,float"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Geometry::Strands,construct_strands"
-                },
-                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-772.897 -65.2675 1269.89 847.591"
+                    "metaValue": "-774.998 -65 1275 850.996"
                 },
                 {
                     "metaName": "compoundIsGraph",
@@ -131,1252 +130,6 @@
             ],
             "compounds": [
                 {
-                    "name": "snap",
-                    "uriImported": "stream:/bifrostGraphShape1",
-                    "metadata": [
-                        {
-                            "metaName": "io_nodes",
-                            "metadata": [
-                                {
-                                    "metaName": "io_inodes",
-                                    "metadata": [
-                                        {
-                                            "metaName": "input",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "DisplayMode",
-                                                    "metaType": "string",
-                                                    "metaValue": "2"
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "-816.56 357.705"
-                                                },
-                                                {
-                                                    "metaName": "zValue",
-                                                    "metaType": "string",
-                                                    "metaValue": "40.000000"
-                                                },
-                                                {
-                                                    "metaName": "io_ports",
-                                                    "metadata": [
-                                                        {
-                                                            "metaName": "use_tag_data"
-                                                        },
-                                                        {
-                                                            "metaName": "point_tag_data_to_snap"
-                                                        },
-                                                        {
-                                                            "metaName": "invert_tag"
-                                                        },
-                                                        {
-                                                            "metaName": "grid_scale"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "metaName": "input1",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "DisplayMode",
-                                                    "metaType": "string",
-                                                    "metaValue": "2"
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "-798.998 1154.1"
-                                                },
-                                                {
-                                                    "metaName": "zValue",
-                                                    "metaType": "string",
-                                                    "metaValue": "41.000000"
-                                                },
-                                                {
-                                                    "metaName": "io_ports",
-                                                    "metadata": [
-                                                        {
-                                                            "metaName": "target_geometry"
-                                                        },
-                                                        {
-                                                            "metaName": "use_target_tag_data"
-                                                        },
-                                                        {
-                                                            "metaName": "point_tag_data_of_target"
-                                                        },
-                                                        {
-                                                            "metaName": "invert_target_tag"
-                                                        },
-                                                        {
-                                                            "metaName": "snap_using"
-                                                        },
-                                                        {
-                                                            "metaName": "size"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "metaName": "input2",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "DisplayMode",
-                                                    "metaType": "string",
-                                                    "metaValue": "2"
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "-1085.15 -161.916"
-                                                },
-                                                {
-                                                    "metaName": "zValue",
-                                                    "metaType": "string",
-                                                    "metaValue": "34.000000"
-                                                },
-                                                {
-                                                    "metaName": "io_ports",
-                                                    "metadata": [
-                                                        {
-                                                            "metaName": "in_geometry"
-                                                        },
-                                                        {
-                                                            "metaName": "snap_to"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "metaName": "io_onodes",
-                                    "metadata": [
-                                        {
-                                            "metaName": "output",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "DisplayMode",
-                                                    "metaType": "string",
-                                                    "metaValue": "2"
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "1211.45 -161.367"
-                                                },
-                                                {
-                                                    "metaName": "zValue",
-                                                    "metaType": "string",
-                                                    "metaValue": "44.000000"
-                                                },
-                                                {
-                                                    "metaName": "io_ports",
-                                                    "metadata": [
-                                                        {
-                                                            "metaName": "out_geometry"
-                                                        },
-                                                        {
-                                                            "metaName": "processed_point_tag_data"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "metaName": "backdrop",
-                            "metadata": [
-                                {
-                                    "metaName": "type",
-                                    "metaType": "string",
-                                    "metaValue": "backdrop"
-                                },
-                                {
-                                    "metaName": "title",
-                                    "metaType": "string",
-                                    "metaValue": "Grid"
-                                },
-                                {
-                                    "metaName": "coords",
-                                    "metaType": "string",
-                                    "metaValue": "-25.6582 -64.501 683.758 393.977"
-                                },
-                                {
-                                    "metaName": "color",
-                                    "metaType": "string",
-                                    "metaValue": "#28e0c84e"
-                                }
-                            ]
-                        },
-                        {
-                            "metaName": "backdrop1",
-                            "metadata": [
-                                {
-                                    "metaName": "type",
-                                    "metaType": "string",
-                                    "metaValue": "backdrop"
-                                },
-                                {
-                                    "metaName": "title",
-                                    "metaType": "string",
-                                    "metaValue": "Geometry"
-                                },
-                                {
-                                    "metaName": "coords",
-                                    "metaType": "string",
-                                    "metaValue": "-477.191 572.128 673.241 527.697"
-                                },
-                                {
-                                    "metaName": "color",
-                                    "metaType": "string",
-                                    "metaValue": "#28825fc8"
-                                }
-                            ]
-                        },
-                        {
-                            "metaName": "backdrop2",
-                            "metadata": [
-                                {
-                                    "metaName": "type",
-                                    "metaType": "string",
-                                    "metaValue": "backdrop"
-                                },
-                                {
-                                    "metaName": "coords",
-                                    "metaType": "string",
-                                    "metaValue": "-476.681 1085.13 673.843 208"
-                                },
-                                {
-                                    "metaName": "title"
-                                },
-                                {
-                                    "metaName": "color",
-                                    "metaType": "string",
-                                    "metaValue": "#28825fc8"
-                                }
-                            ]
-                        },
-                        {
-                            "metaName": "backdrop3",
-                            "metadata": [
-                                {
-                                    "metaName": "type",
-                                    "metaType": "string",
-                                    "metaValue": "backdrop"
-                                },
-                                {
-                                    "metaName": "coords",
-                                    "metaType": "string",
-                                    "metaValue": "-24.1327 306.67 682.233 285"
-                                },
-                                {
-                                    "metaName": "title"
-                                },
-                                {
-                                    "metaName": "color",
-                                    "metaType": "string",
-                                    "metaValue": "#28e0c84e"
-                                }
-                            ]
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Graph,pass"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "input"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Logic,equal"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Constants,float"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Logic,if"
-                        },
-                        {
-                            "metaName": "ViewportRect",
-                            "metaType": "string",
-                            "metaValue": "-1196.39 -369.663 2743.31 1973.07"
-                        }
-                    ],
-                    "ports": [
-                        {
-                            "portName": "in_geometry",
-                            "portDirection": "input",
-                            "portType": "Object"
-                        },
-                        {
-                            "portName": "snap_to",
-                            "portDirection": "input",
-                            "portType": "uint",
-                            "metadata": [
-                                {
-                                    "metaName": "UIWidget",
-                                    "metaType": "string",
-                                    "metaValue": "ComboBox"
-                                },
-                                {
-                                    "metaName": "UIWidgetProp",
-                                    "metaType": "string",
-                                    "metaValue": "items={grid=0;\"target geometry\"=1}"
-                                }
-                            ]
-                        },
-                        {
-                            "portName": "use_tag_data",
-                            "portDirection": "input",
-                            "portType": "bool"
-                        },
-                        {
-                            "portName": "point_tag_data_to_snap",
-                            "portDirection": "input",
-                            "portType": "array<bool>"
-                        },
-                        {
-                            "portName": "invert_tag",
-                            "portDirection": "input",
-                            "portType": "bool"
-                        },
-                        {
-                            "portName": "grid_scale",
-                            "portDirection": "input",
-                            "portType": "Math::uint3"
-                        },
-                        {
-                            "portName": "target_geometry",
-                            "portDirection": "input",
-                            "portType": "Object"
-                        },
-                        {
-                            "portName": "out_geometry",
-                            "portDirection": "output",
-                            "portType": "Object"
-                        },
-                        {
-                            "portName": "use_target_tag_data",
-                            "portDirection": "input",
-                            "portType": "bool"
-                        },
-                        {
-                            "portName": "point_tag_data_of_target",
-                            "portDirection": "input",
-                            "portType": "array<bool>"
-                        },
-                        {
-                            "portName": "invert_target_tag",
-                            "portDirection": "input",
-                            "portType": "bool"
-                        },
-                        {
-                            "portName": "snap_using",
-                            "portDirection": "input",
-                            "portType": "uint",
-                            "metadata": [
-                                {
-                                    "metaName": "UIWidget",
-                                    "metaType": "string",
-                                    "metaValue": "ComboBox"
-                                },
-                                {
-                                    "metaName": "UIWidgetProp",
-                                    "metaType": "string",
-                                    "metaValue": "items={\"least target point iindex\"=0;\"closest target point\"=1}"
-                                }
-                            ]
-                        },
-                        {
-                            "portName": "processed_point_tag_data",
-                            "portDirection": "output",
-                            "portType": "array<bool>"
-                        },
-                        {
-                            "portName": "size",
-                            "portDirection": "input",
-                            "portType": "float"
-                        }
-                    ],
-                    "compoundNodes": [
-                        {
-                            "nodeName": "construct_points",
-                            "nodeType": "Geometry::Points::construct_points",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "204.227 404.073"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "39.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "get_point_position",
-                            "nodeType": "Geometry::Properties::get_point_position",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-803.691 106.887"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "32.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "get_point_position1",
-                            "nodeType": "Geometry::Properties::get_point_position",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-462.258 789.922"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "38.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "get_points_in_radius1",
-                            "nodeType": "Geometry::Query::get_points_in_radius",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-467.191 915.077"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "37.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "location_scope",
-                            "nodeType": "Diagnostic::Display::location_scope",
-                            "metadata": [
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-37.8383 1172.23"
-                                },
-                                {
-                                    "metaName": "PortExpandedState",
-                                    "metadata": [
-                                        {
-                                            "metaName": "Diagnostic Modes",
-                                            "metaType": "string",
-                                            "metaValue": "1"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "54.000000"
-                                },
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "point_scope",
-                            "nodeType": "Diagnostic::Display::point_scope",
-                            "metadata": [
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "423.1 403.741"
-                                },
-                                {
-                                    "metaName": "PortExpandedState",
-                                    "metadata": [
-                                        {
-                                            "metaName": "Color",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "Point Shape",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "56.000000"
-                                },
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "set_point_position",
-                            "nodeType": "Geometry::Properties::set_point_position",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "980.941 -161.921"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "42.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "snap_geometry_core",
-                            "nodeType": "TKCM::Modeling_Toolbox::Internal::snap_geometry_core",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-39.9244 648.128"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "36.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "snap_grid_core",
-                            "nodeType": "TKCM::Modeling_Toolbox::Internal::snap_grid_core",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-15.6582 11.499"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "31.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "snap_grid_point",
-                            "nodeType": "TKCM::Modeling_Toolbox::Internal::snap_grid_point",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-14.1327 382.67"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "35.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "terminal1",
-                            "nodeType": "Core::Graph::terminal",
-                            "fanInPortNames": {
-                                "final": [],
-                                "proxy": [],
-                                "diagnostic": [
-                                    "diagnostic_geo"
-                                ]
-                            },
-                            "terminalStates": [
-                                {
-                                    "name": "Core::Graph::terminal::final",
-                                    "enabled": "false"
-                                },
-                                {
-                                    "name": "Core::Graph::terminal::proxy",
-                                    "enabled": "false"
-                                },
-                                {
-                                    "name": "Core::Graph::terminal::diagnostic",
-                                    "enabled": "true"
-                                }
-                            ],
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "PortExpandedState",
-                                    "metadata": [
-                                        {
-                                            "metaName": "proxy",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "diagnostic",
-                                            "metaType": "string",
-                                            "metaValue": "1"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "999.274 804.498"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "43.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "if",
-                            "nodeType": "Core::Logic::if",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "716.972 -332.645"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "45.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "equal",
-                            "nodeType": "Core::Logic::equal",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-22.6075 -311.029"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "33.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "if1",
-                            "nodeType": "Core::Logic::if",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "746.841 813.032"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "47.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "if2",
-                            "nodeType": "Core::Logic::if",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "721.083 -6.13431"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "46.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "pass",
-                            "nodeType": "Core::Graph::pass",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "64.000000"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "113.88 1299.48"
-                                }
-                            ]
-                        }
-                    ],
-                    "connections": [
-                        {
-                            "source": "snap_grid_point.grid_point",
-                            "target": "construct_points.point_position"
-                        },
-                        {
-                            "source": "construct_points.points",
-                            "target": "point_scope.point_geo"
-                        },
-                        {
-                            "source": ".in_geometry",
-                            "target": "get_point_position.geometry"
-                        },
-                        {
-                            "source": "get_point_position.point_position",
-                            "target": "snap_grid_core.in_point_position"
-                        },
-                        {
-                            "source": "get_point_position.point_position",
-                            "target": "snap_geometry_core.in_point_position"
-                        },
-                        {
-                            "source": "get_point_position.point_position",
-                            "target": "location_scope.positions"
-                        },
-                        {
-                            "source": "get_point_position.point_position",
-                            "target": "get_points_in_radius1.positions"
-                        },
-                        {
-                            "source": "get_point_position.point_position",
-                            "target": "snap_grid_point.point_position"
-                        },
-                        {
-                            "source": ".target_geometry",
-                            "target": "get_point_position1.geometry"
-                        },
-                        {
-                            "source": "get_point_position1.point_position",
-                            "target": "snap_geometry_core.target_point_position"
-                        },
-                        {
-                            "source": ".target_geometry",
-                            "target": "get_points_in_radius1.geometry"
-                        },
-                        {
-                            "source": "get_points_in_radius1.locations",
-                            "target": "location_scope.locations"
-                        },
-                        {
-                            "source": "get_points_in_radius1.point_indices",
-                            "target": "snap_geometry_core.target_point_indices"
-                        },
-                        {
-                            "source": ".target_geometry",
-                            "target": "location_scope.geometry"
-                        },
-                        {
-                            "source": ".in_geometry",
-                            "target": "set_point_position.geometry"
-                        },
-                        {
-                            "source": "set_point_position.out_geometry",
-                            "target": ".out_geometry"
-                        },
-                        {
-                            "source": ".snap_to",
-                            "target": "equal.first"
-                        },
-                        {
-                            "source": "equal.output",
-                            "target": "if.condition"
-                        },
-                        {
-                            "source": "snap_grid_core.out_point_position",
-                            "target": "if.true_case"
-                        },
-                        {
-                            "source": "snap_geometry_core.out_point_position",
-                            "target": "if.false_case"
-                        },
-                        {
-                            "source": "if.output",
-                            "target": "set_point_position.positions"
-                        },
-                        {
-                            "source": ".use_tag_data",
-                            "target": "snap_grid_core.use_tag_data"
-                        },
-                        {
-                            "source": ".point_tag_data_to_snap",
-                            "target": "snap_grid_core.point_tag_data_to_snap"
-                        },
-                        {
-                            "source": ".invert_tag",
-                            "target": "snap_grid_core.invert_tag"
-                        },
-                        {
-                            "source": ".grid_scale",
-                            "target": "snap_grid_core.grid_scale"
-                        },
-                        {
-                            "source": ".grid_scale",
-                            "target": "snap_grid_point.grid_scale"
-                        },
-                        {
-                            "source": ".use_tag_data",
-                            "target": "snap_geometry_core.use_tag_data"
-                        },
-                        {
-                            "source": ".point_tag_data_to_snap",
-                            "target": "snap_geometry_core.point_tag_data_to_snap"
-                        },
-                        {
-                            "source": ".invert_tag",
-                            "target": "snap_geometry_core.invert_tag"
-                        },
-                        {
-                            "source": ".use_target_tag_data",
-                            "target": "snap_geometry_core.use_target_tag_data"
-                        },
-                        {
-                            "source": ".point_tag_data_of_target",
-                            "target": "snap_geometry_core.point_tag_data_of_target"
-                        },
-                        {
-                            "source": ".invert_target_tag",
-                            "target": "snap_geometry_core.invert_target_tag"
-                        },
-                        {
-                            "source": ".snap_using",
-                            "target": "snap_geometry_core.snap_using"
-                        },
-                        {
-                            "source": "equal.output",
-                            "target": "if1.condition"
-                        },
-                        {
-                            "source": "point_scope.diagnostic_geo",
-                            "target": "if1.true_case"
-                        },
-                        {
-                            "source": "location_scope.diagnostic_geo",
-                            "target": "if1.false_case"
-                        },
-                        {
-                            "source": "if1.output",
-                            "target": "terminal1.diagnostic.diagnostic_geo"
-                        },
-                        {
-                            "source": "equal.output",
-                            "target": "if2.condition"
-                        },
-                        {
-                            "source": "snap_grid_core.processed_point_tag_data",
-                            "target": "if2.true_case"
-                        },
-                        {
-                            "source": "snap_geometry_core.processed_point_tag_data",
-                            "target": "if2.false_case"
-                        },
-                        {
-                            "source": "if2.output",
-                            "target": ".processed_point_tag_data"
-                        },
-                        {
-                            "source": ".size",
-                            "target": "location_scope.size"
-                        },
-                        {
-                            "source": "pass.output",
-                            "target": "point_scope.default_size"
-                        },
-                        {
-                            "source": ".size",
-                            "target": "pass.input"
-                        }
-                    ],
-                    "values": [
-                        {
-                            "valueName": "get_points_in_radius1.geometry",
-                            "valueType": "Object",
-                            "value": {}
-                        },
-                        {
-                            "valueName": "get_points_in_radius1.radius",
-                            "valueType": "float",
-                            "value": "10f"
-                        },
-                        {
-                            "valueName": "get_points_in_radius1.enable_max_number",
-                            "valueType": "bool",
-                            "value": "false"
-                        },
-                        {
-                            "valueName": "get_points_in_radius1.max_number",
-                            "valueType": "long",
-                            "value": "8"
-                        },
-                        {
-                            "valueName": "location_scope.arrows",
-                            "valueType": "bool",
-                            "value": "true"
-                        },
-                        {
-                            "valueName": "location_scope.size",
-                            "valueType": "float",
-                            "value": "0.5f"
-                        },
-                        {
-                            "valueName": "location_scope.miss_size_factor",
-                            "valueType": "float",
-                            "value": "0.5f"
-                        },
-                        {
-                            "valueName": "location_scope.circles_at_origin",
-                            "valueType": "bool",
-                            "value": "true"
-                        },
-                        {
-                            "valueName": "location_scope.circles_at_sample",
-                            "valueType": "bool",
-                            "value": "true"
-                        },
-                        {
-                            "valueName": "point_scope.shape",
-                            "valueType": "Geometry::PointShapes",
-                            "value": "Quad"
-                        },
-                        {
-                            "valueName": "point_scope.default_size",
-                            "valueType": "float",
-                            "value": "0.5f"
-                        },
-                        {
-                            "valueName": "point_scope.cull_by_scalar_property",
-                            "valueType": "bool",
-                            "value": "false"
-                        },
-                        {
-                            "valueName": "point_scope.cull_property",
-                            "valueType": "string",
-                            "value": "point_age"
-                        },
-                        {
-                            "valueName": "point_scope.keep_max_value",
-                            "valueType": "float",
-                            "value": "3f"
-                        },
-                        {
-                            "valueName": "point_scope.invert_range",
-                            "valueType": "bool",
-                            "value": "false"
-                        },
-                        {
-                            "valueName": "point_scope.coloring_property",
-                            "valueType": "string",
-                            "value": "point_normal"
-                        },
-                        {
-                            "valueName": "point_scope.coloring_mode",
-                            "valueType": "Diagnostic::ColoringMode",
-                            "value": "Color"
-                        },
-                        {
-                            "valueName": "point_scope.color",
-                            "valueType": "Math::float3",
-                            "value": {
-                                "x": "0.479499996f",
-                                "y": "0.479499996f",
-                                "z": "0f"
-                            }
-                        },
-                        {
-                            "valueName": "point_scope.heatmap_R",
-                            "valueType": "Math::FCurve",
-                            "value": {
-                                "version": "1",
-                                "preExtrapolation": "0",
-                                "postExtrapolation": "0",
-                                "points": [
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "-0.40000000000000002",
-                                                "yp": "0.10000000000000001",
-                                                "x": "0",
-                                                "y": "0.10000000000000001",
-                                                "xn": "0.40000000000000002",
-                                                "yn": "0.10000000000000001"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "9.5999999999999996",
-                                                "yp": "1",
-                                                "x": "10",
-                                                "y": "1",
-                                                "xn": "10.4",
-                                                "yn": "1"
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "valueName": "point_scope.heatmap_G",
-                            "valueType": "Math::FCurve",
-                            "value": {
-                                "version": "1",
-                                "preExtrapolation": "0",
-                                "postExtrapolation": "0",
-                                "points": [
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "-1.3999999999999999",
-                                                "yp": "0",
-                                                "x": "-1",
-                                                "y": "0",
-                                                "xn": "-0.59999999999999998",
-                                                "yn": "0"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "4.7000000000000002",
-                                                "yp": "1",
-                                                "x": "5",
-                                                "y": "1",
-                                                "xn": "5.2999999999999998",
-                                                "yn": "1"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "9.5999999999999996",
-                                                "yp": "0",
-                                                "x": "10",
-                                                "y": "0",
-                                                "xn": "10.4",
-                                                "yn": "0"
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "valueName": "point_scope.heatmap_B",
-                            "valueType": "Math::FCurve",
-                            "value": {
-                                "version": "1",
-                                "preExtrapolation": "0",
-                                "postExtrapolation": "0",
-                                "points": [
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "-0.40000000000000002",
-                                                "yp": "1",
-                                                "x": "0",
-                                                "y": "1",
-                                                "xn": "0.40000000000000002",
-                                                "yn": "1"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "9.5999999999999996",
-                                                "yp": "0.10000000000000001",
-                                                "x": "10",
-                                                "y": "0.10000000000000001",
-                                                "xn": "10.4",
-                                                "yn": "0.10000000000000001"
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "valueName": "point_scope.arrow_property",
-                            "valueType": "string",
-                            "value": "point_velocity"
-                        },
-                        {
-                            "valueName": "point_scope.normalize_arrow",
-                            "valueType": "bool",
-                            "value": "false"
-                        },
-                        {
-                            "valueName": "point_scope.enable_arrows",
-                            "valueType": "bool",
-                            "value": "false"
-                        },
-                        {
-                            "valueName": "point_scope.length_scale",
-                            "valueType": "float",
-                            "value": "1f"
-                        },
-                        {
-                            "valueName": "snap_grid_core.use_tag_data",
-                            "valueType": "bool",
-                            "value": "false"
-                        },
-                        {
-                            "valueName": "snap_grid_core.grid_scale",
-                            "valueType": "Math::uint3",
-                            "value": {
-                                "x": "3U",
-                                "y": "4U",
-                                "z": "2U"
-                            }
-                        },
-                        {
-                            "valueName": "snap_grid_point.grid_scale",
-                            "valueType": "Math::uint3",
-                            "value": {
-                                "x": "3U",
-                                "y": "4U",
-                                "z": "2U"
-                            }
-                        }
-                    ],
-                    "reservedNodeNames": [
-                        {
-                            "name": "input"
-                        },
-                        {
-                            "name": "output"
-                        },
-                        {
-                            "name": "input1"
-                        },
-                        {
-                            "name": "input2"
-                        }
-                    ]
-                },
-                {
                     "name": "create_sample_strand",
                     "metadata": [
                         {
@@ -1414,14 +167,6 @@
                                             "metaName": "output",
                                             "metadata": [
                                                 {
-                                                    "metaName": "io_ports",
-                                                    "metadata": [
-                                                        {
-                                                            "metaName": "out_geometry"
-                                                        }
-                                                    ]
-                                                },
-                                                {
                                                     "metaName": "DisplayMode",
                                                     "metaType": "string",
                                                     "metaValue": "2"
@@ -1430,6 +175,14 @@
                                                     "metaName": "LayoutPos",
                                                     "metaType": "string",
                                                     "metaValue": "225.5 -61"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "out_geometry"
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "metaName": "zValue",
@@ -1441,6 +194,11 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-831.959 11.1075 1687.11 1126.06"
                         }
                     ],
                     "ports": [
@@ -1489,7 +247,7 @@
                                 {
                                     "metaName": "zValue",
                                     "metaType": "string",
-                                    "metaValue": "40.000000"
+                                    "metaValue": "42.000000"
                                 }
                             ]
                         },
@@ -1826,9 +584,9 @@
                             "valueName": "constant_surface_mat.color",
                             "valueType": "Math::float3",
                             "value": {
-                                "x": "0f",
-                                "y": "0.384600013f",
-                                "z": "0.00609999988f"
+                                "x": "1f",
+                                "y": "1f",
+                                "z": "1f"
                             }
                         },
                         {
@@ -1895,1310 +653,9 @@
                             "name": "output"
                         }
                     ]
-                },
-                {
-                    "name": "snap1",
-                    "metadata": [
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Graph,pass"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "input"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Logic,equal"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Constants,float"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Logic,if"
-                        },
-                        {
-                            "metaName": "ViewportRect",
-                            "metaType": "string",
-                            "metaValue": "-1196.39 -369.663 2743.31 1973.07"
-                        },
-                        {
-                            "metaName": "io_nodes",
-                            "metadata": [
-                                {
-                                    "metaName": "io_inodes",
-                                    "metadata": [
-                                        {
-                                            "metaName": "input",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "DisplayMode",
-                                                    "metaType": "string",
-                                                    "metaValue": "2"
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "-816.56 357.705"
-                                                },
-                                                {
-                                                    "metaName": "zValue",
-                                                    "metaType": "string",
-                                                    "metaValue": "40.000000"
-                                                },
-                                                {
-                                                    "metaName": "io_ports",
-                                                    "metadata": [
-                                                        {
-                                                            "metaName": "use_tag_data"
-                                                        },
-                                                        {
-                                                            "metaName": "point_tag_data_to_snap"
-                                                        },
-                                                        {
-                                                            "metaName": "invert_tag"
-                                                        },
-                                                        {
-                                                            "metaName": "grid_scale"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "metaName": "input1",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "DisplayMode",
-                                                    "metaType": "string",
-                                                    "metaValue": "2"
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "-798.998 1154.1"
-                                                },
-                                                {
-                                                    "metaName": "zValue",
-                                                    "metaType": "string",
-                                                    "metaValue": "41.000000"
-                                                },
-                                                {
-                                                    "metaName": "io_ports",
-                                                    "metadata": [
-                                                        {
-                                                            "metaName": "target_geometry"
-                                                        },
-                                                        {
-                                                            "metaName": "use_target_tag_data"
-                                                        },
-                                                        {
-                                                            "metaName": "point_tag_data_of_target"
-                                                        },
-                                                        {
-                                                            "metaName": "invert_target_tag"
-                                                        },
-                                                        {
-                                                            "metaName": "snap_using"
-                                                        },
-                                                        {
-                                                            "metaName": "size"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "metaName": "input2",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "DisplayMode",
-                                                    "metaType": "string",
-                                                    "metaValue": "2"
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "-1085.15 -161.916"
-                                                },
-                                                {
-                                                    "metaName": "zValue",
-                                                    "metaType": "string",
-                                                    "metaValue": "34.000000"
-                                                },
-                                                {
-                                                    "metaName": "io_ports",
-                                                    "metadata": [
-                                                        {
-                                                            "metaName": "in_geometry"
-                                                        },
-                                                        {
-                                                            "metaName": "snap_to"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "metaName": "io_onodes",
-                                    "metadata": [
-                                        {
-                                            "metaName": "output",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "DisplayMode",
-                                                    "metaType": "string",
-                                                    "metaValue": "2"
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "1211.45 -161.367"
-                                                },
-                                                {
-                                                    "metaName": "zValue",
-                                                    "metaType": "string",
-                                                    "metaValue": "44.000000"
-                                                },
-                                                {
-                                                    "metaName": "io_ports",
-                                                    "metadata": [
-                                                        {
-                                                            "metaName": "out_geometry"
-                                                        },
-                                                        {
-                                                            "metaName": "processed_point_tag_data"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "metaName": "backdrop",
-                            "metadata": [
-                                {
-                                    "metaName": "type",
-                                    "metaType": "string",
-                                    "metaValue": "backdrop"
-                                },
-                                {
-                                    "metaName": "title",
-                                    "metaType": "string",
-                                    "metaValue": "Grid"
-                                },
-                                {
-                                    "metaName": "coords",
-                                    "metaType": "string",
-                                    "metaValue": "-25.6582 -64.501 683.758 393.977"
-                                },
-                                {
-                                    "metaName": "color",
-                                    "metaType": "string",
-                                    "metaValue": "#28e0c84e"
-                                }
-                            ]
-                        },
-                        {
-                            "metaName": "backdrop1",
-                            "metadata": [
-                                {
-                                    "metaName": "type",
-                                    "metaType": "string",
-                                    "metaValue": "backdrop"
-                                },
-                                {
-                                    "metaName": "title",
-                                    "metaType": "string",
-                                    "metaValue": "Geometry"
-                                },
-                                {
-                                    "metaName": "coords",
-                                    "metaType": "string",
-                                    "metaValue": "-477.191 572.128 673.241 527.697"
-                                },
-                                {
-                                    "metaName": "color",
-                                    "metaType": "string",
-                                    "metaValue": "#28825fc8"
-                                }
-                            ]
-                        },
-                        {
-                            "metaName": "backdrop2",
-                            "metadata": [
-                                {
-                                    "metaName": "type",
-                                    "metaType": "string",
-                                    "metaValue": "backdrop"
-                                },
-                                {
-                                    "metaName": "coords",
-                                    "metaType": "string",
-                                    "metaValue": "-476.681 1085.13 673.843 208"
-                                },
-                                {
-                                    "metaName": "color",
-                                    "metaType": "string",
-                                    "metaValue": "#28825fc8"
-                                }
-                            ]
-                        },
-                        {
-                            "metaName": "backdrop3",
-                            "metadata": [
-                                {
-                                    "metaName": "type",
-                                    "metaType": "string",
-                                    "metaValue": "backdrop"
-                                },
-                                {
-                                    "metaName": "coords",
-                                    "metaType": "string",
-                                    "metaValue": "-24.1327 306.67 682.233 285"
-                                },
-                                {
-                                    "metaName": "color",
-                                    "metaType": "string",
-                                    "metaValue": "#28e0c84e"
-                                }
-                            ]
-                        }
-                    ],
-                    "ports": [
-                        {
-                            "portName": "in_geometry",
-                            "portDirection": "input",
-                            "portType": "Object"
-                        },
-                        {
-                            "portName": "snap_to",
-                            "portDirection": "input",
-                            "portType": "uint",
-                            "metadata": [
-                                {
-                                    "metaName": "UIWidget",
-                                    "metaType": "string",
-                                    "metaValue": "ComboBox"
-                                },
-                                {
-                                    "metaName": "UIWidgetProp",
-                                    "metaType": "string",
-                                    "metaValue": "items={grid=0;\"target geometry\"=1}"
-                                }
-                            ]
-                        },
-                        {
-                            "portName": "use_tag_data",
-                            "portDirection": "input",
-                            "portType": "bool"
-                        },
-                        {
-                            "portName": "point_tag_data_to_snap",
-                            "portDirection": "input",
-                            "portType": "array<bool>"
-                        },
-                        {
-                            "portName": "invert_tag",
-                            "portDirection": "input",
-                            "portType": "bool"
-                        },
-                        {
-                            "portName": "grid_scale",
-                            "portDirection": "input",
-                            "portType": "Math::uint3"
-                        },
-                        {
-                            "portName": "target_geometry",
-                            "portDirection": "input",
-                            "portType": "Object"
-                        },
-                        {
-                            "portName": "use_target_tag_data",
-                            "portDirection": "input",
-                            "portType": "bool"
-                        },
-                        {
-                            "portName": "point_tag_data_of_target",
-                            "portDirection": "input",
-                            "portType": "array<bool>"
-                        },
-                        {
-                            "portName": "invert_target_tag",
-                            "portDirection": "input",
-                            "portType": "bool"
-                        },
-                        {
-                            "portName": "snap_using",
-                            "portDirection": "input",
-                            "portType": "uint",
-                            "metadata": [
-                                {
-                                    "metaName": "UIWidget",
-                                    "metaType": "string",
-                                    "metaValue": "ComboBox"
-                                },
-                                {
-                                    "metaName": "UIWidgetProp",
-                                    "metaType": "string",
-                                    "metaValue": "items={\"least target point iindex\"=0;\"closest target point\"=1}"
-                                }
-                            ]
-                        },
-                        {
-                            "portName": "size",
-                            "portDirection": "input",
-                            "portType": "float"
-                        },
-                        {
-                            "portName": "out_geometry",
-                            "portDirection": "output",
-                            "portType": "Object"
-                        },
-                        {
-                            "portName": "processed_point_tag_data",
-                            "portDirection": "output",
-                            "portType": "array<bool>"
-                        }
-                    ],
-                    "compoundNodes": [
-                        {
-                            "nodeName": "construct_points",
-                            "nodeType": "Geometry::Points::construct_points",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "204.227 404.073"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "39.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "get_point_position",
-                            "nodeType": "Geometry::Properties::get_point_position",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-803.691 106.887"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "32.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "get_point_position1",
-                            "nodeType": "Geometry::Properties::get_point_position",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-462.258 789.922"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "38.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "get_points_in_radius1",
-                            "nodeType": "Geometry::Query::get_points_in_radius",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-467.191 915.077"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "37.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "location_scope",
-                            "nodeType": "Diagnostic::Display::location_scope",
-                            "metadata": [
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-37.8383 1172.23"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "54.000000"
-                                },
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "PortExpandedState",
-                                    "metadata": [
-                                        {
-                                            "metaName": "Diagnostic Modes",
-                                            "metaType": "string",
-                                            "metaValue": "1"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "point_scope",
-                            "nodeType": "Diagnostic::Display::point_scope",
-                            "metadata": [
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "423.1 403.741"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "56.000000"
-                                },
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "PortExpandedState",
-                                    "metadata": [
-                                        {
-                                            "metaName": "Color",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "Point Shape",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "set_point_position",
-                            "nodeType": "Geometry::Properties::set_point_position",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "980.941 -161.921"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "42.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "snap_geometry_core",
-                            "nodeType": "TKCM::Modeling_Toolbox::Internal::snap_geometry_core",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-39.9244 648.128"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "36.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "snap_grid_core",
-                            "nodeType": "TKCM::Modeling_Toolbox::Internal::snap_grid_core",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-15.6582 11.499"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "31.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "snap_grid_point",
-                            "nodeType": "TKCM::Modeling_Toolbox::Internal::snap_grid_point",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-14.1327 382.67"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "35.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "terminal1",
-                            "nodeType": "Core::Graph::terminal",
-                            "fanInPortNames": {
-                                "final": [],
-                                "proxy": [],
-                                "diagnostic": [
-                                    "diagnostic_geo"
-                                ]
-                            },
-                            "terminalStates": [
-                                {
-                                    "name": "Core::Graph::terminal::final",
-                                    "enabled": "false"
-                                },
-                                {
-                                    "name": "Core::Graph::terminal::proxy",
-                                    "enabled": "false"
-                                },
-                                {
-                                    "name": "Core::Graph::terminal::diagnostic",
-                                    "enabled": "true"
-                                }
-                            ],
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "999.274 804.498"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "43.000000"
-                                },
-                                {
-                                    "metaName": "PortExpandedState",
-                                    "metadata": [
-                                        {
-                                            "metaName": "proxy",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "diagnostic",
-                                            "metaType": "string",
-                                            "metaValue": "1"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "if",
-                            "nodeType": "Core::Logic::if",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "716.972 -332.645"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "45.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "equal",
-                            "nodeType": "Core::Logic::equal",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "-22.6075 -311.029"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "33.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "if1",
-                            "nodeType": "Core::Logic::if",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "746.841 813.032"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "47.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "if2",
-                            "nodeType": "Core::Logic::if",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "721.083 -6.13431"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "46.000000"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "pass",
-                            "nodeType": "Core::Graph::pass",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "zValue",
-                                    "metaType": "string",
-                                    "metaValue": "64.000000"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "113.88 1299.48"
-                                }
-                            ]
-                        }
-                    ],
-                    "connections": [
-                        {
-                            "source": "construct_points.points",
-                            "target": "point_scope.point_geo"
-                        },
-                        {
-                            "source": "get_point_position.point_position",
-                            "target": "snap_grid_core.in_point_position"
-                        },
-                        {
-                            "source": "get_point_position.point_position",
-                            "target": "snap_geometry_core.in_point_position"
-                        },
-                        {
-                            "source": "get_point_position.point_position",
-                            "target": "location_scope.positions"
-                        },
-                        {
-                            "source": "get_point_position.point_position",
-                            "target": "get_points_in_radius1.positions"
-                        },
-                        {
-                            "source": "get_point_position.point_position",
-                            "target": "snap_grid_point.point_position"
-                        },
-                        {
-                            "source": "get_point_position1.point_position",
-                            "target": "snap_geometry_core.target_point_position"
-                        },
-                        {
-                            "source": "get_points_in_radius1.locations",
-                            "target": "location_scope.locations"
-                        },
-                        {
-                            "source": "get_points_in_radius1.point_indices",
-                            "target": "snap_geometry_core.target_point_indices"
-                        },
-                        {
-                            "source": "location_scope.diagnostic_geo",
-                            "target": "if1.false_case"
-                        },
-                        {
-                            "source": "point_scope.diagnostic_geo",
-                            "target": "if1.true_case"
-                        },
-                        {
-                            "source": "set_point_position.out_geometry",
-                            "target": ".out_geometry"
-                        },
-                        {
-                            "source": "snap_geometry_core.out_point_position",
-                            "target": "if.false_case"
-                        },
-                        {
-                            "source": "snap_geometry_core.processed_point_tag_data",
-                            "target": "if2.false_case"
-                        },
-                        {
-                            "source": "snap_grid_core.out_point_position",
-                            "target": "if.true_case"
-                        },
-                        {
-                            "source": "snap_grid_core.processed_point_tag_data",
-                            "target": "if2.true_case"
-                        },
-                        {
-                            "source": "snap_grid_point.grid_point",
-                            "target": "construct_points.point_position"
-                        },
-                        {
-                            "source": "if.output",
-                            "target": "set_point_position.positions"
-                        },
-                        {
-                            "source": "equal.output",
-                            "target": "if.condition"
-                        },
-                        {
-                            "source": "equal.output",
-                            "target": "if1.condition"
-                        },
-                        {
-                            "source": "equal.output",
-                            "target": "if2.condition"
-                        },
-                        {
-                            "source": "if1.output",
-                            "target": "terminal1.diagnostic.diagnostic_geo"
-                        },
-                        {
-                            "source": "if2.output",
-                            "target": ".processed_point_tag_data"
-                        },
-                        {
-                            "source": "pass.output",
-                            "target": "point_scope.default_size"
-                        },
-                        {
-                            "source": ".in_geometry",
-                            "target": "get_point_position.geometry"
-                        },
-                        {
-                            "source": ".in_geometry",
-                            "target": "set_point_position.geometry"
-                        },
-                        {
-                            "source": ".snap_to",
-                            "target": "equal.first"
-                        },
-                        {
-                            "source": ".use_tag_data",
-                            "target": "snap_grid_core.use_tag_data"
-                        },
-                        {
-                            "source": ".use_tag_data",
-                            "target": "snap_geometry_core.use_tag_data"
-                        },
-                        {
-                            "source": ".point_tag_data_to_snap",
-                            "target": "snap_grid_core.point_tag_data_to_snap"
-                        },
-                        {
-                            "source": ".point_tag_data_to_snap",
-                            "target": "snap_geometry_core.point_tag_data_to_snap"
-                        },
-                        {
-                            "source": ".invert_tag",
-                            "target": "snap_grid_core.invert_tag"
-                        },
-                        {
-                            "source": ".invert_tag",
-                            "target": "snap_geometry_core.invert_tag"
-                        },
-                        {
-                            "source": ".grid_scale",
-                            "target": "snap_grid_core.grid_scale"
-                        },
-                        {
-                            "source": ".grid_scale",
-                            "target": "snap_grid_point.grid_scale"
-                        },
-                        {
-                            "source": ".target_geometry",
-                            "target": "get_point_position1.geometry"
-                        },
-                        {
-                            "source": ".target_geometry",
-                            "target": "get_points_in_radius1.geometry"
-                        },
-                        {
-                            "source": ".target_geometry",
-                            "target": "location_scope.geometry"
-                        },
-                        {
-                            "source": ".use_target_tag_data",
-                            "target": "snap_geometry_core.use_target_tag_data"
-                        },
-                        {
-                            "source": ".point_tag_data_of_target",
-                            "target": "snap_geometry_core.point_tag_data_of_target"
-                        },
-                        {
-                            "source": ".invert_target_tag",
-                            "target": "snap_geometry_core.invert_target_tag"
-                        },
-                        {
-                            "source": ".snap_using",
-                            "target": "snap_geometry_core.snap_using"
-                        },
-                        {
-                            "source": ".size",
-                            "target": "location_scope.size"
-                        },
-                        {
-                            "source": ".size",
-                            "target": "pass.input"
-                        }
-                    ],
-                    "values": [
-                        {
-                            "valueName": "get_points_in_radius1.geometry",
-                            "valueType": "Object",
-                            "value": {}
-                        },
-                        {
-                            "valueName": "get_points_in_radius1.radius",
-                            "valueType": "float",
-                            "value": "10f"
-                        },
-                        {
-                            "valueName": "get_points_in_radius1.enable_max_number",
-                            "valueType": "bool",
-                            "value": "false"
-                        },
-                        {
-                            "valueName": "get_points_in_radius1.max_number",
-                            "valueType": "long",
-                            "value": "8"
-                        },
-                        {
-                            "valueName": "location_scope.arrows",
-                            "valueType": "bool",
-                            "value": "true"
-                        },
-                        {
-                            "valueName": "location_scope.size",
-                            "valueType": "float",
-                            "value": "0.5f"
-                        },
-                        {
-                            "valueName": "location_scope.miss_size_factor",
-                            "valueType": "float",
-                            "value": "0.5f"
-                        },
-                        {
-                            "valueName": "location_scope.circles_at_origin",
-                            "valueType": "bool",
-                            "value": "true"
-                        },
-                        {
-                            "valueName": "location_scope.circles_at_sample",
-                            "valueType": "bool",
-                            "value": "true"
-                        },
-                        {
-                            "valueName": "point_scope.shape",
-                            "valueType": "Geometry::PointShapes",
-                            "value": "Quad"
-                        },
-                        {
-                            "valueName": "point_scope.default_size",
-                            "valueType": "float",
-                            "value": "0.5f"
-                        },
-                        {
-                            "valueName": "point_scope.cull_by_scalar_property",
-                            "valueType": "bool",
-                            "value": "false"
-                        },
-                        {
-                            "valueName": "point_scope.cull_property",
-                            "valueType": "string",
-                            "value": "point_age"
-                        },
-                        {
-                            "valueName": "point_scope.keep_max_value",
-                            "valueType": "float",
-                            "value": "3f"
-                        },
-                        {
-                            "valueName": "point_scope.invert_range",
-                            "valueType": "bool",
-                            "value": "false"
-                        },
-                        {
-                            "valueName": "point_scope.coloring_property",
-                            "valueType": "string",
-                            "value": "point_normal"
-                        },
-                        {
-                            "valueName": "point_scope.coloring_mode",
-                            "valueType": "Diagnostic::ColoringMode",
-                            "value": "Color"
-                        },
-                        {
-                            "valueName": "point_scope.color",
-                            "valueType": "Math::float3",
-                            "value": {
-                                "x": "0.479499996f",
-                                "y": "0.479499996f",
-                                "z": "0f"
-                            }
-                        },
-                        {
-                            "valueName": "point_scope.heatmap_R",
-                            "valueType": "Math::FCurve",
-                            "value": {
-                                "version": "1",
-                                "preExtrapolation": "0",
-                                "postExtrapolation": "0",
-                                "points": [
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "-0.40000000000000002",
-                                                "yp": "0.10000000000000001",
-                                                "x": "0",
-                                                "y": "0.10000000000000001",
-                                                "xn": "0.40000000000000002",
-                                                "yn": "0.10000000000000001"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "9.5999999999999996",
-                                                "yp": "1",
-                                                "x": "10",
-                                                "y": "1",
-                                                "xn": "10.4",
-                                                "yn": "1"
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "valueName": "point_scope.heatmap_G",
-                            "valueType": "Math::FCurve",
-                            "value": {
-                                "version": "1",
-                                "preExtrapolation": "0",
-                                "postExtrapolation": "0",
-                                "points": [
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "-1.3999999999999999",
-                                                "yp": "0",
-                                                "x": "-1",
-                                                "y": "0",
-                                                "xn": "-0.59999999999999998",
-                                                "yn": "0"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "4.7000000000000002",
-                                                "yp": "1",
-                                                "x": "5",
-                                                "y": "1",
-                                                "xn": "5.2999999999999998",
-                                                "yn": "1"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "9.5999999999999996",
-                                                "yp": "0",
-                                                "x": "10",
-                                                "y": "0",
-                                                "xn": "10.4",
-                                                "yn": "0"
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "valueName": "point_scope.heatmap_B",
-                            "valueType": "Math::FCurve",
-                            "value": {
-                                "version": "1",
-                                "preExtrapolation": "0",
-                                "postExtrapolation": "0",
-                                "points": [
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "-0.40000000000000002",
-                                                "yp": "1",
-                                                "x": "0",
-                                                "y": "1",
-                                                "xn": "0.40000000000000002",
-                                                "yn": "1"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "point": {
-                                            "locked": "1",
-                                            "interpolation": "2",
-                                            "pcn": {
-                                                "xp": "9.5999999999999996",
-                                                "yp": "0.10000000000000001",
-                                                "x": "10",
-                                                "y": "0.10000000000000001",
-                                                "xn": "10.4",
-                                                "yn": "0.10000000000000001"
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "valueName": "point_scope.arrow_property",
-                            "valueType": "string",
-                            "value": "point_velocity"
-                        },
-                        {
-                            "valueName": "point_scope.normalize_arrow",
-                            "valueType": "bool",
-                            "value": "false"
-                        },
-                        {
-                            "valueName": "point_scope.enable_arrows",
-                            "valueType": "bool",
-                            "value": "false"
-                        },
-                        {
-                            "valueName": "point_scope.length_scale",
-                            "valueType": "float",
-                            "value": "1f"
-                        },
-                        {
-                            "valueName": "snap_grid_core.use_tag_data",
-                            "valueType": "bool",
-                            "value": "false"
-                        },
-                        {
-                            "valueName": "snap_grid_core.grid_scale",
-                            "valueType": "Math::uint3",
-                            "value": {
-                                "x": "3U",
-                                "y": "4U",
-                                "z": "2U"
-                            }
-                        },
-                        {
-                            "valueName": "snap_grid_point.grid_scale",
-                            "valueType": "Math::uint3",
-                            "value": {
-                                "x": "3U",
-                                "y": "4U",
-                                "z": "2U"
-                            }
-                        }
-                    ],
-                    "reservedNodeNames": [
-                        {
-                            "name": "input"
-                        },
-                        {
-                            "name": "input1"
-                        },
-                        {
-                            "name": "input2"
-                        },
-                        {
-                            "name": "output"
-                        }
-                    ]
                 }
             ],
             "compoundNodes": [
-                {
-                    "nodeName": "snap",
-                    "nodeType": "snap",
-                    "terminalStates": [
-                        {
-                            "name": "Core::Graph::terminal::diagnostic",
-                            "enabled": "true"
-                        }
-                    ],
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "PortExpandedState",
-                            "metadata": [
-                                {
-                                    "metaName": "Geometry.Mask",
-                                    "metaType": "string",
-                                    "metaValue": "1"
-                                },
-                                {
-                                    "metaName": "Geometry",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "Grid",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "Diagnostics",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "Mask",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                }
-                            ]
-                        },
-                        {
-                            "metaName": "UILayout",
-                            "metaType": "string",
-                            "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"in_geometry\"\n            },\n            {\n                \"port\": \"snap_to\"\n            },\n            {\n                \"group\": \"Mask\",\n                \"items\": [\n                    {\n                        \"port\": \"use_tag_data\"\n                    },\n                    {\n                        \"port\": \"point_tag_data_to_snap\"\n                    },\n                    {\n                        \"port\": \"invert_tag\"\n                    }\n                ],\n                \"unique_id\": 48\n            },\n            {\n                \"condition\": {\n                    \"action\": \"show\",\n                    \"op\": \"==\",\n                    \"port\": \"snap_to\",\n                    \"value\": \"0\"\n                },\n                \"group\": \"Show based on: snap_to\",\n                \"items\": [\n                    {\n                        \"group\": \"Grid\",\n                        \"items\": [\n                            {\n                                \"port\": \"grid_scale\"\n                            }\n                        ],\n                        \"unique_id\": 12\n                    }\n                ],\n                \"unique_id\": 73\n            },\n            {\n                \"condition\": {\n                    \"action\": \"show\",\n                    \"op\": \"==\",\n                    \"port\": \"snap_to\",\n                    \"value\": \"1\"\n                },\n                \"group\": \"Show based on: snap_to\",\n                \"items\": [\n                    {\n                        \"group\": \"Geometry\",\n                        \"items\": [\n                            {\n                                \"port\": \"target_geometry\"\n                            },\n                            {\n                                \"port\": \"snap_using\"\n                            },\n                            {\n                                \"group\": \"Mask\",\n                                \"items\": [\n                                    {\n                                        \"port\": \"use_target_tag_data\"\n                                    },\n                                    {\n                                        \"port\": \"point_tag_data_of_target\"\n                                    },\n                                    {\n                                        \"port\": \"invert_target_tag\"\n                                    }\n                                ],\n                                \"unique_id\": 36\n                            }\n                        ],\n                        \"unique_id\": 24\n                    }\n                ],\n                \"unique_id\": 86\n            },\n            {\n                \"group\": \"Diagnostics\",\n                \"items\": [\n                    {\n                        \"port\": \"size\"\n                    }\n                ],\n                \"unique_id\": 60\n            }\n        ]\n    }\n}\n"
-                        },
-                        {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "129.000000"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-302.457 -19.8919"
-                        }
-                    ]
-                },
                 {
                     "nodeName": "create_mesh_sphere",
                     "nodeType": "Modeling::Primitive::create_mesh_sphere",
@@ -3209,14 +666,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "130.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-614.329 54.1152"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
                         }
                     ]
                 },
@@ -3230,28 +687,28 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "126.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-628.856 473.283"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "50.000000"
                         }
                     ]
                 },
                 {
-                    "nodeName": "snap1",
-                    "nodeType": "snap1",
+                    "nodeName": "snap2",
+                    "nodeType": "TKCM::Modeling_Toolbox::snap",
                     "terminalStates": [
                         {
                             "name": "Core::Graph::terminal::final",
-                            "enabled": "true"
+                            "enabled": "false"
                         },
                         {
                             "name": "Core::Graph::terminal::proxy",
-                            "enabled": "true"
+                            "enabled": "false"
                         },
                         {
                             "name": "Core::Graph::terminal::diagnostic",
@@ -3265,35 +722,15 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "UILayout",
+                            "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"in_geometry\"\n            },\n            {\n                \"port\": \"snap_to\"\n            },\n            {\n                \"group\": \"Mask\",\n                \"items\": [\n                    {\n                        \"port\": \"use_tag_data\"\n                    },\n                    {\n                        \"port\": \"point_tag_data_to_snap\"\n                    },\n                    {\n                        \"port\": \"invert_tag\"\n                    }\n                ],\n                \"unique_id\": 48\n            },\n            {\n                \"condition\": {\n                    \"action\": \"show\",\n                    \"op\": \"==\",\n                    \"port\": \"snap_to\",\n                    \"value\": \"0\"\n                },\n                \"group\": \"Show based on: snap_to\",\n                \"items\": [\n                    {\n                        \"group\": \"Grid\",\n                        \"items\": [\n                            {\n                                \"port\": \"grid_scale\"\n                            }\n                        ],\n                        \"unique_id\": 12\n                    }\n                ],\n                \"unique_id\": 73\n            },\n            {\n                \"condition\": {\n                    \"action\": \"show\",\n                    \"op\": \"==\",\n                    \"port\": \"snap_to\",\n                    \"value\": \"1\"\n                },\n                \"group\": \"Show based on: snap_to\",\n                \"items\": [\n                    {\n                        \"group\": \"Geometry\",\n                        \"items\": [\n                            {\n                                \"port\": \"target_geometry\"\n                            },\n                            {\n                                \"port\": \"snap_using\"\n                            },\n                            {\n                                \"group\": \"Mask\",\n                                \"items\": [\n                                    {\n                                        \"port\": \"use_target_tag_data\"\n                                    },\n                                    {\n                                        \"port\": \"point_tag_data_of_target\"\n                                    },\n                                    {\n                                        \"port\": \"invert_target_tag\"\n                                    }\n                                ],\n                                \"unique_id\": 36\n                            }\n                        ],\n                        \"unique_id\": 24\n                    }\n                ],\n                \"unique_id\": 86\n            },\n            {\n                \"group\": \"Diagnostics\",\n                \"items\": [\n                    {\n                        \"port\": \"size\"\n                    }\n                ],\n                \"unique_id\": 60\n            }\n        ]\n    }\n}\n"
+                            "metaValue": "-303.661 7.42368"
                         },
                         {
                             "metaName": "PortExpandedState",
                             "metadata": [
                                 {
-                                    "metaName": "Geometry.Mask",
-                                    "metaType": "string",
-                                    "metaValue": "1"
-                                },
-                                {
                                     "metaName": "Geometry",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "Grid",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "Diagnostics",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "Mask",
                                     "metaType": "string",
                                     "metaValue": "0"
                                 }
@@ -3302,12 +739,42 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "122.000000"
+                            "metaValue": "49.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "snap3",
+                    "nodeType": "TKCM::Modeling_Toolbox::snap",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
                         },
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-304.564 403.105"
+                            "metaValue": "-281.187 395.467"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "48.000000"
                         }
                     ]
                 }
@@ -3315,154 +782,104 @@
             "connections": [
                 {
                     "source": "create_mesh_sphere.sphere_mesh",
-                    "target": "snap.in_geometry"
+                    "target": "snap2.in_geometry"
                 },
                 {
-                    "source": "create_sample_strand.out_geometry",
-                    "target": "snap1.in_geometry"
-                },
-                {
-                    "source": "snap.out_geometry",
+                    "source": "snap2.out_geometry",
                     "target": ".out_geometry"
                 },
                 {
-                    "source": "snap1.out_geometry",
+                    "source": "create_sample_strand.out_geometry",
+                    "target": "snap3.in_geometry"
+                },
+                {
+                    "source": "snap3.out_geometry",
                     "target": ".strands"
                 }
             ],
             "values": [
-                {
-                    "valueName": "snap.in_geometry",
-                    "valueType": "Object",
-                    "value": {}
-                },
-                {
-                    "valueName": "snap.snap_to",
-                    "valueType": "uint",
-                    "value": "0U"
-                },
-                {
-                    "valueName": "snap.use_tag_data",
-                    "valueType": "bool",
-                    "value": "false"
-                },
-                {
-                    "valueName": "snap.point_tag_data_to_snap",
-                    "valueType": "array<bool>",
-                    "value": []
-                },
-                {
-                    "valueName": "snap.invert_tag",
-                    "valueType": "bool",
-                    "value": "false"
-                },
-                {
-                    "valueName": "snap.grid_scale",
-                    "valueType": "Math::uint3",
-                    "value": {
-                        "x": "3U",
-                        "y": "3U",
-                        "z": "3U"
-                    }
-                },
-                {
-                    "valueName": "snap.target_geometry",
-                    "valueType": "Object",
-                    "value": {}
-                },
-                {
-                    "valueName": "snap.use_target_tag_data",
-                    "valueType": "bool",
-                    "value": "false"
-                },
-                {
-                    "valueName": "snap.point_tag_data_of_target",
-                    "valueType": "array<bool>",
-                    "value": []
-                },
-                {
-                    "valueName": "snap.invert_target_tag",
-                    "valueType": "bool",
-                    "value": "false"
-                },
-                {
-                    "valueName": "snap.snap_using",
-                    "valueType": "uint",
-                    "value": "1U"
-                },
-                {
-                    "valueName": "snap.size",
-                    "valueType": "float",
-                    "value": "0.100000001f"
-                },
                 {
                     "valueName": "create_mesh_sphere.radius",
                     "valueType": "float",
                     "value": "10f"
                 },
                 {
-                    "valueName": "snap1.in_geometry",
+                    "valueName": "snap2.grid_scale",
+                    "valueType": "Math::uint3",
+                    "value": {
+                        "x": "5U",
+                        "y": "5U",
+                        "z": "5U"
+                    }
+                },
+                {
+                    "valueName": "snap2.size",
+                    "valueType": "float",
+                    "value": "0.200000003f"
+                },
+                {
+                    "valueName": "snap3.in_geometry",
                     "valueType": "Object",
                     "value": {}
                 },
                 {
-                    "valueName": "snap1.snap_to",
+                    "valueName": "snap3.snap_to",
                     "valueType": "uint",
                     "value": "0U"
                 },
                 {
-                    "valueName": "snap1.use_tag_data",
+                    "valueName": "snap3.use_tag_data",
                     "valueType": "bool",
                     "value": "false"
                 },
                 {
-                    "valueName": "snap1.point_tag_data_to_snap",
+                    "valueName": "snap3.point_tag_data_to_snap",
                     "valueType": "array<bool>",
                     "value": []
                 },
                 {
-                    "valueName": "snap1.invert_tag",
+                    "valueName": "snap3.invert_tag",
                     "valueType": "bool",
                     "value": "false"
                 },
                 {
-                    "valueName": "snap1.grid_scale",
+                    "valueName": "snap3.grid_scale",
                     "valueType": "Math::uint3",
                     "value": {
-                        "x": "3U",
-                        "y": "3U",
-                        "z": "3U"
+                        "x": "5U",
+                        "y": "5U",
+                        "z": "5U"
                     }
                 },
                 {
-                    "valueName": "snap1.target_geometry",
+                    "valueName": "snap3.target_geometry",
                     "valueType": "Object",
                     "value": {}
                 },
                 {
-                    "valueName": "snap1.use_target_tag_data",
+                    "valueName": "snap3.use_target_tag_data",
                     "valueType": "bool",
                     "value": "false"
                 },
                 {
-                    "valueName": "snap1.point_tag_data_of_target",
+                    "valueName": "snap3.point_tag_data_of_target",
                     "valueType": "array<bool>",
                     "value": []
                 },
                 {
-                    "valueName": "snap1.invert_target_tag",
+                    "valueName": "snap3.invert_target_tag",
                     "valueType": "bool",
                     "value": "false"
                 },
                 {
-                    "valueName": "snap1.snap_using",
+                    "valueName": "snap3.snap_using",
                     "valueType": "uint",
                     "value": "1U"
                 },
                 {
-                    "valueName": "snap1.size",
+                    "valueName": "snap3.size",
                     "valueType": "float",
-                    "value": "0.100000001f"
+                    "value": "0.300000012f"
                 }
             ],
             "reservedNodeNames": [
