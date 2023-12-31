@@ -44,3 +44,10 @@ set( config_json            ${CMAKE_BINARY_DIR}/${PROJECT_NAME}PackConfig.json )
 set( common_config_json     "../../core/PackConfig.json")
 configure_file(${common_config_json}.in ${config_json} )
 install(FILES ${config_json} DESTINATION . )
+
+# duplicate dll/json to pack dir 
+add_custom_command(
+  TARGET ${OPS_NAME} POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/../out/build/x64-Release/src/${OPS_NAME}.dll" "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/bin"
+  COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/../out/build/x64-Release/src/${PRJ_NAME}_nodedef.json" "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/compounds/${PRJ_NAME}"
+)

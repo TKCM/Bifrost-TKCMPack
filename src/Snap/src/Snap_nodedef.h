@@ -11,6 +11,9 @@
 
 // TKCM
 #include "../../core/TKCM_core.h"
+#include "../../core/TKCM_math.h"
+#include "../../core/TKCM_geometry.h"
+#include "../../core/TKCM_geometry.cpp"
 
 namespace TKCM
 {

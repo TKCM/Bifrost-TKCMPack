@@ -65,5 +65,5 @@ namespace TKCM
 
 		Eigen::MatrixXf array2DToMat(const Amino::Ptr<Amino::Array<Amino::Ptr<Amino::Array<float>>>>& data);
 	}
-} // namespace TKCM_BIF
+}
 #endif // BIF_TKCMRBF_H
