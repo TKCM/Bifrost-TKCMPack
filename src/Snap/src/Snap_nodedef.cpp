@@ -157,7 +157,7 @@ void TKCM::snap_geometry(
 							if (point_tag_data_of_target->at(targetPoiID) == true){ continue; }
 						}
 					}
-					float sqDistance = TKCM::LengthSquared(point_position_MPtr->at(poiID), target_point_position->at(poiID));
+					float sqDistance = TKCM::DistanceSquared(point_position_MPtr->at(poiID), target_point_position->at(poiID));
 					if (sqDistance < sqLen){
 						targetID = targetPoiID;
 						sqLen = sqDistance;
