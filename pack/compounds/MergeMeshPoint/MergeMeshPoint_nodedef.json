@@ -1,0 +1,118 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "operators": [
+        {
+            "name": "TKCM::Modeling_Toolbox::Internal::merge_mesh_point_core",
+            "msMangle": "?MergeMeshPoint@@YAXAEBV?$Ptr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@Amino@@AEBV?$Ptr@V?$Array@I@Amino@@@2@1AEB_NAEBV?$Ptr@V?$Array@_N@Amino@@@2@2AEBV?$Ptr@V?$Array@V?$Ptr@V?$Array@_J@Amino@@@Amino@@@Amino@@@2@AEAV?$MutablePtr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@2@AEAV?$MutablePtr@V?$Array@I@Amino@@@2@6666AEA_N@Z",
+            "itaniumMangle": "_Z14MergeMeshPointRKN5Amino3PtrINS_5ArrayIN7Bifrost4Math6float3EEEEERKNS0_INS1_IjEEEESC_RKbRKNS0_INS1_IbEEEESE_RKNS0_INS1_INS0_INS1_IxEEEEEEEERNS_10MutablePtrIS5_EERNSP_IS9_EEST_ST_ST_ST_Rb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "source_point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "source_face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "source_face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "use_tag_data",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "point_tag_data_to_merge",
+                    "portDirection": "input",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "invert_tag",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "target_point_indices",
+                    "portDirection": "input",
+                    "portType": "array<array<long>>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_position",
+                    "portDirection": "output",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "point_dst_to_source",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_dst_to_source",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_vertex_dst_to_source",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        }
+    ]
+}

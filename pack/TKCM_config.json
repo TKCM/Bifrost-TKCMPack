@@ -14,7 +14,8 @@
             "RBFOps",
             "TagsOps",
             "InstantMeshesOps",
-            "SnapOps"
+            "SnapOps",
+            "MergeMeshPointOps"
           ]
         }
       ],
