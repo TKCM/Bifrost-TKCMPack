@@ -15,7 +15,8 @@
             "TagsOps",
             "InstantMeshesOps",
             "SnapOps",
-            "MergeMeshPointOps"
+            "MergeMeshPointOps",
+            "QuadrangulateOps"
           ]
         }
       ],

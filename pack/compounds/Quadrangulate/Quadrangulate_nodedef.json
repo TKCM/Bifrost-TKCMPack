@@ -1,0 +1,70 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "operators": [
+        {
+            "name": "TKCM::Modeling_Toolbox::Internal::quadrangulate_core",
+            "msMangle": "?quadrangulate_core@@YAXAEBV?$Ptr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@Amino@@AEBV?$Ptr@V?$Array@I@Amino@@@2@111AEAV?$MutablePtr@V?$Array@_N@Amino@@@2@@Z",
+            "itaniumMangle": "_Z18quadrangulate_coreRKN5Amino3PtrINS_5ArrayIN7Bifrost4Math6float3EEEEERKNS0_INS1_IjEEEESC_SC_SC_RNS_10MutablePtrINS1_IbEEEE",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "false"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacent_face",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacent_side",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "half_edge_tag_data_to_delete",
+                    "portDirection": "output",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToMutablePtr"
+                }
+            ]
+        }
+    ]
+}
