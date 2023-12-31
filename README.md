@@ -33,3 +33,5 @@ https://vimeo.com/manage/videos/896561829
 ## Snap
 ![snap](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/435105a6-80fe-40d0-a112-7247b8d74331)
 
+## Merge Mesh Point
+![mergemeshpoint](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/b8a5a173-0b78-49cd-bd91-186d82b2ed56)
