@@ -1,4 +1,4 @@
-![dp](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/c8a92c8c-fb6e-47d0-9e25-cb6cb94646ba)# Bifrost-TKCM pack
+# Bifrost-TKCM pack
 これは個人的な学習のために制作したBifrostノードパックです。  
 
 <img src="pack/compounds/icon/tkcm.png" width="80px">
