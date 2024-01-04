@@ -1,4 +1,4 @@
-# Bifrost-TKCM pack
+![dp](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/c8a92c8c-fb6e-47d0-9e25-cb6cb94646ba)# Bifrost-TKCM pack
 これは個人的な学習のために制作したBifrostノードパックです。  
 
 <img src="pack/compounds/icon/tkcm.png" width="80px">
@@ -35,3 +35,18 @@ https://vimeo.com/manage/videos/896561829
 
 ## Merge Mesh Point
 ![mergemeshpoint](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/cdb3043f-ba0a-4e16-b7fc-ab67d031f6ba)
+
+## Qquadrangulate Mesh
+![quad](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/996773f4-a088-4874-bece-0b8cd58920a8)
+
+## Dissolve
+- dissolve_point
+- dissolve_face
+- dissolve_half_edge
+
+![dp](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/c7b652fe-cbdc-49aa-9edb-5ff315eb3396)
+![df](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/b8f0fac6-2d3b-42c1-a3b4-995c8101331a)
+![de](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/ff2ecf91-a5e3-4db7-b4d8-48cbe81a46e3)
+
+
+
