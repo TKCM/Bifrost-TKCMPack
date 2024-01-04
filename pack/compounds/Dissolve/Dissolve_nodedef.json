@@ -1,0 +1,362 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "operators": [
+        {
+            "name": "TKCM::Modeling_Toolbox::Internal::dissolve_point_core",
+            "msMangle": "?dissolve_point_core@TKCM@@YAXAEBV?$Ptr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@Amino@@AEBV?$Ptr@V?$Array@I@Amino@@@3@111111AEBV?$Ptr@V?$Array@_J@Amino@@@3@AEAV?$MutablePtr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@3@AEAV?$MutablePtr@V?$Array@I@Amino@@@3@4444AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM19dissolve_point_coreERKN5Amino3PtrINS0_5ArrayIN7Bifrost4Math6float3EEEEERKNS1_INS2_IjEEEESD_SD_SD_SD_SD_SD_RKNS1_INS2_IxEEEERNS0_10MutablePtrIS6_EERNSI_ISA_EESM_SM_SM_SM_Rb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "source_point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "source_face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "source_face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_ver_adjacent_edge_face",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_ver_adjacent_edge_side",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacecy_face",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacecy_side",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacecy_index",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_to_dissolve",
+                    "portDirection": "input",
+                    "portType": "array<long>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_position",
+                    "portDirection": "output",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "point_dst_to_source",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_dst_to_source",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_vertex_dst_to_source",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "TKCM::Modeling_Toolbox::Internal::dissolve_edge_core",
+            "msMangle": "?dissolve_edge_core@TKCM@@YAXAEBV?$Ptr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@Amino@@AEBV?$Ptr@V?$Array@I@Amino@@@3@111111AEBV?$Ptr@V?$Array@_J@Amino@@@3@AEAV?$MutablePtr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@3@AEAV?$MutablePtr@V?$Array@I@Amino@@@3@4444AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM18dissolve_edge_coreERKN5Amino3PtrINS0_5ArrayIN7Bifrost4Math6float3EEEEERKNS1_INS2_IjEEEESD_SD_SD_SD_SD_SD_RKNS1_INS2_IxEEEERNS0_10MutablePtrIS6_EERNSI_ISA_EESM_SM_SM_SM_Rb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "source_point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "source_face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "source_face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_ver_adjacent_edge_face",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_ver_adjacent_edge_side",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacecy_face",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacecy_side",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacecy_index",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "half_edge_to_dissolve",
+                    "portDirection": "input",
+                    "portType": "array<long>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_position",
+                    "portDirection": "output",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "point_dst_to_source",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_dst_to_source",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_vertex_dst_to_source",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "TKCM::Modeling_Toolbox::Internal::dissolve_face_core",
+            "msMangle": "?dissolve_face_core@TKCM@@YAXAEBV?$Ptr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@Amino@@AEBV?$Ptr@V?$Array@I@Amino@@@3@111111AEBV?$Ptr@V?$Array@_J@Amino@@@3@AEAV?$MutablePtr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@3@AEAV?$MutablePtr@V?$Array@I@Amino@@@3@4444AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM18dissolve_face_coreERKN5Amino3PtrINS0_5ArrayIN7Bifrost4Math6float3EEEEERKNS1_INS2_IjEEEESD_SD_SD_SD_SD_SD_RKNS1_INS2_IxEEEERNS0_10MutablePtrIS6_EERNSI_ISA_EESM_SM_SM_SM_Rb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "source_point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "source_face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "source_face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_ver_adjacent_edge_face",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_ver_adjacent_edge_side",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacecy_face",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacecy_side",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacecy_index",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "face_to_dissolve",
+                    "portDirection": "input",
+                    "portType": "array<long>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_position",
+                    "portDirection": "output",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "point_dst_to_source",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_dst_to_source",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_vertex_dst_to_source",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        }
+    ]
+}

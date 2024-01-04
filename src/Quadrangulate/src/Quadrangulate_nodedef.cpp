@@ -1,11 +1,11 @@
 #include "Quadrangulate_nodedef.h"
 
-void quadrangulate_core(
+void TKCM::quadrangulate_core(
 	const	Amino::Ptr<Amino::Array<Bifrost::Math::float3>>& point_position,
 	const	Amino::Ptr<Amino::Array<uInt>>& face_vertex,
 	const	Amino::Ptr<Amino::Array<uInt>>& face_offset,
-	const	Amino::Ptr<Amino::Array<uInt>>& point_face_adjacent_face,
-	const	Amino::Ptr<Amino::Array<uInt>>& point_face_adjacent_side,
+	const	Amino::Ptr<Amino::Array<uInt>>& face_ver_adjacent_edge_face,
+	const	Amino::Ptr<Amino::Array<uInt>>& face_ver_adjacent_edge_side,
 			Amino::MutablePtr<Amino::Array<bool>>& half_edge_tag_data_to_delete
 ) {
 	half_edge_tag_data_to_delete = Amino::newMutablePtr<Amino::Array<bool>>();
@@ -15,15 +15,15 @@ void quadrangulate_core(
 	if (!face_offset || face_offset->empty () || 
 		!point_position || point_position->empty () || 
 		!face_vertex || face_vertex->empty () ||
-		!point_face_adjacent_face || point_face_adjacent_face->empty() ||
-		!point_face_adjacent_side || point_face_adjacent_side->empty()) 
+		!face_ver_adjacent_edge_face || face_ver_adjacent_edge_face->empty() ||
+		!face_ver_adjacent_edge_side || face_ver_adjacent_edge_side->empty()) 
 	{
 		return;
 	}
 	size_t vertexCount = face_vertex->size ();
 	size_t polyCount = face_offset->size () - 1;
-	if (point_face_adjacent_face->size() != vertexCount ||
-		point_face_adjacent_side->size() != vertexCount)
+	if (face_ver_adjacent_edge_face->size() != vertexCount ||
+		face_ver_adjacent_edge_side->size() != vertexCount)
 	{
 		return;
 	}
@@ -61,8 +61,8 @@ void quadrangulate_core(
 	#pragma omp parallel for
 	for (size_t polyNum = 0; polyNum < polyCount; ++polyNum) {
 		int edgeNum = face_offset->at ( polyNum ) + deleteLocID[polyNum];
-		size_t fEdgeFace = point_face_adjacent_face->at(edgeNum);
-		size_t fEdgeSide = point_face_adjacent_side->at(edgeNum);
+		size_t fEdgeFace = face_ver_adjacent_edge_face->at(edgeNum);
+		size_t fEdgeSide = face_ver_adjacent_edge_side->at(edgeNum);
 		if (polyCount <= fEdgeFace) { continue; }
 
 		if (deleteLocID[fEdgeFace] == fEdgeSide) {

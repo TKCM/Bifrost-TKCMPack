@@ -16,7 +16,8 @@
             "InstantMeshesOps",
             "SnapOps",
             "MergeMeshPointOps",
-            "QuadrangulateOps"
+            "QuadrangulateOps",
+            "DissolveOps"
           ]
         }
       ],
