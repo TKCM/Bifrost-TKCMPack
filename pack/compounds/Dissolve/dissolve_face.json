@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "TKCM::Modeling_Toolbox::dissolve_face",
-            "uriImported": "stream:/mergeMeshPointSampleShape",
+            "uriImported": "file:///dissolve_face.json",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -67,17 +67,17 @@
                                             "metaValue": "1045.57 567.083"
                                         },
                                         {
-                                            "metaName": "io_ports",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "indices"
-                                                }
-                                            ]
-                                        },
-                                        {
                                             "metaName": "zValue",
                                             "metaType": "string",
                                             "metaValue": "31.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "face_to_dissolve"
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
@@ -90,6 +90,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1597.82 1061.96"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -100,12 +105,7 @@
                                         {
                                             "metaName": "zValue",
                                             "metaType": "string",
-                                            "metaValue": "64.000000"
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "1597.82 1061.96"
+                                            "metaValue": "50.000000"
                                         }
                                     ]
                                 }
@@ -123,6 +123,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "3464.23 865.757"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -133,12 +138,7 @@
                                         {
                                             "metaName": "zValue",
                                             "metaType": "string",
-                                            "metaValue": "63.000000"
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "3464.23 865.757"
+                                            "metaValue": "49.000000"
                                         }
                                     ]
                                 }
@@ -194,7 +194,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "9.36765 -548.31 3762.69 2301.17"
+                    "metaValue": "9 -696.685 3764 2599.37"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -204,12 +204,12 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "538.642 445.961"
+                    "metaValue": "993.891 607.896"
                 },
                 {
                     "metaName": "zValue",
                     "metaType": "string",
-                    "metaValue": "46.000000"
+                    "metaValue": "47.000000"
                 }
             ],
             "ports": [
@@ -220,7 +220,7 @@
                     "portDefault": {}
                 },
                 {
-                    "portName": "indices",
+                    "portName": "face_to_dissolve",
                     "portDirection": "input",
                     "portType": "array<long>",
                     "portDefault": []
@@ -394,7 +394,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "49.000000"
+                            "metaValue": "39.000000"
                         }
                     ]
                 },
@@ -429,14 +429,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "55.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2536.66 154.632"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "42.000000"
                         }
                     ]
                 },
@@ -450,14 +450,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "52.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2821.46 505.484"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "40.000000"
                         }
                     ]
                 },
@@ -471,14 +471,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "53.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "3066.35 865.856"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "41.000000"
                         }
                     ]
                 },
@@ -492,14 +492,14 @@
                             "metaValue": "0"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "62.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1932.09 964.255"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "48.000000"
                         }
                     ]
                 },
@@ -513,14 +513,14 @@
                             "metaValue": "0"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "61.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1928.3 1082.93"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "47.000000"
                         }
                     ]
                 },
@@ -534,14 +534,14 @@
                             "metaValue": "0"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "57.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1996.61 1228.44"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "43.000000"
                         }
                     ]
                 },
@@ -555,14 +555,14 @@
                             "metaValue": "0"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "58.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1999.48 1365.84"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "44.000000"
                         }
                     ]
                 },
@@ -592,14 +592,14 @@
                             ]
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "59.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2327.49 1082.39"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "45.000000"
                         }
                     ]
                 },
@@ -629,14 +629,14 @@
                             ]
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "60.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2320 1218.5"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "46.000000"
                         }
                     ]
                 },
@@ -657,7 +657,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "48.000000"
+                            "metaValue": "38.000000"
                         }
                     ]
                 }
@@ -712,7 +712,7 @@
                     "target": "dissolve_face_core.point_face_adjacecy_index"
                 },
                 {
-                    "source": ".indices",
+                    "source": ".face_to_dissolve",
                     "target": "dissolve_face_core.face_to_dissolve"
                 },
                 {

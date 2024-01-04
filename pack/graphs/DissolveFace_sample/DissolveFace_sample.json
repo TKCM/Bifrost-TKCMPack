@@ -12,7 +12,6 @@
     "compounds": [
         {
             "name": "TKCM::Modeling_Toolbox::DissolveFace_sample",
-            "uriImported": "stream:/mergeMeshPointSampleShape",
             "metadata": [
                 {
                     "metaName": "io_nodes",
@@ -50,7 +49,7 @@
                                         {
                                             "metaName": "zValue",
                                             "metaType": "string",
-                                            "metaValue": "43.000000"
+                                            "metaValue": "37.000000"
                                         }
                                     ]
                                 }
@@ -109,19 +108,19 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "40.000000"
+                            "metaValue": "36.000000"
                         }
                     ]
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Modeling::Mesh,delete_faces"
+                    "metaValue": "BifrostGraph,TKCM::Modeling_Toolbox,dissolve_face"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,TKCM::Modeling_Toolbox,dissolve_face"
+                    "metaValue": "BifrostGraph,Modeling::Mesh,delete_faces"
                 },
                 {
                     "metaName": "_recentNode_",
@@ -141,7 +140,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "265.941 -12.4257 2280.65 1390.71"
+                    "metaValue": "326.872 284.365 1333.57 920.95"
                 },
                 {
                     "metaName": "compoundIsGraph",
@@ -187,7 +186,6 @@
             "compounds": [
                 {
                     "name": "apply_transform",
-                    "uriImported": "stream:/mergeMeshPointSampleShape",
                     "metadata": [
                         {
                             "metaName": "ViewportRect",
@@ -529,7 +527,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "50.000000"
+                            "metaValue": "39.000000"
                         }
                     ]
                 },
@@ -558,14 +556,14 @@
                             "metaValue": "0"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "72.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1248.77 626.518"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "45.000000"
                         }
                     ]
                 },
@@ -586,7 +584,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "37.000000"
+                            "metaValue": "33.000000"
                         }
                     ]
                 },
@@ -628,7 +626,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "38.000000"
+                            "metaValue": "34.000000"
                         }
                     ]
                 },
@@ -649,7 +647,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "39.000000"
+                            "metaValue": "35.000000"
                         }
                     ]
                 },
@@ -670,7 +668,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "45.000000"
+                            "metaValue": "38.000000"
                         }
                     ]
                 },
@@ -684,14 +682,14 @@
                             "metaValue": "0"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "67.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "386.206 562.429"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "41.000000"
                         }
                     ]
                 },
@@ -705,14 +703,14 @@
                             "metaValue": "0"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "69.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "384.128 679.743"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "43.000000"
                         }
                     ]
                 },
@@ -726,14 +724,14 @@
                             "metaValue": "0"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "70.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "381.16 793.313"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "44.000000"
                         }
                     ]
                 },
@@ -752,14 +750,14 @@
                             "metaValue": "0"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "68.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "644.727 678.064"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "42.000000"
                         }
                     ]
                 },
@@ -775,12 +773,12 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "66.000000"
+                            "metaValue": "50.000000"
                         },
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "993.054 607.896"
+                            "metaValue": "983.015 605.879"
                         }
                     ]
                 }
@@ -831,12 +829,12 @@
                     "target": "dissolve_face.in_mesh"
                 },
                 {
-                    "source": "dissolve_face.new_mesh",
-                    "target": "apply_transform.geometry"
+                    "source": "build_array.array",
+                    "target": "dissolve_face.face_to_dissolve"
                 },
                 {
-                    "source": "build_array.array",
-                    "target": "dissolve_face.indices"
+                    "source": "dissolve_face.new_mesh",
+                    "target": "apply_transform.geometry"
                 }
             ],
             "values": [
