@@ -44,8 +44,8 @@ https://vimeo.com/manage/videos/896561829
 - dissolve_face
 - dissolve_half_edge
 
-![dp](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/c7b652fe-cbdc-49aa-9edb-5ff315eb3396)
-![df](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/b8f0fac6-2d3b-42c1-a3b4-995c8101331a)
+![dp](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/622e3dec-2082-464c-a226-687212c78d8a)
+![df](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/0f523079-013c-40a2-8fa4-50bd99a143be)
 ![de](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/ff2ecf91-a5e3-4db7-b4d8-48cbe81a46e3)
 
 
