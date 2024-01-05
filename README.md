@@ -47,6 +47,9 @@ https://vimeo.com/manage/videos/896561829
 ![df](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/0f523079-013c-40a2-8fa4-50bd99a143be)
 ![de](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/ff2ecf91-a5e3-4db7-b4d8-48cbe81a46e3)
 
+## Delete Unused Mesh Components
+![dmc](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/b693f1f2-5dc5-4d86-b6df-9ed289c7c68e)
+
 # pack develop environment  
 packの開発環境  
 - CMake 3.17
