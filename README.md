@@ -1,18 +1,17 @@
 # Bifrost-TKCM pack
+This is a Bifrost node pack produced for personal study.  
+Note that this pack contains only the Windows build.  
+  
 これは個人的な学習のために制作したBifrostノードパックです。  
+packにはWindows版のビルドだけが含まれます。
 
 <img src="pack/compounds/icon/tkcm.png" width="80px">
 
 # Install
-zipを解凍した後に以下のどちらかの方法を行ってください
-- packフォルダをC:/Users/***/Autodesk/Bifrost/Compoundsにコピーする
-- 環境変数"BIFROST_LIB_CONFIG_PATH"に***/pack/TKCM_config.jsonへのパスをセットする
-
-packの開発環境  
-- CMake 3.17
-- VisualStudio 2019  
-- BifrostSDK : Bifrost 2.8.0.0 WIndows  
-- Eigen : 3.4.0
+Please set the following environment variables.  
+環境変数の設定を行ってください
+- ~~packフォルダをC:/Users/***/Autodesk/Bifrost/Compoundsにコピーする~~
+- BIFROST_LIB_CONFIG_FILES = <path_to_TKCM_packs>/pack/TKCM_config.json
 
 # pack
 下記のカスタムノードとサンプルグラフが含まれます。
@@ -48,5 +47,10 @@ https://vimeo.com/manage/videos/896561829
 ![df](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/0f523079-013c-40a2-8fa4-50bd99a143be)
 ![de](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/ff2ecf91-a5e3-4db7-b4d8-48cbe81a46e3)
 
-
+# pack develop environment  
+packの開発環境  
+- CMake 3.17
+- VisualStudio 2019  
+- BifrostSDK : Bifrost 2.8.0.0 WIndows  
+- Eigen : 3.4.0
 
