@@ -33,7 +33,23 @@ namespace TKCM {
 	}
 	
 	template<typename T>
-	bool AlmostEqual(const T A, const T B, const T tolerance = 0.0001){
+	T ArrayValuePreviousElement(const Amino::Array<T>& arrayVal, const T thisElement){
+		int id;
+		for (id = 0; id < arrayVal.size (); ++id) {
+			if (thisElement == arrayVal[id]) { break; }
+		}
+
+		if (id == arrayVal.size ()) {
+			return -1;
+		}else if (id == 0) {
+			return arrayVal.back();
+		}else {
+			return arrayVal[id - 1];
+		}
+	}
+		
+	template<typename T>
+	bool AlmostEqual(const T A, const T B, const T tolerance = T(0.0001)){
 		return std::abs(A - B) < tolerance;
 	}
 }

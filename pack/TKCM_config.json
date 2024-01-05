@@ -17,7 +17,8 @@
             "SnapOps",
             "MergeMeshPointOps",
             "QuadrangulateOps",
-            "DissolveOps"
+            "DissolveOps",
+            "DeleteUnusedMeshComponentsOps"
           ]
         }
       ],
