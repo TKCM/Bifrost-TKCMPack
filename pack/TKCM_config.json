@@ -4,12 +4,9 @@
       "vendorName": "TKCM",
       "libraryName": "TKCM pack",
       "libraryVersion": "0.1",
-      "libraryDependencies": [
-        "Amino"
-      ],
       "sharedLibs": [
         {
-          "path": "bin",
+          "path": "./bin",
           "files": [
             "RBFOps",
             "TagsOps",
@@ -24,12 +21,10 @@
       ],
       "jsonLibs": [
         {
-          "path": "compounds",
-          "files": [ ]
+          "path": "./compounds"
         },
         {
-          "path": "graphs",
-          "files": [ ]
+          "path": "./graphs"
         }
       ]
     }
