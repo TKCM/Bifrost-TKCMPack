@@ -11,19 +11,19 @@
     "types": [],
     "operators": [
         {
-            "name": "TKCM::Modeling_Toolbox::delete_unused_mesh_components_core",
+            "name": "TKCM::Modeling_Toolbox::Internal::delete_unused_mesh_components_core",
             "msMangle": "?delete_unused_mesh_components_core@TKCM@@YAXAEBV?$Ptr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@Amino@@AEBV?$Ptr@V?$Array@I@Amino@@@3@1AEB_N222AEAV?$MutablePtr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@3@AEAV?$MutablePtr@V?$Array@I@Amino@@@3@4444AEA_N@Z",
             "itaniumMangle": "_ZN4TKCM34delete_unused_mesh_components_coreERKN5Amino3PtrINS0_5ArrayIN7Bifrost4Math6float3EEEEERKNS1_INS2_IjEEEESD_RKbSF_SF_SF_RNS0_10MutablePtrIS6_EERNSG_ISA_EESK_SK_SK_SK_Rb",
             "metadata": [
                 {
                     "metaName": "icon",
                     "metaType": "string",
-                    "metaValue": "../icon/tkcm.png"
+                    "metaValue": "../icon/tkcm_internal.png"
                 },
                 {
                     "metaName": "internal",
                     "metaType": "string",
-                    "metaValue": "false"
+                    "metaValue": "true"
                 }
             ],
             "cancellationPolicy": "Unsafe",

@@ -39,11 +39,6 @@
                                             "metaValue": "-725.516 977.282"
                                         },
                                         {
-                                            "metaName": "zValue",
-                                            "metaType": "string",
-                                            "metaValue": "41.000000"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -62,6 +57,11 @@
                                                     "metaName": "overlap_polygon"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "40.000000"
                                         }
                                     ]
                                 },
@@ -79,17 +79,17 @@
                                             "metaValue": "160.695 1097.78"
                                         },
                                         {
-                                            "metaName": "zValue",
-                                            "metaType": "string",
-                                            "metaValue": "45.000000"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "properties"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "42.000000"
                                         }
                                     ]
                                 }
@@ -122,7 +122,7 @@
                                         {
                                             "metaName": "zValue",
                                             "metaType": "string",
-                                            "metaValue": "43.000000"
+                                            "metaValue": "41.000000"
                                         }
                                     ]
                                 }
@@ -151,9 +151,34 @@
                     ]
                 },
                 {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,TKCM::Modeling_Toolbox::Internal,delete_unused_mesh_components_core"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,TKCM::Modeling_Toolbox,delete_unused_mesh_components"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,TKCM::Modeling_Toolbox,delete_unused_mesh_components_core"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Mesh,get_mesh_structure"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Mesh,construct_mesh"
+                },
+                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-496.079 29.4985 2310.04 1595.28"
+                    "metaValue": "-902.11 189.376 1707.6 1179.25"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -161,14 +186,14 @@
                     "metaValue": "2"
                 },
                 {
-                    "metaName": "zValue",
-                    "metaType": "string",
-                    "metaValue": "56.000000"
-                },
-                {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "2035.02 735.384"
+                    "metaValue": "1951.56 607.825"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "51.000000"
                 }
             ],
             "ports": [
@@ -225,35 +250,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "49.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "178.971 236.473"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "delete_unused_mesh_components_core",
-                    "nodeType": "TKCM::Modeling_Toolbox::delete_unused_mesh_components_core",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
                         },
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "51.000000"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-135.205 422.294"
+                            "metaValue": "43.000000"
                         }
                     ]
                 },
@@ -267,14 +271,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "50.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-448.054 516.856"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "44.000000"
                         }
                     ]
                 },
@@ -358,7 +362,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "39.000000"
+                            "metaValue": "38.000000"
                         }
                     ]
                 },
@@ -379,7 +383,7 @@
                         {
                             "metaName": "zValue",
                             "metaType": "string",
-                            "metaValue": "40.000000"
+                            "metaValue": "39.000000"
                         }
                     ]
                 },
@@ -498,33 +502,30 @@
                             "metaValue": "35.000000"
                         }
                     ]
+                },
+                {
+                    "nodeName": "delete_unused_mesh_components_core1",
+                    "nodeType": "TKCM::Modeling_Toolbox::Internal::delete_unused_mesh_components_core",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "50.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-175.881 474.757"
+                        }
+                    ]
                 }
             ],
             "connections": [
-                {
-                    "source": "delete_unused_mesh_components_core.point_position",
-                    "target": "construct_mesh.point_position"
-                },
-                {
-                    "source": "delete_unused_mesh_components_core.face_offset",
-                    "target": "construct_mesh.face_offset"
-                },
-                {
-                    "source": "delete_unused_mesh_components_core.face_vertex",
-                    "target": "construct_mesh.face_vertex"
-                },
-                {
-                    "source": "get_mesh_structure1.point_position",
-                    "target": "delete_unused_mesh_components_core.source_point_position"
-                },
-                {
-                    "source": "get_mesh_structure1.face_vertex",
-                    "target": "delete_unused_mesh_components_core.source_face_vertex"
-                },
-                {
-                    "source": "get_mesh_structure1.face_offset",
-                    "target": "delete_unused_mesh_components_core.source_face_offset"
-                },
                 {
                     "source": ".in_mesh",
                     "target": "get_mesh_structure1.mesh"
@@ -590,36 +591,60 @@
                     "target": "pass1.input"
                 },
                 {
-                    "source": "delete_unused_mesh_components_core.point_dst_to_source",
-                    "target": "transfer_point_properties_by_indices.indices"
-                },
-                {
-                    "source": "delete_unused_mesh_components_core.face_dst_to_source",
-                    "target": "transfer_face_properties_by_indices.indices"
-                },
-                {
-                    "source": "delete_unused_mesh_components_core.face_vertex_dst_to_source",
-                    "target": "transfer_face_vertex_properties_by_indices.indices"
-                },
-                {
                     "source": "transfer_face_vertex_properties_by_indices.target_with_properties",
                     "target": ".new_mesh"
                 },
                 {
+                    "source": "get_mesh_structure1.point_position",
+                    "target": "delete_unused_mesh_components_core1.source_point_position"
+                },
+                {
+                    "source": "get_mesh_structure1.face_vertex",
+                    "target": "delete_unused_mesh_components_core1.source_face_vertex"
+                },
+                {
+                    "source": "get_mesh_structure1.face_offset",
+                    "target": "delete_unused_mesh_components_core1.source_face_offset"
+                },
+                {
                     "source": ".unused_point",
-                    "target": "delete_unused_mesh_components_core.unused_point"
+                    "target": "delete_unused_mesh_components_core1.unused_point"
                 },
                 {
                     "source": ".inline_point",
-                    "target": "delete_unused_mesh_components_core.inline_point"
+                    "target": "delete_unused_mesh_components_core1.inline_point"
                 },
                 {
                     "source": ".degenerate_polygon",
-                    "target": "delete_unused_mesh_components_core.degenerate_polygon"
+                    "target": "delete_unused_mesh_components_core1.degenerate_polygon"
                 },
                 {
                     "source": ".overlap_polygon",
-                    "target": "delete_unused_mesh_components_core.overlap_polygon"
+                    "target": "delete_unused_mesh_components_core1.overlap_polygon"
+                },
+                {
+                    "source": "delete_unused_mesh_components_core1.point_position",
+                    "target": "construct_mesh.point_position"
+                },
+                {
+                    "source": "delete_unused_mesh_components_core1.face_offset",
+                    "target": "construct_mesh.face_offset"
+                },
+                {
+                    "source": "delete_unused_mesh_components_core1.face_vertex",
+                    "target": "construct_mesh.face_vertex"
+                },
+                {
+                    "source": "delete_unused_mesh_components_core1.point_dst_to_source",
+                    "target": "transfer_point_properties_by_indices.indices"
+                },
+                {
+                    "source": "delete_unused_mesh_components_core1.face_dst_to_source",
+                    "target": "transfer_face_properties_by_indices.indices"
+                },
+                {
+                    "source": "delete_unused_mesh_components_core1.face_vertex_dst_to_source",
+                    "target": "transfer_face_vertex_properties_by_indices.indices"
                 }
             ],
             "values": [

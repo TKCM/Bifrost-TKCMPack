@@ -31,8 +31,8 @@ namespace TKCM {
 				bool& success
 	) AMINO_ANNOTATE(
 		"Amino::Node "
-		"name=Modeling_Toolbox::delete_unused_mesh_components_core "
-		"metadata=[{icon, ../icon/tkcm.png}, {internal, string, false}] "
+		"name=Modeling_Toolbox::Internal::delete_unused_mesh_components_core "
+		"metadata=[{icon, ../icon/tkcm_internal.png}, {internal, string, true}] "
 	);
 }
 
