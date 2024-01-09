@@ -52,4 +52,9 @@ namespace TKCM {
 	bool AlmostEqual(const T A, const T B, const T tolerance = T(0.0001)){
 		return std::abs(A - B) < tolerance;
 	}
+	
+	template<typename T>
+	T Lerp ( const T a, const T b, const float t ){
+		return a + ((b - a) * t);
+	}
 }

@@ -13,4 +13,9 @@ namespace TKCM {
 		const uInt& faceID,
 		const uInt& vertexID,
 		const Amino::Ptr<Amino::Array<uInt>>& face_offset);
+		
+	uInt GetPreviousFaceVertexIndex(
+		const uInt& faceID,
+		const uInt& vertexID,
+		const Amino::Ptr<Amino::Array<uInt>>& face_offset);
 }
