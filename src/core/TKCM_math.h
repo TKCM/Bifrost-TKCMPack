@@ -29,16 +29,14 @@ namespace TKCM {
 	}
 	
 	Bifrost::Math::float3 Normal(const Bifrost::Math::float3 &vec3){
-		if (TKCM::AlmostEqual(TKCM::LengthSquared(vec3), 1.0f)) {
-			return vec3;
-		} else {
+		Bifrost::Math::float3 result = vec3;
+		if (TKCM::AlmostEqual(TKCM::LengthSquared(vec3), 1.0f) == false) {
 			float len = TKCM::Length(vec3);
-			Bifrost::Math::float3 result;
 			result.x = vec3.x / len;
 			result.y = vec3.y / len;
 			result.z = vec3.z / len;
-			return result;
 		}
+		return result;
 	}
 	
 	float DistanceSquared (const Bifrost::Math::float3& A, const Bifrost::Math::float3& B){

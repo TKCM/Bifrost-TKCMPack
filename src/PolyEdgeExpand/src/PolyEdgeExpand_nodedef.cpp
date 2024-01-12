@@ -154,11 +154,9 @@ void TKCM::poly_edge_expand_core(
 		const Bifrost::Math::float3& faceNormal = source_face_normal->at ( faceIDs[i] );
 		if (TKCM::Dot ( faceNormal, plane_noraml_s ) < 0.0f) { plane_noraml_s = TKCM::Mul(plane_noraml_s ,-1.0f); }
 		if (TKCM::Dot ( faceNormal, plane_noraml_e ) < 0.0f) { plane_noraml_e = TKCM::Mul(plane_noraml_e ,-1.0f); }
-
-		pushDir_s[i] = TKCM::Cross ( plane_noraml_s, edgeVec );
-		pushDir_s[i] = TKCM::Normal ( pushDir_s[i] );
-		pushDir_e[i] = TKCM::Cross ( plane_noraml_e, edgeVec );
-		pushDir_e[i] = TKCM::Normal ( pushDir_e[i] );
+ 
+		pushDir_s[i] = TKCM::Normal (TKCM::Cross(plane_noraml_s, edgeVec));
+		pushDir_e[i] = TKCM::Normal (TKCM::Cross(plane_noraml_e, edgeVec));
 	}
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -205,26 +203,29 @@ void TKCM::poly_edge_expand_core(
 	for (size_t i = 0; i < edgeStartVerID.size(); ++i) {
 		// 押し出す方向
 		Bifrost::Math::float3 dir;
-		float reDistance = _offset;
+		float reDistance;
 		int prevVerID = TKCM::GetPreviousFaceVertexIndex(faceIDs[i], edgeStartVerID[i], source_face_offset);
 		int prevPoiID = source_face_vertex->at(prevVerID);
 		int esPoiID = source_face_vertex->at(edgeStartVerID[i]);
 		int eePoiID = source_face_vertex->at(edgeEndVerID[i]);
+
 		if (0 <= connectEdgeID_s[i]) { // エッジの始点に別の処理対象のエッジが隣接する場合
 			dir = TKCM::Add(pushDir_s[i], pushDir_e[connectEdgeID_s[i]]);
+			reDistance = _offset;
 		} else { // エッジの始点に別の処理対象のエッジが隣接しない場合
 			const Bifrost::Math::float3& pPoiPos = source_point_position->at(prevPoiID);
 			const Bifrost::Math::float3& ePoiPos = source_point_position->at(esPoiID);
+
 			dir = TKCM::Sub(pPoiPos, ePoiPos);
 			reDistance = std::min ( TKCM::Length ( dir ) - 0.01f, _offset );
 		}
-				
+
 		// 隣接するエッジとのpushDirの平均を算出する（押し出しの方向）
-		dir = TKCM::Normal ( dir );
-		float rad = TKCM::UnitAngleTo ( dir, pushDir_s[i] );
-				
+		dir = TKCM::Normal(dir);
+		float rad = TKCM::UnitAngleTo(dir, pushDir_s[i]);
+
 		// このエッジのpushDirの方向から↑の新しい方向への角度を取得し、_offsetを元に斜辺の長さを算出する（押し出し距離）
-		float hypotenuse = reDistance / std::cos ( rad );
+		float hypotenuse = reDistance / std::cos(rad);
 
 		const Bifrost::Math::float3& poiPos = source_point_position->at(esPoiID);
 		Bifrost::Math::float3& offset = TKCM::Mul(dir, hypotenuse);
@@ -255,14 +256,11 @@ void TKCM::poly_edge_expand_core(
 			const Bifrost::Math::float3& nPoiPos = source_point_position->at(nextPoiID);
 			const Bifrost::Math::float3& ePoiPos = source_point_position->at(eePoiID);
 			Bifrost::Math::float3 dir = TKCM::Sub(nPoiPos, ePoiPos);
-			float reDistance = std::min ( TKCM::Length ( dir ) - 0.01f, _offset );
-					
+			
+			// このエッジのpushDirの方向から↑の新しい方向への角度を取得し、_offsetを元に斜辺の長さを算出する（押し出し距離）
+			float hypotenuse = std::min(TKCM::Length(dir) - 0.01f, _offset);
 			dir = TKCM::Normal ( dir );
 					
-			// このエッジのpushDirの方向から↑の新しい方向への角度を取得し、_offsetを元に斜辺の長さを算出する（押し出し距離）
-			float rad = TKCM::UnitAngleTo ( dir, pushDir_e[i] );
-			float hypotenuse = reDistance / std::cos ( rad );
-
 			const Bifrost::Math::float3& poiPos = source_point_position->at(eePoiID);
 			Bifrost::Math::float3 offset = TKCM::Mul(dir, hypotenuse);
 			int setID = origPoiCount + edgeEndVerID.size() + newEndPointIDOffset[i];
@@ -415,5 +413,3 @@ void TKCM::poly_edge_expand_core(
 		
 	success = true;
 }
-
-隣り合うエッジを連続して処理する際に、それぞれのハーフエッジの新規頂点の位置が微妙に誤差がある

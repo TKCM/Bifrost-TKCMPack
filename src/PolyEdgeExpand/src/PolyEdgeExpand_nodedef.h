@@ -78,7 +78,7 @@ namespace TKCM {
 	) AMINO_ANNOTATE(
 		"Amino::Node "
 		"name=Modeling_Toolbox::Internal::poly_edge_expand_core "
-		"metadata=[{icon, ../icon/tkcm_internal.png}, {internal, string, false}] "
+		"metadata=[{icon, ../icon/tkcm_internal.png}, {internal, string, true}] "
 	);
 }
 
