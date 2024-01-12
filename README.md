@@ -35,7 +35,7 @@ https://vimeo.com/manage/videos/896561829
 ## Merge Mesh Point
 ![mergemeshpoint](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/cdb3043f-ba0a-4e16-b7fc-ab67d031f6ba)
 
-## Qquadrangulate Mesh
+## Quadrangulate Mesh
 ![quad](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/996773f4-a088-4874-bece-0b8cd58920a8)
 
 ## Dissolve
@@ -51,7 +51,8 @@ https://vimeo.com/manage/videos/896561829
 ![dmc](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/b693f1f2-5dc5-4d86-b6df-9ed289c7c68e)
 
 ## Poly Edge Expand
-![expand](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/554ce4f0-20e8-4cc3-a05f-f5b067e3680b)
+![expand](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/8d698efa-b2ee-420c-ba81-1da7aa2a2455)
+
 
 # pack develop environment  
 packの開発環境  
