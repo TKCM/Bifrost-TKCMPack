@@ -50,6 +50,9 @@ https://vimeo.com/manage/videos/896561829
 ## Delete Unused Mesh Components
 ![dmc](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/b693f1f2-5dc5-4d86-b6df-9ed289c7c68e)
 
+## Poly Edge Expand
+![expand](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/554ce4f0-20e8-4cc3-a05f-f5b067e3680b)
+
 # pack develop environment  
 packの開発環境  
 - CMake 3.17
