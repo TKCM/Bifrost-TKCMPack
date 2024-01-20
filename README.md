@@ -1,9 +1,9 @@
 # Bifrost-TKCM pack
 This is a Bifrost node pack produced for personal study.  
-Note that this pack contains only the Windows build.  
+Note : This pack contains only the Windows build that for Bifrost 2.8.0.0.
   
 これは個人的な学習のために制作したBifrostノードパックです。  
-packにはWindows版のビルドだけが含まれます。
+packにはWindows版のBifrost 2.8.0.0用ビルドだけが含まれます。
 
 <img src="pack/compounds/icon/tkcm.png" width="80px">
 
@@ -59,5 +59,5 @@ packの開発環境
 - CMake 3.17
 - VisualStudio 2019  
 - BifrostSDK : Bifrost 2.8.0.0 WIndows  
-- Eigen : 3.4.0
+- Eigen : 3.4.0 (use only for RBF-solver build)
 
