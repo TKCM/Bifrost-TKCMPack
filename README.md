@@ -1,6 +1,6 @@
 # Bifrost-TKCM pack
 This is a Bifrost node pack produced for personal study.  
-Note : This pack contains only the Windows build that for Bifrost 2.8.0.0.
+Note : This pack contains only the Bifrost-2.8.0.0-Windows build.
   
 これは個人的な学習のために制作したBifrostノードパックです。  
 packにはWindows版のBifrost 2.8.0.0用ビルドだけが含まれます。
@@ -53,6 +53,8 @@ https://vimeo.com/manage/videos/896561829
 ## Poly Edge Expand
 ![expand](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/8d698efa-b2ee-420c-ba81-1da7aa2a2455)
 
+## Detach Mesh Components
+![detach](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/d173f759-01ab-41e8-9045-0f0f0465eb0f)
 
 # pack develop environment  
 packの開発環境  
