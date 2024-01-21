@@ -16,7 +16,8 @@
             "QuadrangulateOps",
             "DissolveOps",
             "DeleteUnusedMeshComponentsOps",
-            "PolyEdgeExpandOps"
+            "PolyEdgeExpandOps",
+            "DetachMeshComponentsOps"
           ]
         }
       ],

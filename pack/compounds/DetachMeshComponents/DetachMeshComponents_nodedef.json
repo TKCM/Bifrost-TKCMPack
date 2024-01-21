@@ -1,0 +1,114 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "operators": [
+        {
+            "name": "TKCM::Modeling_Toolbox::Internal::detach_mesh_components_core",
+            "msMangle": "?detach_mesh_components_core@TKCM@@YAXAEAV?$Ptr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@Amino@@AEAV?$Ptr@V?$Array@I@Amino@@@3@AEBV43@222AEBIAEBV?$Ptr@V?$Array@_N@Amino@@@3@AEAV?$MutablePtr@V?$Array@I@Amino@@@3@AEAV?$MutablePtr@V?$Array@_N@Amino@@@3@AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM27detach_mesh_components_coreERN5Amino3PtrINS0_5ArrayIN7Bifrost4Math6float3EEEEERNS1_INS2_IjEEEERKSA_SD_SD_SD_RKjRKNS1_INS2_IbEEEERNS0_10MutablePtrIS9_EERNSK_ISG_EERb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "false"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "source_point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "new_point_position",
+                    "portDirection": "output",
+                    "portType": "array<Math::float3>",
+                    "portAssociated": "source_point_position",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "source_face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "new_face_vertex",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portAssociated": "source_face_vertex",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "source_face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacent_edge_face",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacent_edge_side",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_face_adjacency_index",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "component_tag_data_type",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "component_tag_data_to_split",
+                    "portDirection": "input",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_dst_to_source",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "new_point_tag_data",
+                    "portDirection": "output",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        }
+    ]
+}

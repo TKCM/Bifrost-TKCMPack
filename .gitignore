@@ -21,3 +21,7 @@ src/SimpleString/out/
 src/PolyEdgeExpand/out/
 src/SimpleString/
 src/PolyEdgeExpand/.vs/
+src/SplitMeshComponents/.vs/
+src/SplitMeshComponents/out/
+src/DetachMeshComponents/.vs/
+src/DetachMeshComponents/out/
