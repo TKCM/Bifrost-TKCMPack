@@ -39,7 +39,7 @@ namespace TKCM {
 	) AMINO_ANNOTATE(
 		"Amino::Node "
 		"name=Modeling_Toolbox::Internal::detach_mesh_components_core "
-		"metadata=[{icon, ../icon/tkcm_internal.png}, {internal, string, false}] "
+		"metadata=[{icon, ../icon/tkcm_internal.png}, {internal, string, true}] "
 	);
 
 }
