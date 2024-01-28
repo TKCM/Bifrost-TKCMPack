@@ -58,6 +58,10 @@ https://vimeo.com/manage/videos/896561829
 ## Split Edge
 ![splitedge](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/4d32d771-38b2-4177-a6fe-e61016ebf8b0)
 
+# Known issues
+[split_edge]  
+: Due to a bug in the transfer_properties_by_weighted_sum node, the transfer of point_component/face_vertex_component properties is not performed correctly.  
+: transfer_properties_by_weighted_sum ノードの不具合により、point_component/face_vertex_component プロパティの転送が正しく実行されません。  
 
 # pack develop environment  
 packの開発環境  
