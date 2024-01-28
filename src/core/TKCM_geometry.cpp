@@ -24,4 +24,27 @@ namespace TKCM {
 			return vertexID - 1;
 		}
 	}
+
+	uInt GetEdgeLeftPolygonID(
+		const Amino::Ptr<Amino::Array<uInt>>& source_face_vertex,
+		const Amino::Ptr<Amino::Array<uInt>>& source_face_offset,
+		const Amino::Ptr<Amino::Array<uInt>>& point_face_adjacent_edge_face,
+		const Amino::Ptr<Amino::Array<uInt>>& point_face_adjacent_edge_side,
+		const Amino::Ptr<Amino::Array<uInt>>& point_face_adjacency_index,
+		const uInt halfEdgeID){
+
+		int poiID = source_face_vertex->at(halfEdgeID);
+		for (uInt i = point_face_adjacency_index->at(poiID); i < point_face_adjacency_index->at(poiID + 1); ++i){
+			uInt adjFaceID = point_face_adjacent_edge_face->at(i);
+			if (source_face_offset->size() - 1 <= adjFaceID){
+				return 4294967295;
+			}
+
+			uInt vertexID = source_face_offset->at(adjFaceID) + point_face_adjacent_edge_side->at(i);
+			if (halfEdgeID == vertexID){
+				return adjFaceID;
+			}
+		}
+		return 4294967295;
+	}
 }

@@ -77,6 +77,18 @@ namespace TKCM {
 			return TKCM::AlmostEqual ( absDot, 1.0f, tolerance ) || TKCM::AlmostEqual ( absDot, -1.0f, tolerance );
 		}
 	}
+
+	bool AlmostSameDirection(const Bifrost::Math::float3& valA, const Bifrost::Math::float3& valB, float tolerance = 0.001f){
+		if (TKCM::AlmostEqual(TKCM::LengthSquared(valA), 1.0f, tolerance) && TKCM::AlmostEqual(TKCM::LengthSquared(valB), 1.0f, tolerance))	{
+			float absDot = std::abs(TKCM::Dot(valA, valB));
+			return AlmostEqual(absDot, 1.0f, tolerance);
+		} else{
+			Bifrost::Math::float3 valAUnit = TKCM::Normal(valA);
+			Bifrost::Math::float3 valBUnit = TKCM::Normal(valB);
+			float absDot = std::abs(TKCM::Dot(valAUnit, valBUnit));
+			return AlmostEqual(absDot, 1.0f, tolerance);
+		}
+	}
 	
 	float GetTriangleArea ( const Bifrost::Math::float3 &p0, const Bifrost::Math::float3 &p1, const Bifrost::Math::float3 &p2 ){
 		if (TKCM::AlmostEqual ( p0, p1 ) ||
@@ -100,7 +112,7 @@ namespace TKCM {
 		return TKCM::Length ( TKCM::Cross ( edge1, edge2 ) ) * 0.5f;
 	}
 	
-	Bifrost::Math::float3 Lerp ( const Bifrost::Math::float3& A, const Bifrost::Math::float3& B, const float t ){
+	Bifrost::Math::float3 LerpVec3 ( const Bifrost::Math::float3& A, const Bifrost::Math::float3& B, const float t ){
 		Bifrost::Math::float3 result;
 		result.x = TKCM::Lerp<float>(A.x, B.x, t);
 		result.y = TKCM::Lerp<float>(A.y, B.y, t);
@@ -170,6 +182,10 @@ namespace TKCM {
 		}
 
 		return TKCM::Add(segmentP0, TKCM::Mul(linVec, segment_t));
+	}
+
+	Bifrost::Math::float3 Lerp(const Bifrost::Math::float3 a, const Bifrost::Math::float3 b, const float t){
+		return TKCM::Add( a, ( TKCM::Mul( TKCM::Sub(b, a), t) ) );
 	}
 
 	Bifrost::Math::float4 GetTriBarycentric(
