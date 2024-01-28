@@ -1,5 +1,5 @@
 # Bifrost-TKCM pack
-This is a Bifrost node pack produced for personal study.  
+This is the result of a personal study.  
 Note : This pack contains only the Bifrost-2.8.0.0-Windows build.
   
 これは個人的な学習のために制作したBifrostノードパックです。  
@@ -10,7 +10,6 @@ packにはWindows版のBifrost 2.8.0.0用ビルドだけが含まれます。
 # Install
 Please set the following environment variables.  
 環境変数の設定を行ってください
-- ~~packフォルダをC:/Users/***/Autodesk/Bifrost/Compoundsにコピーする~~
 - BIFROST_LIB_CONFIG_FILES = <path_to_TKCM_packs>/pack/TKCM_config.json
 
 # pack
@@ -55,6 +54,10 @@ https://vimeo.com/manage/videos/896561829
 
 ## Detach Mesh Components
 ![detach](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/d173f759-01ab-41e8-9045-0f0f0465eb0f)
+
+## Split Edge
+![splitedge](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/4d32d771-38b2-4177-a6fe-e61016ebf8b0)
+
 
 # pack develop environment  
 packの開発環境  
