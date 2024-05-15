@@ -11,6 +11,7 @@
 #include <Bifrost/Math/Types.h>
 #include <Amino/Core/Ptr.h>
 #include <Amino/Core/Any.h>
+#include <Amino/Core/Array.h>
 
 // TKCM
 #include "../../core/TKCM_core.h"

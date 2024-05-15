@@ -19,16 +19,12 @@ set( headers_to_parse
     Snap_nodedef.h
 )
 
-amino_cpp2json(
-    TARGET          ${PRJ_NAME}JsonFiles
-    CPP2JSON        ${BIFROST_LOCATION}/bin/cpp2json.exe
-    INPUT           ${headers_to_parse}
-    INCLUDES        ${CMAKE_CURRENT_SOURCE_DIR}
-    INCLUDES        ${BIFROST_LOCATION}/sdk/include
-    INCLUDES        ${BIFROST_LOCATION}/sdk/include/Amino
-    DEFINES         "_MT"
-    PATH            ${BIFROST_LOCATION}/thirdparty/bin/tbb.dll                       
-)
+bifrost_header_parser( 
+    ${PRJ_NAME}JsonFiles  # Name of the target.
+    "json/${PROJECT_NAME}" # Install and build dirs - relative to install prefix
+                           # and build directory
+    INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}
+    HEADER_FILES ${headers_to_parse})
 
 # Create config json file to load the bifrost pack
 set( CONFIG_PACK_VERSION    "${PROJECT_VERSION}")
@@ -44,5 +40,5 @@ install(FILES ${config_json} DESTINATION . )
 add_custom_command(
   TARGET ${OPS_NAME} POST_BUILD
   COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/../out/build/x64-Release/src/${OPS_NAME}.dll" "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/bin"
-  COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/../out/build/x64-Release/src/${PRJ_NAME}_nodedef.json" "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/compounds/${PRJ_NAME}"
+  COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/../out/build/x64-Release/json/${PRJ_NAME}/${PRJ_NAME}_nodedef.json" "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/compounds/${PRJ_NAME}"
 )

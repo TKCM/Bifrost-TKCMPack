@@ -11,7 +11,7 @@
     "types": [
         {
             "className": "TKCM::RBFSolver",
-            "msTypeNameMangleName": ".?AVRBFSolver@TKCM@@",
+            "msTypeNameMangleName": "VRBFSolver@TKCM@@",
             "itaniumTypeNameMangleName": "N4TKCM9RBFSolverE"
         }
     ],

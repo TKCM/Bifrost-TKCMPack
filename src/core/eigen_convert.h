@@ -2,7 +2,7 @@
 #include <vector>
 #include <sstream>
 #include <Amino/Bifrost/Math/Types.h>
-#include <Amino/Core/AminoArray.h>
+#include <Amino/Core/Array.h>
 #include <Eigen/Dense>
 #include "TKCM_define.h"
 

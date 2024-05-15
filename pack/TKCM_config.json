@@ -11,14 +11,14 @@
             "RBFOps",
             "TagsOps",
             "InstantMeshesOps",
-            "SnapOps",
             "MergeMeshPointOps",
             "QuadrangulateOps",
             "DissolveOps",
             "DeleteUnusedMeshComponentsOps",
             "PolyEdgeExpandOps",
             "DetachMeshComponentsOps",
-            "SplitEdgeOps"
+            "SplitEdgeOps",
+            "SnapOps"
           ]
         }
       ],

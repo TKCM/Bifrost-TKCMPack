@@ -5,6 +5,7 @@
 #include <Bifrost/Math/Types.h>
 #include <Amino/Core/Ptr.h>
 #include <Amino/Core/Any.h>
+#include <Amino/Core/Array.h>
 
 namespace TKCM {
 	template<typename T>
