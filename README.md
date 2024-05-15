@@ -67,6 +67,6 @@ https://vimeo.com/manage/videos/896561829
 packの開発環境  
 - CMake 3.17
 - VisualStudio 2019  
-- BifrostSDK : Bifrost 2.8.0.0 WIndows  
+- BifrostSDK : Bifrost 2.10.0.0 Windows  
 - Eigen : 3.4.0 (use only for RBF-solver build)
 
