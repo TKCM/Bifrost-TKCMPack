@@ -1,9 +1,9 @@
 # Bifrost-TKCM pack
 This is the result of a personal study.  
-Note : This pack contains only the Bifrost-2.8.0.0-Windows build.
+Note : This pack contains only the Bifrost-2.10.0.0-Windows build.
   
 これは個人的な学習のために制作したBifrostノードパックです。  
-packにはWindows版のBifrost 2.8.0.0用ビルドだけが含まれます。
+packにはWindows版のBifrost 2.10.0.0用ビルドだけが含まれます。
 
 <img src="pack/compounds/icon/tkcm.png" width="80px">
 
