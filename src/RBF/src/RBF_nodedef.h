@@ -4,7 +4,7 @@
 #include <algorithm>
 
 // Eigen
-#include <Eigen/Dense>
+#include <oss/eigen/Eigen/Dense>
 
 // Bifrost Amino
 #include <Amino/Cpp/Annotate.h>

@@ -27,7 +27,7 @@ amino_cpp2json(
     INCLUDES        ${CMAKE_CURRENT_SOURCE_DIR}
     INCLUDES        ${BIFROST_LOCATION}/sdk/include
     INCLUDES        ${BIFROST_LOCATION}/sdk/include/Amino
-    INCLUDES        "${CMAKE_CURRENT_SOURCE_DIR}/../../../eigen"
+    INCLUDES        "${CMAKE_CURRENT_SOURCE_DIR}/../../../"
     DEFINES         "_MT"
     PATH            ${BIFROST_LOCATION}/thirdparty/bin/tbb.dll                       
 )

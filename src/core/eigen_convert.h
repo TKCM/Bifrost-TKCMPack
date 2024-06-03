@@ -3,7 +3,7 @@
 #include <sstream>
 #include <Amino/Bifrost/Math/Types.h>
 #include <Amino/Core/Array.h>
-#include <Eigen/Dense>
+#include <oss/eigen/Eigen/Dense>
 #include "TKCM_define.h"
 
 namespace TKCM {

@@ -11,7 +11,7 @@ project(
     LANGUAGES CXX
 )
 include_directories( ${BIFROST_LOCATION}/sdk/include )
-include_directories( "${CMAKE_CURRENT_SOURCE_DIR}/../../eigen" )
+include_directories( "${CMAKE_CURRENT_SOURCE_DIR}/../../" )
 
 # ignore warning c4819
 add_compile_options(/wd4819)
