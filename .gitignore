@@ -27,3 +27,4 @@ src/DetachMeshComponents/.vs/
 src/DetachMeshComponents/out/
 src/SplitEdge/.vs/
 src/SplitEdge/out/
+oss/eigen/Eigen/
