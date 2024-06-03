@@ -18,7 +18,8 @@
             "PolyEdgeExpandOps",
             "DetachMeshComponentsOps",
             "SplitEdgeOps",
-            "SnapOps"
+            "SnapOps",
+            "ConvexHullOps"
           ]
         }
       ],

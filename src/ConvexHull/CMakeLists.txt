@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.17)
 
 set( BIFROST_VERSION "2.10.0.0")
 set( BIFROST_LOCATION "C:/Program Files/Autodesk/Bifrost/Maya2025/${BIFROST_VERSION}/bifrost" )
-set( PRJ_NAME "Tags" )
+set( PRJ_NAME "ConvexHull" )
 
 # Project Name
 project(
@@ -11,6 +11,10 @@ project(
     LANGUAGES CXX
 )
 include_directories( ${BIFROST_LOCATION}/sdk/include )
+include_directories( "${CMAKE_CURRENT_SOURCE_DIR}/../../" )
+
+# ignore warning c4819
+add_compile_options(/wd4819 /wd4267)
 
 # Bifrost setup and utilities...
 include( ${BIFROST_LOCATION}/sdk/cmake/setup.cmake )

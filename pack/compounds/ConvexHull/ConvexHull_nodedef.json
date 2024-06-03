@@ -1,0 +1,236 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "operators": [
+        {
+            "name": "TKCM::Geometry::Internal::VHACD_core",
+            "msMangle": "?VHACD_core@TKCM@@YAXAEBV?$Ptr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@Amino@@AEBV?$Ptr@V?$Array@I@Amino@@@3@1IINI_NII2I2AEAV?$MutablePtr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@3@AEAV?$MutablePtr@V?$Array@I@Amino@@@3@4AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM10VHACD_coreERKN5Amino3PtrINS0_5ArrayIN7Bifrost4Math6float3EEEEERKNS1_INS2_IjEEEESD_jjdjbjjbjbRNS0_10MutablePtrIS6_EERNSE_ISA_EESI_Rb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "source_point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "source_face_vertex",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "source_face_offset",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "max_convex_hulls",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "resolution",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "minimum_volume_percent_error_allowed",
+                    "portDirection": "input",
+                    "portType": "double",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "max_recursion_depth",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "shrink_wrap",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "fill_mode",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "max_num_vertices_per_cnvex_hull",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "async_ACD",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "min_edge_length",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "find_best_plane",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "point_position",
+                    "portDirection": "output",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "TKCM::Geometry::Internal::quick_hull_core",
+            "msMangle": "?quick_hull_core@TKCM@@YAXAEBV?$Ptr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@Amino@@AEAV?$MutablePtr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@3@AEAV?$MutablePtr@V?$Array@I@Amino@@@3@2AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM15quick_hull_coreERKN5Amino3PtrINS0_5ArrayIN7Bifrost4Math6float3EEEEERNS0_10MutablePtrIS6_EERNSA_INS2_IjEEEESF_Rb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "source_point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "point_position",
+                    "portDirection": "output",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_vertex",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "face_offset",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        },
+        {
+            "name": "TKCM::Geometry::Internal::plane_quick_hull_core",
+            "msMangle": "?plane_quick_hull_core@TKCM@@YAXAEBV?$Ptr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@Amino@@HAEAV?$MutablePtr@V?$Array@Ufloat3@Math@Bifrost@@@Amino@@@3@AEAV?$MutablePtr@V?$Array@I@Amino@@@3@AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM21plane_quick_hull_coreERKN5Amino3PtrINS0_5ArrayIN7Bifrost4Math6float3EEEEEiRNS0_10MutablePtrIS6_EERNSA_INS2_IjEEEERb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "source_point_position",
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "plane_axis",
+                    "portDirection": "input",
+                    "portType": "int",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "point_position",
+                    "portDirection": "output",
+                    "portType": "array<Math::float3>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "orig_point_index",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ]
+        }
+    ]
+}

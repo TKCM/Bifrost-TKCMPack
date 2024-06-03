@@ -28,3 +28,10 @@ src/DetachMeshComponents/out/
 src/SplitEdge/.vs/
 src/SplitEdge/out/
 oss/eigen/Eigen/
+oss/quickhull/
+oss/v-hacd/v-hacd-master/
+src/ConvexHull/.vs/
+src/ConvexHull/out/
+src/mocopi/
+src/SplitPolygon/.vs/
+src/SplitPolygon/out/

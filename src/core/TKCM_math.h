@@ -9,7 +9,7 @@
 #include "TKCM_fn.h"
 
 namespace TKCM {
-	Bifrost::Math::float3 Cross( const Bifrost::Math::float3& A, const Bifrost::Math::float3& B ) {
+	inline Bifrost::Math::float3 Cross( const Bifrost::Math::float3& A, const Bifrost::Math::float3& B ) {
 		Bifrost::Math::float3 result;
 		result.x = A.y * B.z - A.z * B.y;
 		result.y = A.z * B.x - A.x * B.z;
@@ -17,19 +17,19 @@ namespace TKCM {
 		return result;
 	}
 	
-	float Dot( const Bifrost::Math::float3& A, const Bifrost::Math::float3& B ) {
+	inline float Dot( const Bifrost::Math::float3& A, const Bifrost::Math::float3& B ) {
 		return A.x * B.x + A.y * B.y + A.z * B.z;
 	}
 
-	float LengthSquared (const Bifrost::Math::float3& A){
+	inline float LengthSquared (const Bifrost::Math::float3& A){
 		return Dot ( A, A );
 	}
 	
-	float Length (const Bifrost::Math::float3& A){
+	inline float Length (const Bifrost::Math::float3& A){
 		return std::sqrt (TKCM::LengthSquared ( A ));
 	}
 	
-	Bifrost::Math::float3 Normal(const Bifrost::Math::float3 &vec3){
+	inline Bifrost::Math::float3 Normal(const Bifrost::Math::float3 &vec3){
 		Bifrost::Math::float3 result = vec3;
 		if (TKCM::AlmostEqual(TKCM::LengthSquared(vec3), 1.0f) == false) {
 			float len = TKCM::Length(vec3);
@@ -40,7 +40,7 @@ namespace TKCM {
 		return result;
 	}
 	
-	float DistanceSquared (const Bifrost::Math::float3& A, const Bifrost::Math::float3& B){
+	inline float DistanceSquared (const Bifrost::Math::float3& A, const Bifrost::Math::float3& B){
 		Bifrost::Math::float3 v0;
 		v0.x = A.x - B.x;
 		v0.y = A.y - B.y;
@@ -49,7 +49,7 @@ namespace TKCM {
 		return TKCM::LengthSquared ( v0 );
 	}
 	
-	float Distance (const Bifrost::Math::float3& A, const Bifrost::Math::float3& B){
+	inline float Distance (const Bifrost::Math::float3& A, const Bifrost::Math::float3& B){
 		Bifrost::Math::float3 v0;
 		v0.x = A.x - B.x;
 		v0.y = A.y - B.y;
@@ -58,14 +58,14 @@ namespace TKCM {
 		return Length ( v0 );
 	}
 	
-	bool AlmostEqual(const Bifrost::Math::float3 A, const Bifrost::Math::float3 B, const float tolerance = 10e-6f){
+	inline bool AlmostEqual(const Bifrost::Math::float3 A, const Bifrost::Math::float3 B, const float tolerance = 10e-6f){
 		return 
 			std::abs(A.x - B.x) < tolerance &&
 			std::abs(A.y - B.y) < tolerance &&
 			std::abs(A.z - B.z) < tolerance;
 	}
 	
-	bool AlmostParallel ( const Bifrost::Math::float3& valA, const Bifrost::Math::float3& valB, float tolerance = 10e-6f) {
+	inline bool AlmostParallel ( const Bifrost::Math::float3& valA, const Bifrost::Math::float3& valB, float tolerance = 10e-6f) {
 		if (TKCM::AlmostEqual ( TKCM::LengthSquared ( valA ), 1.0f, tolerance ) &&
 			TKCM::AlmostEqual ( TKCM::LengthSquared ( valB ), 1.0f, tolerance )
 		){
@@ -79,7 +79,7 @@ namespace TKCM {
 		}
 	}
 
-	bool AlmostSameDirection(const Bifrost::Math::float3& valA, const Bifrost::Math::float3& valB, float tolerance = 0.001f){
+	inline bool AlmostSameDirection(const Bifrost::Math::float3& valA, const Bifrost::Math::float3& valB, float tolerance = 0.001f){
 		if (TKCM::AlmostEqual(TKCM::LengthSquared(valA), 1.0f, tolerance) && TKCM::AlmostEqual(TKCM::LengthSquared(valB), 1.0f, tolerance))	{
 			float absDot = std::abs(TKCM::Dot(valA, valB));
 			return AlmostEqual(absDot, 1.0f, tolerance);
@@ -91,7 +91,7 @@ namespace TKCM {
 		}
 	}
 	
-	float GetTriangleArea ( const Bifrost::Math::float3 &p0, const Bifrost::Math::float3 &p1, const Bifrost::Math::float3 &p2 ){
+	inline float GetTriangleArea ( const Bifrost::Math::float3 &p0, const Bifrost::Math::float3 &p1, const Bifrost::Math::float3 &p2 ){
 		if (TKCM::AlmostEqual ( p0, p1 ) ||
 			TKCM::AlmostEqual ( p1, p2 ) ||
 			TKCM::AlmostEqual ( p2, p0 )
@@ -113,7 +113,7 @@ namespace TKCM {
 		return TKCM::Length ( TKCM::Cross ( edge1, edge2 ) ) * 0.5f;
 	}
 	
-	Bifrost::Math::float3 LerpVec3 ( const Bifrost::Math::float3& A, const Bifrost::Math::float3& B, const float t ){
+	inline Bifrost::Math::float3 LerpVec3 ( const Bifrost::Math::float3& A, const Bifrost::Math::float3& B, const float t ){
 		Bifrost::Math::float3 result;
 		result.x = TKCM::Lerp<float>(A.x, B.x, t);
 		result.y = TKCM::Lerp<float>(A.y, B.y, t);
@@ -121,7 +121,7 @@ namespace TKCM {
 		return result;
 	}
 	
-	float UnitAngleTo ( const Bifrost::Math::float3& unitVec0, const Bifrost::Math::float3& unitVec1 ) {
+	inline float UnitAngleTo ( const Bifrost::Math::float3& unitVec0, const Bifrost::Math::float3& unitVec1 ) {
 		float dot = TKCM::Dot ( unitVec0, unitVec1 );
 		dot = std::max ( dot, -1.0f );
 		dot = std::min ( dot, 1.0f );
@@ -132,7 +132,7 @@ namespace TKCM {
 		}
 	}
 	
-	Bifrost::Math::float3 Sub(const Bifrost::Math::float3& A, const Bifrost::Math::float3& B){
+	inline Bifrost::Math::float3 Sub(const Bifrost::Math::float3& A, const Bifrost::Math::float3& B){
 		Bifrost::Math::float3 result;
 		result.x = A.x - B.x;
 		result.y = A.y - B.y;
@@ -140,7 +140,7 @@ namespace TKCM {
 		return result;
 	}
 
-	Bifrost::Math::float3 Add(const Bifrost::Math::float3& A, const Bifrost::Math::float3& B){
+	inline Bifrost::Math::float3 Add(const Bifrost::Math::float3& A, const Bifrost::Math::float3& B){
 		Bifrost::Math::float3 result;
 		result.x = A.x + B.x;
 		result.y = A.y + B.y;
@@ -148,7 +148,7 @@ namespace TKCM {
 		return result;
 	}
 	
-	Bifrost::Math::float3 Mul(const Bifrost::Math::float3& A, const float& B){
+	inline Bifrost::Math::float3 Mul(const Bifrost::Math::float3& A, const float& B){
 		Bifrost::Math::float3 result;
 		result.x = A.x * B;
 		result.y = A.y * B;
@@ -156,7 +156,7 @@ namespace TKCM {
 		return result;
 	}
 
-	Bifrost::Math::float3 GetClosestPositionOnLineSegment(
+	inline Bifrost::Math::float3 GetClosestPositionOnLineSegment(
 		const Bifrost::Math::float3& P,
 		const Bifrost::Math::float3& segmentP0,
 		const Bifrost::Math::float3& segmentP1,
@@ -185,11 +185,11 @@ namespace TKCM {
 		return TKCM::Add(segmentP0, TKCM::Mul(linVec, segment_t));
 	}
 
-	Bifrost::Math::float3 Lerp(const Bifrost::Math::float3 a, const Bifrost::Math::float3 b, const float t){
+	inline Bifrost::Math::float3 Lerp(const Bifrost::Math::float3 a, const Bifrost::Math::float3 b, const float t){
 		return TKCM::Add( a, ( TKCM::Mul( TKCM::Sub(b, a), t) ) );
 	}
 
-	Bifrost::Math::float4 GetTriBarycentric(
+	inline Bifrost::Math::float4 GetTriBarycentric(
 		const Bifrost::Math::float3& P,
 		const Bifrost::Math::float3& triP0,
 		const Bifrost::Math::float3& triP1,
@@ -269,5 +269,36 @@ namespace TKCM {
 		result.z = resultW;
 		result.w = 0.0f;
 		return result;
+	}
+
+	inline void Sort(std::vector<float>& arrayVal, std::vector<unsigned int>& arrayOrigID, bool descendingOrder = false){
+		int cnt = arrayVal.size();
+		if (cnt == 0){ return; }
+
+		arrayOrigID.resize(cnt);
+
+		std::vector<std::vector<float>> val_id(cnt);
+		#pragma omp parallel for if(1000 < cnt)
+		for (int i = 0; i < cnt; i++){
+			val_id[i].resize(2);
+			val_id[i][0] = arrayVal[i];
+			val_id[i][1] = float(i);
+		}
+		std::sort(val_id.begin(), val_id.end());
+
+		if (descendingOrder){
+		#pragma omp parallel for if(1000 < cnt)
+			for (int i = 0; i < cnt; i++){
+				unsigned int ii = cnt - i - 1;
+				arrayVal[i] = val_id[ii][0];
+				arrayOrigID[i] = int(val_id[ii][1]);
+			}
+		} else{
+		#pragma omp parallel for if(1000 < cnt)
+			for (int i = 0; i < cnt; i++){
+				arrayVal[i] = val_id[i][0];
+				arrayOrigID[i] = int(val_id[i][1]);
+			}
+		}
 	}
 }
