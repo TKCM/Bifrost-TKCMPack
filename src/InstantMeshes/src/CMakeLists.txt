@@ -30,8 +30,8 @@ amino_cpp2json(
     INCLUDES        ${CMAKE_CURRENT_SOURCE_DIR}
     INCLUDES        ${BIFROST_LOCATION}/sdk/include
     INCLUDES        ${BIFROST_LOCATION}/sdk/include/Amino
-    INCLUDES        "${CMAKE_CURRENT_SOURCE_DIR}/../../../eigen"
-    INCLUDES        "${CMAKE_CURRENT_SOURCE_DIR}/tbb/include"
+    INCLUDES        "${CMAKE_CURRENT_SOURCE_DIR}/../../../oss/eigen"
+    INCLUDES        "C:/D/GitHub/MayaPlugins/maya_SDK/include"
     DEFINES         "_MT"                     
 )
 

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.17)
 
-set( BIFROST_VERSION "2.10.0.0")
+set( BIFROST_VERSION "2.11.0.0")
 set( BIFROST_LOCATION "C:/Program Files/Autodesk/Bifrost/Maya2025/${BIFROST_VERSION}/bifrost" )
 set( PRJ_NAME "DeleteUnusedMeshComponents" )
 
