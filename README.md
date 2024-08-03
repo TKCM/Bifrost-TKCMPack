@@ -58,6 +58,12 @@ https://vimeo.com/manage/videos/896561829
 ## Split Edge
 ![splitedge](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/4d32d771-38b2-4177-a6fe-e61016ebf8b0)
 
+## Convex Hull
+- convex_hull
+- VHACD 
+![ch2](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/9392cbf0-1497-45a4-9bc6-ff31f1530448)
+![ch](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/f20bd294-057b-4322-9316-5348880180f1)
+
 # Known issues
 [split_edge]  
 : Due to a bug in the transfer_properties_by_weighted_sum node, the transfer of point_component/face_vertex_component properties is not performed correctly.  
