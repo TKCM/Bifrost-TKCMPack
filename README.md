@@ -64,6 +64,9 @@ https://vimeo.com/manage/videos/896561829
 ![ch2](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/9392cbf0-1497-45a4-9bc6-ff31f1530448)
 ![ch](https://github.com/TKCM/Bifrost-TKCMPack/assets/13941074/f20bd294-057b-4322-9316-5348880180f1)
 
+## update_point_neighbors_plus
+Option additional version - "include_all_face_points"
+
 # Known issues
 [split_edge]  
 : Due to a bug in the transfer_properties_by_weighted_sum node, the transfer of point_component/face_vertex_component properties is not performed correctly.  
