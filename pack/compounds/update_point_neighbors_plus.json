@@ -22,7 +22,7 @@
                 {
                     "metaName": "icon",
                     "metaType": "string",
-                    "metaValue": "../icon/tkcm.png"
+                    "metaValue": "icon/tkcm.png"
                 },
                 {
                     "metaName": "_recentNode_",
