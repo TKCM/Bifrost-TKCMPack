@@ -51,3 +51,4 @@ void TKCM::solve(
 		}
 	}
 }
+AMINO_DEFINE_DEFAULT_CLASS(TKCM::RBFSolver);
