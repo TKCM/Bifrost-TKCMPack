@@ -35,3 +35,6 @@ src/ConvexHull/out/
 src/mocopi/
 src/SplitPolygon/.vs/
 src/SplitPolygon/out/
+oss/
+src/array_test/out/
+src/array_test/.vs/
