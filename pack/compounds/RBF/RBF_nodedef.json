@@ -32,7 +32,6 @@
                     "metaValue": "false"
                 }
             ],
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "rbf",
@@ -76,7 +75,6 @@
                     "metaValue": "true"
                 }
             ],
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "key",

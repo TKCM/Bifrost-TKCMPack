@@ -26,7 +26,6 @@
                     "metaValue": "true"
                 }
             ],
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "point_count",
@@ -94,7 +93,6 @@
                     "metaValue": "true"
                 }
             ],
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "point_count",
@@ -180,7 +178,6 @@
                     "metaValue": "true"
                 }
             ],
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "point_count",
@@ -242,7 +239,6 @@
                     "metaValue": "true"
                 }
             ],
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "half_edge_vertex_tag_data",
@@ -293,7 +289,6 @@
                     "metaValue": "true"
                 }
             ],
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "point_count",

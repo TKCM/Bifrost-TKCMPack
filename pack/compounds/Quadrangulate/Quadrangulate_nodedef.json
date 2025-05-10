@@ -26,7 +26,6 @@
                     "metaValue": "true"
                 }
             ],
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "point_position",

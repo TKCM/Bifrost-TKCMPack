@@ -26,7 +26,6 @@
                     "metaValue": "true"
                 }
             ],
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "source_point_position",
@@ -148,7 +147,6 @@
                     "metaValue": "true"
                 }
             ],
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "source_point_position",
@@ -198,7 +196,6 @@
                     "metaValue": "true"
                 }
             ],
-            "cancellationPolicy": "Unsafe",
             "ports": [
                 {
                     "portName": "source_point_position",
