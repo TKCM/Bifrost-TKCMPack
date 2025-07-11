@@ -21,6 +21,7 @@ namespace TKCM {
 		const	Amino::Ptr<Amino::Array<uInt>>& source_face_offset,
 		const	bool& unused_point,
 		const	bool& inline_point,
+		const	float& line_threshold,
 		const	bool& degenerate_polygon,
 		const	bool& overlap_polygon,
 				Amino::MutablePtr<Amino::Array<Bifrost::Math::float3>>& point_position,

@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "TKCM::Modeling_Toolbox::delete_unused_mesh_components",
-            "uriImported": "stream:/dissolvepointSampleShape",
+            "uriImported": "file:///delete_unused_mesh_components.json",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -39,6 +39,11 @@
                                             "metaValue": "-725.516 977.282"
                                         },
                                         {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "40.000000"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -55,13 +60,11 @@
                                                 },
                                                 {
                                                     "metaName": "overlap_polygon"
+                                                },
+                                                {
+                                                    "metaName": "line_threshold"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "zValue",
-                                            "metaType": "string",
-                                            "metaValue": "40.000000"
                                         }
                                     ]
                                 },
@@ -178,7 +181,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-902.11 189.376 1707.6 1179.25"
+                    "metaValue": "-902 95.9185 1708 1367.16"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -188,12 +191,17 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "1951.56 607.825"
+                    "metaValue": "1488.87 578.705"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"in_mesh\"\n            },\n            {\n                \"port\": \"unused_point\"\n            },\n            {\n                \"port\": \"inline_point\"\n            },\n            {\n                \"port\": \"line_threshold\"\n            },\n            {\n                \"port\": \"degenerate_polygon\"\n            },\n            {\n                \"port\": \"overlap_polygon\"\n            },\n            {\n                \"port\": \"properties\"\n            }\n        ]\n    }\n}\n"
                 },
                 {
                     "metaName": "zValue",
                     "metaType": "string",
-                    "metaValue": "51.000000"
+                    "metaValue": "56.000000"
                 }
             ],
             "ports": [
@@ -237,6 +245,24 @@
                     "portDirection": "input",
                     "portType": "string",
                     "portDefault": "*"
+                },
+                {
+                    "portName": "line_threshold",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "0f",
+                    "metadata": [
+                        {
+                            "metaName": "UISoftMin",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "UISoftMax",
+                            "metaType": "string",
+                            "metaValue": "0.999"
+                        }
+                    ]
                 }
             ],
             "compoundNodes": [
@@ -513,14 +539,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "zValue",
-                            "metaType": "string",
-                            "metaValue": "50.000000"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-175.881 474.757"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "45.000000"
                         }
                     ]
                 }
@@ -645,6 +671,10 @@
                 {
                     "source": "delete_unused_mesh_components_core1.face_vertex_dst_to_source",
                     "target": "transfer_face_vertex_properties_by_indices.indices"
+                },
+                {
+                    "source": ".line_threshold",
+                    "target": "delete_unused_mesh_components_core1.line_threshold"
                 }
             ],
             "values": [

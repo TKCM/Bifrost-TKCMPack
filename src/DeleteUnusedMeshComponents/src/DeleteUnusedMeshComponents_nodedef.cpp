@@ -7,6 +7,7 @@ void TKCM::delete_unused_mesh_components_core(
 	const	Amino::Ptr<Amino::Array<uInt>>& source_face_offset,
 	const	bool& unusedPoint,
 	const	bool& inlinePoint,
+	const	float& lineThreshold,
 	const	bool& degenerate,
 	const	bool& overlapPolygon,
 			Amino::MutablePtr<Amino::Array<Bifrost::Math::float3>>& point_position,
@@ -208,7 +209,7 @@ void TKCM::delete_unused_mesh_components_core(
 						Bifrost::Math::float3 p1p2UnitVec3 = TKCM::Normal ( p12 );
 						float dot = TKCM::Dot ( p0p1UnitVec3, p1p2UnitVec3 );
 
-						if (TKCM::AlmostEqual ( dot, 1.0f )) {
+						if ( 0.999999 - lineThreshold < dot ) {
 							poiCondition[poiID] = -2;
 						}
 						break;
