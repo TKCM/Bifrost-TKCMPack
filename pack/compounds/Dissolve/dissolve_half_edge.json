@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "TKCM::Modeling_Toolbox::dissolve_half_edge",
-            "uriImported": "stream:/bifrostGraphShape1",
+            "uriImported": "file:///dissolve_half_edge.json",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -76,6 +76,9 @@
                                             "metadata": [
                                                 {
                                                     "metaName": "half_edge_to_dissolve"
+                                                },
+                                                {
+                                                    "metaName": "delete_adjacency_point"
                                                 }
                                             ]
                                         }
@@ -95,17 +98,17 @@
                                             "metaValue": "638.915 671.254"
                                         },
                                         {
-                                            "metaName": "zValue",
-                                            "metaType": "string",
-                                            "metaValue": "48.000000"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "properties"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "48.000000"
                                         }
                                     ]
                                 }
@@ -194,7 +197,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-238.352 -145.962 2076.97 1270.22"
+                    "metaValue": "94.6654 -13.109 768.865 920.84"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -204,12 +207,12 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "965.891 -198.604"
+                    "metaValue": "-176.5 -350"
                 },
                 {
                     "metaName": "zValue",
                     "metaType": "string",
-                    "metaValue": "43.000000"
+                    "metaValue": "39.000000"
                 }
             ],
             "ports": [
@@ -235,6 +238,12 @@
                     "portDirection": "input",
                     "portType": "string",
                     "portDefault": "*"
+                },
+                {
+                    "portName": "delete_adjacency_point",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
                 }
             ],
             "compoundNodes": [
@@ -801,6 +810,10 @@
                 {
                     "source": ".properties",
                     "target": "pass1.input"
+                },
+                {
+                    "source": ".delete_adjacency_point",
+                    "target": "dissolve_edge_core.delete_adjacency_point"
                 }
             ],
             "values": [

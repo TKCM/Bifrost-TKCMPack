@@ -119,5 +119,748 @@
                 }
             ]
         }
+    ],
+    "compounds": [
+        {
+            "name": "TKCM::Modeling_Toolbox::delete_unused_mesh_components",
+            "uriImported": "file:///delete_unused_mesh_components.json",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm.png"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-725.516 977.282"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "40.000000"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "in_mesh"
+                                                },
+                                                {
+                                                    "metaName": "unused_point"
+                                                },
+                                                {
+                                                    "metaName": "inline_point"
+                                                },
+                                                {
+                                                    "metaName": "degenerate_polygon"
+                                                },
+                                                {
+                                                    "metaName": "overlap_polygon"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "input2",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "160.695 1097.78"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "properties"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "42.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1989.38 903.543"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "new_mesh"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "41.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "title",
+                            "metaType": "string",
+                            "metaValue": "Transfer component properties"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "412.497 117.873 1501.19 1425.57"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,TKCM::Modeling_Toolbox::Internal,delete_unused_mesh_components_core"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,TKCM::Modeling_Toolbox,delete_unused_mesh_components"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,TKCM::Modeling_Toolbox,delete_unused_mesh_components_core"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Mesh,get_mesh_structure"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Mesh,construct_mesh"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"in_mesh\"\n            },\n            {\n                \"port\": \"unused_point\"\n            },\n            {\n                \"port\": \"inline_point\"\n            },\n            {\n                \"port\": \"line_threshold\"\n            },\n            {\n                \"port\": \"degenerate_polygon\"\n            },\n            {\n                \"port\": \"overlap_polygon\"\n            },\n            {\n                \"port\": \"properties\"\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-902 91.6358 1709 1376.73"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-124.5 -233"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "39.000000"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "new_mesh",
+                    "portDirection": "output",
+                    "portType": "Object"
+                },
+                {
+                    "portName": "in_mesh",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "unused_point",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "true"
+                },
+                {
+                    "portName": "inline_point",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "degenerate_polygon",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "overlap_polygon",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
+                },
+                {
+                    "portName": "properties",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "*"
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "construct_mesh",
+                    "nodeType": "Geometry::Mesh::construct_mesh",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "178.971 236.473"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "43.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_mesh_structure1",
+                    "nodeType": "Geometry::Mesh::get_mesh_structure",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-448.054 516.856"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "44.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "transfer_point_properties_by_indices",
+                    "nodeType": "Geometry::Properties::transfer_properties_by_indices",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1138.9 190.048"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "transfer_face_properties_by_indices",
+                    "nodeType": "Geometry::Properties::transfer_properties_by_indices",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1423.7 540.9"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "transfer_face_vertex_properties_by_indices",
+                    "nodeType": "Geometry::Properties::transfer_properties_by_indices",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1666.63 901.272"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "pass",
+                    "nodeType": "Core::Graph::pass",
+                    "metadata": [
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "525.907 1002.05"
+                        },
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "38.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "pass1",
+                    "nodeType": "Core::Graph::pass",
+                    "metadata": [
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "522.117 1122.13"
+                        },
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "build_string",
+                    "nodeType": "Core::String::build_string",
+                    "fanInPortNames": {
+                        "strings": [
+                            "output",
+                            "output1"
+                        ]
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "strings",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "921.307 1120.19"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "build_string1",
+                    "nodeType": "Core::String::build_string",
+                    "fanInPortNames": {
+                        "strings": [
+                            "joined",
+                            "output"
+                        ]
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "strings",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "913.817 1256.3"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value2",
+                    "valueType": "string",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "590.427 1266.24"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value3",
+                    "valueType": "string",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "593.297 1403.64"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "delete_unused_mesh_components_core1",
+                    "nodeType": "TKCM::Modeling_Toolbox::Internal::delete_unused_mesh_components_core",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-175.881 474.757"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "45.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".in_mesh",
+                    "target": "get_mesh_structure1.mesh"
+                },
+                {
+                    "source": "transfer_point_properties_by_indices.target_with_properties",
+                    "target": "transfer_face_properties_by_indices.target_geometry"
+                },
+                {
+                    "source": "transfer_face_properties_by_indices.target_with_properties",
+                    "target": "transfer_face_vertex_properties_by_indices.target_geometry"
+                },
+                {
+                    "source": "pass.output",
+                    "target": "transfer_point_properties_by_indices.source_geometry"
+                },
+                {
+                    "source": "pass.output",
+                    "target": "transfer_face_properties_by_indices.source_geometry"
+                },
+                {
+                    "source": "pass.output",
+                    "target": "transfer_face_vertex_properties_by_indices.source_geometry"
+                },
+                {
+                    "source": "pass1.output",
+                    "target": "transfer_point_properties_by_indices.property_expression"
+                },
+                {
+                    "source": "pass1.output",
+                    "target": "build_string.strings.output"
+                },
+                {
+                    "source": "pass1.output",
+                    "target": "build_string1.strings.joined"
+                },
+                {
+                    "source": "build_string.joined",
+                    "target": "transfer_face_properties_by_indices.property_expression"
+                },
+                {
+                    "source": "build_string1.joined",
+                    "target": "transfer_face_vertex_properties_by_indices.property_expression"
+                },
+                {
+                    "source": "value2.output",
+                    "target": "build_string.strings.output1"
+                },
+                {
+                    "source": "value3.output",
+                    "target": "build_string1.strings.output"
+                },
+                {
+                    "source": "construct_mesh.mesh",
+                    "target": "transfer_point_properties_by_indices.target_geometry"
+                },
+                {
+                    "source": ".in_mesh",
+                    "target": "pass.input"
+                },
+                {
+                    "source": ".properties",
+                    "target": "pass1.input"
+                },
+                {
+                    "source": "transfer_face_vertex_properties_by_indices.target_with_properties",
+                    "target": ".new_mesh"
+                },
+                {
+                    "source": "get_mesh_structure1.point_position",
+                    "target": "delete_unused_mesh_components_core1.source_point_position"
+                },
+                {
+                    "source": "get_mesh_structure1.face_vertex",
+                    "target": "delete_unused_mesh_components_core1.source_face_vertex"
+                },
+                {
+                    "source": "get_mesh_structure1.face_offset",
+                    "target": "delete_unused_mesh_components_core1.source_face_offset"
+                },
+                {
+                    "source": ".unused_point",
+                    "target": "delete_unused_mesh_components_core1.unused_point"
+                },
+                {
+                    "source": ".inline_point",
+                    "target": "delete_unused_mesh_components_core1.inline_point"
+                },
+                {
+                    "source": ".degenerate_polygon",
+                    "target": "delete_unused_mesh_components_core1.degenerate_polygon"
+                },
+                {
+                    "source": ".overlap_polygon",
+                    "target": "delete_unused_mesh_components_core1.overlap_polygon"
+                },
+                {
+                    "source": "delete_unused_mesh_components_core1.point_position",
+                    "target": "construct_mesh.point_position"
+                },
+                {
+                    "source": "delete_unused_mesh_components_core1.face_offset",
+                    "target": "construct_mesh.face_offset"
+                },
+                {
+                    "source": "delete_unused_mesh_components_core1.face_vertex",
+                    "target": "construct_mesh.face_vertex"
+                },
+                {
+                    "source": "delete_unused_mesh_components_core1.point_dst_to_source",
+                    "target": "transfer_point_properties_by_indices.indices"
+                },
+                {
+                    "source": "delete_unused_mesh_components_core1.face_dst_to_source",
+                    "target": "transfer_face_properties_by_indices.indices"
+                },
+                {
+                    "source": "delete_unused_mesh_components_core1.face_vertex_dst_to_source",
+                    "target": "transfer_face_vertex_properties_by_indices.indices"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "transfer_point_properties_by_indices.target_geometry",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "transfer_point_properties_by_indices.source_geometry",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "transfer_point_properties_by_indices.component",
+                    "valueType": "string",
+                    "value": "point_component"
+                },
+                {
+                    "valueName": "transfer_point_properties_by_indices.property_expression",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "transfer_point_properties_by_indices.always_transfer_expression",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "transfer_face_properties_by_indices.target_geometry",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "transfer_face_properties_by_indices.source_geometry",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "transfer_face_properties_by_indices.component",
+                    "valueType": "string",
+                    "value": "face_component"
+                },
+                {
+                    "valueName": "transfer_face_properties_by_indices.property_expression",
+                    "valueType": "string",
+                    "value": "* !face_offset"
+                },
+                {
+                    "valueName": "transfer_face_properties_by_indices.always_transfer_expression",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "transfer_face_vertex_properties_by_indices.target_geometry",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "transfer_face_vertex_properties_by_indices.source_geometry",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "transfer_face_vertex_properties_by_indices.component",
+                    "valueType": "string",
+                    "value": "face_vertex_component"
+                },
+                {
+                    "valueName": "transfer_face_vertex_properties_by_indices.property_expression",
+                    "valueType": "string",
+                    "value": "* !face_vertex"
+                },
+                {
+                    "valueName": "transfer_face_vertex_properties_by_indices.always_transfer_expression",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "value2.value",
+                    "valueType": "string",
+                    "value": " !face_offset"
+                },
+                {
+                    "valueName": "value3.value",
+                    "valueType": "string",
+                    "value": " !face_vertex"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                },
+                {
+                    "name": "input2"
+                }
+            ]
+        }
     ]
 }

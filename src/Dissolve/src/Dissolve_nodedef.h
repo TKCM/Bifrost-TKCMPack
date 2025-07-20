@@ -1,3 +1,7 @@
+#if 1930 <= _MSC_VER // Visual Studio 2022 (MSVC 14.30 以降)
+#define _ALLOW_COMPILER_AND_STL_VERSION_MISMATCH // Clangのバージョンエラーが出るのを無視する
+#endif
+
 #ifndef BIF_DISSOLVE_H
 #define BIF_DISSOLVE_H
 // Bifrost Amino
@@ -34,6 +38,7 @@ namespace TKCM {
 		const	Amino::Ptr<Amino::Array<uInt>>& point_face_adjacecy_index,
 		const	TKCM::ComponentType& component_id_type,
 		const	Amino::Ptr<Amino::Array<Amino::long_t>>& component_id_to_dissolve,
+		const	bool& delete_adjacency_point,
 				Amino::MutablePtr<Amino::Array<Bifrost::Math::float3>>& point_position,
 				Amino::MutablePtr<Amino::Array<uInt>>& face_vertex,
 				Amino::MutablePtr<Amino::Array<uInt>>& face_offset,
@@ -80,6 +85,7 @@ namespace TKCM {
 		const	Amino::Ptr<Amino::Array<uInt>>& point_face_adjacecy_side,
 		const	Amino::Ptr<Amino::Array<uInt>>& point_face_adjacecy_index,
 		const	Amino::Ptr<Amino::Array<Amino::long_t>>& half_edge_to_dissolve,
+		const	bool& delete_adjacency_point,
 				Amino::MutablePtr<Amino::Array<Bifrost::Math::float3>>& point_position,
 				Amino::MutablePtr<Amino::Array<uInt>>& face_vertex,
 				Amino::MutablePtr<Amino::Array<uInt>>& face_offset,
@@ -104,6 +110,7 @@ namespace TKCM {
 		const	Amino::Ptr<Amino::Array<uInt>>& point_face_adjacecy_side,
 		const	Amino::Ptr<Amino::Array<uInt>>& point_face_adjacecy_index,
 		const	Amino::Ptr<Amino::Array<Amino::long_t>>& face_to_dissolve,
+		const	bool& delete_adjacency_point,
 				Amino::MutablePtr<Amino::Array<Bifrost::Math::float3>>& point_position,
 				Amino::MutablePtr<Amino::Array<uInt>>& face_vertex,
 				Amino::MutablePtr<Amino::Array<uInt>>& face_offset,

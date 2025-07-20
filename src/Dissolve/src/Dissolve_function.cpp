@@ -11,6 +11,7 @@ void TKCM::dissolve_core(
 	const	Amino::Ptr<Amino::Array<uInt>>& point_face_adjacecy_index,
 	const	TKCM::ComponentType& component_id_type,
 	const	Amino::Ptr<Amino::Array<Amino::long_t>>& component_id_to_dissolve,
+	const	bool& delete_adjacency_point, // エッジと頂点を同時に削除する場合はtrue
 			Amino::MutablePtr<Amino::Array<Bifrost::Math::float3>>& point_position,
 			Amino::MutablePtr<Amino::Array<uInt>>& face_vertex,
 			Amino::MutablePtr<Amino::Array<uInt>>& face_offset,
@@ -92,6 +93,7 @@ void TKCM::dissolve_core(
 					uInt vertexID = source_face_offset->at(polyNum) + localID;
 					deleteVertexID[vertexID] = true;
 				}
+				poiCondition[poiNum] = -2; // 頂点削除処理
 			}
 
 			// ポリゴンを構成する全てのバーテックスが削除対象の場合はpolyConditionをtrueにする
@@ -132,9 +134,59 @@ void TKCM::dissolve_core(
 			break;
 		}
 		case TKCM::ComponentType::Half_Edge:{
-			for (int i = 0; i < component_id_to_dissolve->size(); ++i){
-				if (component_id_to_dissolve->at(i) < verCount){
-					deleteVertexID[component_id_to_dissolve->at(i)] = true;
+			// エッジと頂点を同時に削除するモードで使用する変数を用意する
+			std::vector<int> neighborPointSize, delSize;
+			if (delete_adjacency_point){
+				neighborPointSize.resize(point_face_adjacecy_index->size() - 1);
+				delSize.resize(point_face_adjacecy_index->size() - 1, 0);
+				#pragma omp parallel for
+				for (size_t i = 0; i < point_face_adjacecy_index->size() - 1; ++i){
+					neighborPointSize[i] = point_face_adjacecy_index->at(i + 1) - point_face_adjacecy_index->at(i);
+				}
+			}
+
+			for (size_t i = 0; i < component_id_to_dissolve->size(); ++i){
+				uInt halfEdgeNum = component_id_to_dissolve->at(i);
+				if (verCount < halfEdgeNum){
+					continue;
+				}
+				if (deleteVertexID[halfEdgeNum] == true){
+					continue; // 既に削除登録されている場合はスキップ
+				}
+				uInt adjPolyNum = face_ver_adjacent_edge_face->at(halfEdgeNum);
+				if (polyCount < adjPolyNum){
+					continue; // ボーダーエッジの場合はスキップ
+				}
+				// ハーフエッジを削除対象として登録する
+				deleteVertexID[halfEdgeNum] = true;
+
+				// エッジと頂点を同時に削除するモードの場合
+				// エッジ両端の頂点ごとに、削除するバーテックス数をカウントする
+				if (delete_adjacency_point){
+					uInt poiNum = source_face_vertex->at(halfEdgeNum);
+					delSize[poiNum] += 1;
+
+					// 隣接するハーフエッジ側もカウントする
+					uInt adjHalfEdgeNum = source_face_offset->at(adjPolyNum) + face_ver_adjacent_edge_side->at(halfEdgeNum);
+					if (deleteVertexID[adjHalfEdgeNum] == false){
+						deleteVertexID[adjHalfEdgeNum] = true;
+						uInt poiNum = source_face_vertex->at(adjHalfEdgeNum);
+						delSize[poiNum] += 1;
+					}
+				}
+			}
+
+			// エッジと頂点を同時に削除するモードの場合
+			// 頂点を構成するバーテックスの数-削除カウント が2の場合はライン上の頂点だと判断して削除候補にする
+			if (delete_adjacency_point){
+				#pragma omp parallel for
+				for (size_t i = 0; i < delSize.size(); ++i){
+					if (delSize[i] == 0){
+						continue;
+					}
+					if (neighborPointSize[i] - delSize[i] <= 2){
+						poiCondition[i] = -2; // 頂点削除処理
+					}
 				}
 			}
 			break;
@@ -306,7 +358,7 @@ void TKCM::dissolve_core(
 	}
 				
 	// 頂点は全て削除対象外にする
-	poiCondition.assign ( poiCondition.size (), 0 );
+	//poiCondition.assign ( poiCondition.size (), 0 );
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// メッシュのストラクトデータを出力する
