@@ -3,8 +3,8 @@ set( OPS_NAME ${PRJ_NAME}Ops)
 add_library( ${OPS_NAME} SHARED)
 set( source_files
     
-    "toFCurve_nodedef.cpp"
-    "toFCurve_nodedef.h"
+    "ConstructFCurve_nodedef.cpp"
+    "ConstructFCurve_nodedef.h"
 )
 target_compile_definitions( ${OPS_NAME} PRIVATE TKCM_BUILD_NODEDEF_DLL )
 target_sources( ${OPS_NAME} PRIVATE ${source_files})
@@ -17,7 +17,7 @@ install( TARGETS ${OPS_NAME} DESTINATION lib )
 
 #Generate and install the json files
 set( headers_to_parse 
-    toFCurve_nodedef.h
+    ConstructFCurve_nodedef.h
 )
 
 amino_cpp2json(

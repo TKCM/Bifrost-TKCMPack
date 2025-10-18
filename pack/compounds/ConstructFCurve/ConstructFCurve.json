@@ -1,0 +1,482 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "TKCM::Math::construct_fcurve",
+          "metadata": [
+            {
+              "metaName": "icon",
+              "metaType": "string",
+              "metaValue": "../icon/tkcm.png"
+            },
+            {
+              "metaName": "io_nodes",
+              "metadata": [
+                {
+                  "metaName": "io_inodes",
+                  "metadata": [
+                    {
+                      "metaName": "input",
+                      "metadata": [
+                        {
+                          "metaName": "DisplayMode",
+                          "metaType": "string",
+                          "metaValue": "2"
+                        },
+                        {
+                          "metaName": "io_ports",
+                          "metadata": [
+                            {
+                              "metaName": "preExtrapolation"
+                            },
+                            {
+                              "metaName": "postExtrapolation"
+                            }
+                          ]
+                        },
+                        {
+                          "metaName": "LayoutPos",
+                          "metaType": "string",
+                          "metaValue": "-219.988 126.934"
+                        },
+                        {
+                          "metaName": "zValue",
+                          "metaType": "string",
+                          "metaValue": "33.000000"
+                        }
+                      ]
+                    },
+                    {
+                      "metaName": "input1",
+                      "metadata": [
+                        {
+                          "metaName": "io_ports",
+                          "metadata": [
+                            {
+                              "metaName": "cps"
+                            }
+                          ]
+                        },
+                        {
+                          "metaName": "DisplayMode",
+                          "metaType": "string",
+                          "metaValue": "2"
+                        },
+                        {
+                          "metaName": "LayoutPos",
+                          "metaType": "string",
+                          "metaValue": "-978.171 -87.565"
+                        },
+                        {
+                          "metaName": "zValue",
+                          "metaType": "string",
+                          "metaValue": "34.000000"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "metaName": "io_onodes",
+                  "metadata": [
+                    {
+                      "metaName": "output",
+                      "metadata": [
+                        {
+                          "metaName": "io_ports",
+                          "metadata": [
+                            {
+                              "metaName": "fcurve"
+                            }
+                          ]
+                        },
+                        {
+                          "metaName": "DisplayMode",
+                          "metaType": "string",
+                          "metaValue": "2"
+                        },
+                        {
+                          "metaName": "LayoutPos",
+                          "metaType": "string",
+                          "metaValue": "306.642 -19.9579"
+                        },
+                        {
+                          "metaName": "zValue",
+                          "metaType": "string",
+                          "metaValue": "37.000000"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "metaName": "ViewportRect",
+              "metaType": "string",
+              "metaValue": "-1058 -434.044 1671 921.088"
+            },
+            {
+              "metaName": "DisplayMode",
+              "metaType": "string",
+              "metaValue": "2"
+            },
+            {
+              "metaName": "LayoutPos",
+              "metaType": "string",
+              "metaValue": "-185.134 -136.223"
+            },
+            {
+              "metaName": "zValue",
+              "metaType": "string",
+              "metaValue": "51.000000"
+            }
+          ],
+            "ports": [
+                {
+                    "portName": "fcurve",
+                    "portDirection": "output",
+                    "portType": "Math::FCurve"
+                },
+                {
+                    "portName": "cps",
+                    "portDirection": "input",
+                    "portType": "array<TKCM::FCurvePoint>",
+                    "portDefault": []
+                },
+                {
+                    "portName": "preExtrapolation",
+                    "portDirection": "input",
+                    "portType": "TKCM::FCurveExtrapolationMode",
+                    "portDefault": "Constant"
+                },
+                {
+                    "portName": "postExtrapolation",
+                    "portDirection": "input",
+                    "portType": "TKCM::FCurveExtrapolationMode",
+                    "portDefault": "Constant"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "for_each",
+                    "metadata": [
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                        },
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-492 -60.5"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "31.000000"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "cps"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "35.000000"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "289.641 -38.859"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "cp_x"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-573.088 -276 1150.18 634"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "cps",
+                            "portDirection": "input",
+                            "portType": "array<TKCM::FCurvePoint>",
+                            "portIterationTarget": "true"
+                        },
+                        {
+                            "portName": "cp_x",
+                            "portDirection": "output",
+                            "portIterationTarget": "true"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "value",
+                            "valueType": "TKCM::FCurvePoint",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-229.967 -276.817"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "38.000000"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "value",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        },
+                                        {
+                                            "metaName": "output",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        },
+                                        {
+                                            "metaName": "output.cp",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": ".cps",
+                            "target": "value.value"
+                        },
+                        {
+                            "source": "value.output.cp.x",
+                            "target": ".cp_x"
+                        }
+                    ],
+                    "values": [],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ],
+                    "forEachCompound": {
+                        "ports": []
+                    },
+                    "libraryDependencies": {
+                        "Amino": "2.15.0.11",
+                        "TKCM pack": "2.15.0.0"
+                    }
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "construct_fcurve_core",
+                    "nodeType": "TKCM::Math::construct_fcurve_core",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "NodeWidthOffset",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "59.2073 -17.9729"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "for_each",
+                    "nodeType": "for_each",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-687.066 -274.653"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "31.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "sort_array_with_indices",
+                    "nodeType": "Core::Array::sort_array_with_indices",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-447.871 -270.683"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "32.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_from_array",
+                    "nodeType": "Core::Array::get_from_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-206.691 -113.866"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "construct_fcurve_core.fcurve",
+                    "target": ".fcurve"
+                },
+                {
+                    "source": ".cps",
+                    "target": "for_each.cps"
+                },
+                {
+                    "source": "for_each.cp_x",
+                    "target": "sort_array_with_indices.array"
+                },
+                {
+                    "source": ".cps",
+                    "target": "get_from_array.array"
+                },
+                {
+                    "source": "sort_array_with_indices.sorted_indices",
+                    "target": "get_from_array.index"
+                },
+                {
+                    "source": "get_from_array.value",
+                    "target": "construct_fcurve_core.cps"
+                },
+                {
+                    "source": ".preExtrapolation",
+                    "target": "construct_fcurve_core.preExtrapolation"
+                },
+                {
+                    "source": ".postExtrapolation",
+                    "target": "construct_fcurve_core.postExtrapolation"
+                }
+            ],
+            "values": [],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                },
+                {
+                    "name": "input1"
+                }
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11",
+                "TKCM pack": "2.15.0.0"
+            }
+        }
+    ]
+}

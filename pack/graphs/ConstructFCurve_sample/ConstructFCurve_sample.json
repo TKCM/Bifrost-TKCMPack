@@ -1,0 +1,544 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "TKCM::Math::ConstructFCurve_sample",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports"
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-998.35 -106.929"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "37.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "744.544 -157.317"
+                                        },
+                                        {
+                                            "metaName": "io_ports"
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "32.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-767.567 -646.298 1553.22 854"
+                },
+                {
+                    "metaName": "compoundIsGraph",
+                    "metaValue": "true"
+                },
+                {
+                    "metaName": "category",
+                    "metaType": "string",
+                    "metaValue": "Users/TKCM"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "true"
+                }
+            ],
+            "ports": [],
+            "compoundNodes": [
+                {
+                    "nodeName": "extrude_faces",
+                    "nodeType": "Modeling::Mesh::extrude_faces",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Extrusion Path",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "49.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "107.937 -419.284"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "create_mesh_plane",
+                    "nodeType": "Modeling::Primitive::create_mesh_plane",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "42.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-183.301 -545.817"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "long",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-181.513 -419.495"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "mesh_scope",
+                    "nodeType": "Diagnostic::Display::mesh_scope",
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "true"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "50.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "336.989 -416.455"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "construct_strands",
+                    "nodeType": "Geometry::Strands::construct_strands",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "44.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-183.06 -295.846"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value1",
+                    "valueType": "float",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "152.523 375.548"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "38.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "construct_fcurve",
+                    "nodeType": "TKCM::Math::construct_fcurve",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-177.248 -134.99"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "57.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "create_mesh_plane.plane_mesh",
+                    "target": "extrude_faces.mesh"
+                },
+                {
+                    "source": "value.output",
+                    "target": "extrude_faces.faces_to_extrude"
+                },
+                {
+                    "source": "extrude_faces.out_mesh",
+                    "target": "mesh_scope.mesh"
+                },
+                {
+                    "source": "construct_strands.strands",
+                    "target": "extrude_faces.strands_extrusion_path"
+                },
+                {
+                    "source": "construct_fcurve.fcurve",
+                    "target": "extrude_faces.taper"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "extrude_faces.faces_to_extrude",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "extrude_faces.divisions",
+                    "valueType": "long",
+                    "value": "20"
+                },
+                {
+                    "valueName": "extrude_faces.thickness",
+                    "valueType": "float",
+                    "value": "1.74800003f"
+                },
+                {
+                    "valueName": "extrude_faces.use_extrusion_path",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "extrude_faces.taper",
+                    "valueType": "Math::FCurve",
+                    "value": {
+                        "version": "2",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "curveInterpolation": "0",
+                                    "pcn": {
+                                        "xp": "-0.10000000000000001",
+                                        "yp": "0",
+                                        "x": "0",
+                                        "y": "0",
+                                        "xn": "0.10000000000000001",
+                                        "yn": "0"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "curveInterpolation": "0",
+                                    "pcn": {
+                                        "xp": "0.90000000000000002",
+                                        "yp": "1",
+                                        "x": "1",
+                                        "y": "1",
+                                        "xn": "1.1000000000000001",
+                                        "yn": "1"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "valueName": "extrude_faces.twist",
+                    "valueType": "Math::FCurve",
+                    "value": {
+                        "version": "2",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "curveInterpolation": "0",
+                                    "pcn": {
+                                        "xp": "-0.10000000000000001",
+                                        "yp": "0.003225",
+                                        "x": "0",
+                                        "y": "0",
+                                        "xn": "0.10000000000000001",
+                                        "yn": "0.003225"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "curveInterpolation": "0",
+                                    "pcn": {
+                                        "xp": "0.86363699999999999",
+                                        "yp": "0",
+                                        "x": "0.96363699999999997",
+                                        "y": "0",
+                                        "xn": "1.0636369999999999",
+                                        "yn": "0"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "valueName": "create_mesh_plane.length",
+                    "valueType": "float",
+                    "value": "10f"
+                },
+                {
+                    "valueName": "create_mesh_plane.width",
+                    "valueType": "float",
+                    "value": "10f"
+                },
+                {
+                    "valueName": "create_mesh_plane.length_segments",
+                    "valueType": "int",
+                    "value": "3L"
+                },
+                {
+                    "valueName": "create_mesh_plane.width_segments",
+                    "valueType": "int",
+                    "value": "3L"
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "long",
+                    "value": "4"
+                },
+                {
+                    "valueName": "mesh_scope.point_tag",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "mesh_scope.face_tag",
+                    "valueType": "string",
+                    "value": ""
+                },
+                {
+                    "valueName": "construct_strands.point_position",
+                    "valueType": "array<Math::float3>",
+                    "value": [
+                        {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f"
+                        },
+                        {
+                            "x": "0f",
+                            "y": "10f",
+                            "z": "0f"
+                        }
+                    ]
+                },
+                {
+                    "valueName": "construct_strands.strand_offset",
+                    "valueType": "array<uint>",
+                    "value": [
+                        "0U",
+                        "2U"
+                    ]
+                },
+                {
+                    "valueName": "construct_fcurve.cps",
+                    "valueType": "array<TKCM::FCurvePoint>",
+                    "value": [
+                        {
+                            "in_handle_cp": {
+                                "x": "0f",
+                                "y": "1f"
+                            },
+                            "cp": {
+                                "x": "0f",
+                                "y": "1f"
+                            },
+                            "out_handle_cp": {
+                                "x": "0.200000003f",
+                                "y": "1f"
+                            },
+                            "spanInterpMethod": "Curve",
+                            "curveMethod": "Bezier",
+                            "lock": "false"
+                        },
+                        {
+                            "in_handle_cp": {
+                                "x": "0.200000003f",
+                                "y": "0f"
+                            },
+                            "cp": {
+                                "x": "0.300000012f",
+                                "y": "0.800000012f"
+                            },
+                            "out_handle_cp": {
+                                "x": "0.800000012f",
+                                "y": "0f"
+                            },
+                            "spanInterpMethod": "Curve",
+                            "curveMethod": "Bezier",
+                            "lock": "false"
+                        },
+                        {
+                            "in_handle_cp": {
+                                "x": "0.400000006f",
+                                "y": "0f"
+                            },
+                            "cp": {
+                                "x": "1f",
+                                "y": "0f"
+                            },
+                            "out_handle_cp": {
+                                "x": "0f",
+                                "y": "0f"
+                            },
+                            "spanInterpMethod": "Curve",
+                            "curveMethod": "Bezier",
+                            "lock": "false"
+                        }
+                    ]
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11",
+                "TKCM pack": "2.15.0.0",
+                "bif": "2.15.0.11",
+                "geometries": "2.15.0.11"
+            }
+        }
+    ]
+}

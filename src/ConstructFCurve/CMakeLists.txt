@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.20)
 
 set( BIFROST_VERSION "2.15.0.0")
 set( BIFROST_LOCATION "C:/Program Files/Autodesk/Bifrost/Maya2026/${BIFROST_VERSION}/bifrost" )
-set( PRJ_NAME "ToFCurve" )
+set( PRJ_NAME "ConstructFCurve" )
 
 # Project Name
 project(
