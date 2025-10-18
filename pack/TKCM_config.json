@@ -20,7 +20,7 @@
             "SplitEdgeOps",
             "SnapOps",
             "ConvexHullOps",
-            "ToFCurveOps"
+            "ConstructFCurveOps"
           ]
         }
       ],

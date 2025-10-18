@@ -78,7 +78,7 @@ namespace TKCM {
 	) AMINO_ANNOTATE(
 		"Amino::Node "
 		"name=Math::construct_fcurve_core "
-		"metadata=[{icon, ../icon/tkcm_internal.png}, {internal, string, false}] "
+		"metadata=[{icon, ../icon/tkcm_internal.png}, {internal, string, true}] "
 	);
 }
 
