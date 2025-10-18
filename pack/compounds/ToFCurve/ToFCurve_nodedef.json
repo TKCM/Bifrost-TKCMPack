@@ -1,0 +1,84 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "operators": [
+        {
+            "name": "TKCM::Math::to_fcurve",
+            "msMangle": "?to_fcurve@TKCM@@YAXAEBV?$Ptr@V?$Array@Ufloat2@Math@Bifrost@@@Amino@@@Amino@@AEBV?$Ptr@V?$Array@E@Amino@@@3@1AEBV?$Ptr@V?$Array@_N@Amino@@@3@AEBE3AEAV?$MutablePtr@VFCurve@Math@Bifrost@@@3@AEA_N@Z",
+            "itaniumMangle": "_ZN4TKCM9to_fcurveERKN5Amino3PtrINS0_5ArrayIN7Bifrost4Math6float2EEEEERKNS1_INS2_IhEEEESD_RKNS1_INS2_IbEEEERKhSJ_RNS0_10MutablePtrINS4_6FCurveEEERb",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icon/tkcm_internal.png"
+                },
+                {
+                    "metaName": "internal",
+                    "metaType": "string",
+                    "metaValue": "true"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "cp",
+                    "portDirection": "input",
+                    "portType": "array<Math::float2>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "spanInterpolation",
+                    "portDirection": "input",
+                    "portType": "array<uchar>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "curveInterpolation",
+                    "portDirection": "input",
+                    "portType": "array<uchar>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "lock",
+                    "portDirection": "input",
+                    "portType": "array<bool>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "preExtrapolation",
+                    "portDirection": "input",
+                    "portType": "uchar",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "postExtrapolation",
+                    "portDirection": "input",
+                    "portType": "uchar",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "fcurve",
+                    "portDirection": "output",
+                    "portType": "Math::FCurve",
+                    "portConvention": "byReferenceToMutablePtr"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool",
+                    "portConvention": "byReference"
+                }
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
+        }
+    ]
+}
