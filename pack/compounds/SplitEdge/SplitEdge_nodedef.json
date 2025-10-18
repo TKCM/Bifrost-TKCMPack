@@ -150,7 +150,10 @@
                     "portType": "bool",
                     "portConvention": "byReference"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         }
     ]
 }

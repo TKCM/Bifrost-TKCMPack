@@ -31,7 +31,7 @@ amino_cpp2json(
     INCLUDES        ${BIFROST_LOCATION}/sdk/include
     INCLUDES        ${BIFROST_LOCATION}/sdk/include/Amino
     INCLUDES        "${CMAKE_CURRENT_SOURCE_DIR}/../../../oss/eigen"
-    INCLUDES        "C:/D/GitHub/MayaPlugins/maya_SDK/include"
+    INCLUDES        "C:/Program Files/Autodesk/Maya2026/include"
     DEFINES         "_MT"                     
 )
 

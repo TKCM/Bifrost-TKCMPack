@@ -1,3 +1,7 @@
+#if 1930 <= _MSC_VER // Visual Studio 2022 (MSVC 14.30 以降)
+#define _ALLOW_COMPILER_AND_STL_VERSION_MISMATCH // Clangのバージョンエラーが出るのを無視する
+#endif
+
 #ifndef BIF_DELETEUNUSEDMESHCOMPONENTS_H
 #define BIF_DELETEUNUSEDMESHCOMPONENTS_H
 // Bifrost Amino

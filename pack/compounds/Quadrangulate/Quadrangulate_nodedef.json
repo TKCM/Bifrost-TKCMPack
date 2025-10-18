@@ -63,7 +63,10 @@
                     "portType": "array<bool>",
                     "portConvention": "byReferenceToMutablePtr"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         }
     ]
 }

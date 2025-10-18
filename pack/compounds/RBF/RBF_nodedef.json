@@ -57,7 +57,10 @@
                     "portType": "bool",
                     "portConvention": "byReference"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         },
         {
             "name": "TKCM::RBF::Internal::setup",
@@ -106,7 +109,10 @@
                     "portType": "bool",
                     "portConvention": "byReference"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         }
     ]
 }

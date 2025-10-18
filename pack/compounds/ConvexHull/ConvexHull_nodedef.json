@@ -129,7 +129,10 @@
                     "portType": "bool",
                     "portConvention": "byReference"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         },
         {
             "name": "TKCM::Geometry::Internal::quick_hull_core",
@@ -178,7 +181,10 @@
                     "portType": "bool",
                     "portConvention": "byReference"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         },
         {
             "name": "TKCM::Geometry::Internal::plane_quick_hull_core",
@@ -227,7 +233,10 @@
                     "portType": "bool",
                     "portConvention": "byReference"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         }
     ]
 }

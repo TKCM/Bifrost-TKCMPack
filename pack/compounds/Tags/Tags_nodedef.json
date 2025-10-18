@@ -75,7 +75,10 @@
                     "portType": "bool",
                     "portConvention": "byReference"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         },
         {
             "name": "TKCM::Geometry::Tags::Internal::vertex_tag_promote",
@@ -160,7 +163,10 @@
                     "portType": "bool",
                     "portConvention": "byReference"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         },
         {
             "name": "TKCM::Geometry::Tags::Internal::face_tag_promote",
@@ -221,7 +227,10 @@
                     "portType": "bool",
                     "portConvention": "byReference"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         },
         {
             "name": "TKCM::Geometry::Tags::Internal::to_face_vertex",
@@ -271,7 +280,10 @@
                     "portType": "bool",
                     "portConvention": "byReference"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         },
         {
             "name": "TKCM::Geometry::Tags::Internal::tag_mesh_border_core",
@@ -332,7 +344,10 @@
                     "portType": "bool",
                     "portConvention": "byReference"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         }
     ]
 }

@@ -76,7 +76,10 @@
                     "portType": "bool",
                     "portConvention": "byReference"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         },
         {
             "name": "TKCM::Modeling_Toolbox::Internal::snap_geometry_core",
@@ -174,7 +177,10 @@
                     "portType": "bool",
                     "portConvention": "byReference"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         },
         {
             "name": "TKCM::Modeling_Toolbox::Internal::snap_grid_point",
@@ -211,7 +217,10 @@
                     "portType": "array<Math::float3>",
                     "portConvention": "byReferenceToMutablePtr"
                 }
-            ]
+            ],
+            "libraryDependencies": {
+                "Amino": "2.15.0.11"
+            }
         }
     ]
 }
