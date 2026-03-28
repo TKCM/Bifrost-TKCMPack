@@ -19,7 +19,8 @@
             "DetachMeshComponentsOps",
             "SplitEdgeOps",
             "SnapOps",
-            "ConvexHullOps"
+            "ConvexHullOps",
+            "ConstructFCurveOps"
           ]
         }
       ],

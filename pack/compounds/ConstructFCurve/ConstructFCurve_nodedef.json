@@ -8,12 +8,120 @@
         ]
     },
     "namespaces": [],
-    "types": [],
+    "types": [
+        {
+            "enumName": "TKCM::FCurveSpanInterpolationMethod",
+            "msTypeNameMangleName": "W4FCurveSpanInterpolationMethod@TKCM@@",
+            "itaniumTypeNameMangleName": "N4TKCM29FCurveSpanInterpolationMethodE",
+            "enumMembers": [
+                {
+                    "enumKey": "Curve",
+                    "enumValue": "0"
+                },
+                {
+                    "enumKey": "Constant",
+                    "enumValue": "1"
+                },
+                {
+                    "enumKey": "Linear",
+                    "enumValue": "2"
+                }
+            ]
+        },
+        {
+            "enumName": "TKCM::FCurveCurveInterpolationMethod",
+            "msTypeNameMangleName": "W4FCurveCurveInterpolationMethod@TKCM@@",
+            "itaniumTypeNameMangleName": "N4TKCM30FCurveCurveInterpolationMethodE",
+            "enumMembers": [
+                {
+                    "enumKey": "Bezier",
+                    "enumValue": "0"
+                },
+                {
+                    "enumKey": "Hermite",
+                    "enumValue": "1"
+                },
+                {
+                    "enumKey": "Sine",
+                    "enumValue": "2"
+                },
+                {
+                    "enumKey": "Parabolic",
+                    "enumValue": "3"
+                },
+                {
+                    "enumKey": "TangentLog",
+                    "enumValue": "4"
+                }
+            ]
+        },
+        {
+            "enumName": "TKCM::FCurveExtrapolationMode",
+            "msTypeNameMangleName": "W4FCurveExtrapolationMode@TKCM@@",
+            "itaniumTypeNameMangleName": "N4TKCM23FCurveExtrapolationModeE",
+            "enumMembers": [
+                {
+                    "enumKey": "Constant",
+                    "enumValue": "0"
+                },
+                {
+                    "enumKey": "Linear",
+                    "enumValue": "1"
+                },
+                {
+                    "enumKey": "Cycle",
+                    "enumValue": "2"
+                },
+                {
+                    "enumKey": "RelativeRepeat",
+                    "enumValue": "3"
+                },
+                {
+                    "enumKey": "Oscillate",
+                    "enumValue": "4"
+                }
+            ]
+        },
+        {
+            "structName": "TKCM::FCurvePoint",
+            "msTypeNameMangleName": "UFCurvePoint@TKCM@@",
+            "itaniumTypeNameMangleName": "N4TKCM11FCurvePointE",
+            "structMembers": [
+                {
+                    "memberName": "in_handle_cp",
+                    "memberType": "Math::float2"
+                },
+                {
+                    "memberName": "cp",
+                    "memberType": "Math::float2"
+                },
+                {
+                    "memberName": "out_handle_cp",
+                    "memberType": "Math::float2"
+                },
+                {
+                    "memberName": "spanInterpMethod",
+                    "memberType": "TKCM::FCurveSpanInterpolationMethod"
+                },
+                {
+                    "memberName": "curveMethod",
+                    "memberType": "TKCM::FCurveCurveInterpolationMethod"
+                },
+                {
+                    "memberName": "lock",
+                    "memberType": "bool"
+                }
+            ],
+            "libraryDependencies": {
+                "Amino": "3.0.0.1"
+            }
+        }
+    ],
     "operators": [
         {
             "name": "TKCM::Math::construct_fcurve_core",
-            "msMangle": "?construct_fcurve_core@TKCM@@YAXAEAV?$MutablePtr@V?$Array@M@Amino@@@Amino@@@Z",
-            "itaniumMangle": "_ZN4TKCM21construct_fcurve_coreERN5Amino10MutablePtrINS0_5ArrayIfEEEE",
+            "msMangle": "?construct_fcurve_core@TKCM@@YAXAEBV?$Ptr@V?$Array@UFCurvePoint@TKCM@@@Amino@@@Amino@@AEBW4FCurveExtrapolationMode@1@1AEAV?$MutablePtr@VFCurve@Math@Bifrost@@@3@@Z",
+            "itaniumMangle": "_ZN4TKCM21construct_fcurve_coreERKN5Amino3PtrINS0_5ArrayINS_11FCurvePointEEEEERKNS_23FCurveExtrapolationModeESA_RNS0_10MutablePtrIN7Bifrost4Math6FCurveEEE",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -28,9 +136,27 @@
             ],
             "ports": [
                 {
-                    "portName": "result",
+                    "portName": "cps",
+                    "portDirection": "input",
+                    "portType": "array<TKCM::FCurvePoint>",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "preExtrapolation",
+                    "portDirection": "input",
+                    "portType": "TKCM::FCurveExtrapolationMode",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "postExtrapolation",
+                    "portDirection": "input",
+                    "portType": "TKCM::FCurveExtrapolationMode",
+                    "portConvention": "byReference"
+                },
+                {
+                    "portName": "fcurve",
                     "portDirection": "output",
-                    "portType": "array<float>",
+                    "portType": "Math::FCurve",
                     "portConvention": "byReferenceToMutablePtr"
                 }
             ],

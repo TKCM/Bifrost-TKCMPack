@@ -38,3 +38,4 @@ src/SplitPolygon/out/
 oss/
 src/array_test/out/
 src/array_test/.vs/
+*.zip
