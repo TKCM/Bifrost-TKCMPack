@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
-set( BIFROST_VERSION "2.15.0.0")
 set( MAYA_VERSION "2026")
+set( BIFROST_VERSION "3.0.0.1")
 set( BIFROST_LOCATION "C:/Program Files/Autodesk/Bifrost/Maya${MAYA_VERSION}/${BIFROST_VERSION}/bifrost" )
 set( PRJ_NAME "InstantMeshes" )
 
@@ -21,6 +21,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/dset)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/pss-master)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/pcg32)
 include_directories("C:/Program Files/Autodesk/Maya${MAYA_VERSION}/include") # tbb
+
 
 # ignore warning c4819
 add_compile_options(/wd4819)

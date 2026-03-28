@@ -131,7 +131,7 @@
                 }
             ],
             "libraryDependencies": {
-                "Amino": "2.15.0.11"
+                "Amino": "3.0.0.1"
             }
         }
     ]

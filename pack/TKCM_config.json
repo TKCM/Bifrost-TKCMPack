@@ -3,7 +3,7 @@
     {
       "vendorName": "TKCM",
       "libraryName": "TKCM pack",
-      "libraryVersion": "2.15.0.0",
+      "libraryVersion": "0.1",
       "sharedLibs": [
         {
           "path": "./bin",
@@ -19,8 +19,7 @@
             "DetachMeshComponentsOps",
             "SplitEdgeOps",
             "SnapOps",
-            "ConvexHullOps",
-            "ConstructFCurveOps"
+            "ConvexHullOps"
           ]
         }
       ],

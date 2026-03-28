@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
 
-set( BIFROST_VERSION "2.15.0.0")
-set( BIFROST_LOCATION "C:/Program Files/Autodesk/Bifrost/Maya2026/${BIFROST_VERSION}/bifrost" )
+set( MAYA_VERSION "2026")
+set( BIFROST_VERSION "3.0.0.1")
+set( BIFROST_LOCATION "C:/Program Files/Autodesk/Bifrost/Maya${MAYA_VERSION}/${BIFROST_VERSION}/bifrost" )
 set( PRJ_NAME "ConvexHull" )
 
 # Project Name

@@ -16,65 +16,68 @@
 
 // TKCM
 #include "../../core/TKCM_core.h"
-#include "../../core/TKCM_fn.h"
+//#include "../../core/TKCM_fn.h"
 //#include "functions.h"
 
 namespace TKCM {
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	enum class AMINO_ANNOTATE("Amino::Enum") FCurveSpanInterpolationMethod {
-		Curve,
-		Constant,
-		Linear
-	};
-
-	constexpr Bifrost::Math::FCurve::SpanInterpolationMethod toAminoEnum(FCurveSpanInterpolationMethod value) {
-		switch (value) {
-			case FCurveSpanInterpolationMethod::Curve:		return Bifrost::Math::FCurve::SpanInterpolationMethod::Curve;
-			case FCurveSpanInterpolationMethod::Constant:	return Bifrost::Math::FCurve::SpanInterpolationMethod::Constant;
-			case FCurveSpanInterpolationMethod::Linear:		return Bifrost::Math::FCurve::SpanInterpolationMethod::Linear;
-		}
-	}
-
-	enum class AMINO_ANNOTATE("Amino::Enum") FCurveCurveInterpolationMethod {
-		Bezier,
-		Hermite,
-		Sine,
-		Parabolic,
-		TangentLog
-	};
-
-	constexpr Bifrost::Math::FCurve::CurveInterpolationMethod toAminoEnum(FCurveCurveInterpolationMethod value) {
-		switch (value) {
-			case FCurveCurveInterpolationMethod::Bezier:		return Bifrost::Math::FCurve::CurveInterpolationMethod::Bezier;
-			case FCurveCurveInterpolationMethod::Hermite:		return Bifrost::Math::FCurve::CurveInterpolationMethod::Hermite;
-			case FCurveCurveInterpolationMethod::Sine:			return Bifrost::Math::FCurve::CurveInterpolationMethod::Sine;
-			case FCurveCurveInterpolationMethod::Parabolic:		return Bifrost::Math::FCurve::CurveInterpolationMethod::Parabolic;
-			case FCurveCurveInterpolationMethod::TangentLog:	return Bifrost::Math::FCurve::CurveInterpolationMethod::TangentLog;
-		}
-	}
-
-	enum class AMINO_ANNOTATE("Amino::Enum") FCurveExtrapolationMode {
-		Constant,
-		Linear,
-		Cycle,
-		RelativeRepeat,
-		Oscillate
-	};
-
-	struct AMINO_ANNOTATE("Amino::Struct") FCurvePoint {
-		Bifrost::Math::float2 in_handle_cp, cp, out_handle_cp;
-		FCurveSpanInterpolationMethod spanInterpMethod;
-		FCurveCurveInterpolationMethod curveMethod;
-		bool lock;
-    };
+//	////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	enum class AMINO_ANNOTATE("Amino::Enum") FCurveSpanInterpolationMethod {
+//		Curve,
+//		Constant,
+//		Linear
+//	};
+//
+//	constexpr Bifrost::Math::FCurve::SpanInterpolationMethod toAminoEnum(FCurveSpanInterpolationMethod value) {
+//		switch (value) {
+//			case FCurveSpanInterpolationMethod::Curve:		return Bifrost::Math::FCurve::SpanInterpolationMethod::Curve;
+//			case FCurveSpanInterpolationMethod::Constant:	return Bifrost::Math::FCurve::SpanInterpolationMethod::Constant;
+//			case FCurveSpanInterpolationMethod::Linear:		return Bifrost::Math::FCurve::SpanInterpolationMethod::Linear;
+//			default:										return Bifrost::Math::FCurve::SpanInterpolationMethod::Linear;
+//		}
+//	}
+//
+//	enum class AMINO_ANNOTATE("Amino::Enum") FCurveCurveInterpolationMethod {
+//		Bezier,
+//		Hermite,
+//		Sine,
+//		Parabolic,
+//		TangentLog
+//	};
+//
+//	constexpr Bifrost::Math::FCurve::CurveInterpolationMethod toAminoEnum(FCurveCurveInterpolationMethod value) {
+//		switch (value) {
+//			case FCurveCurveInterpolationMethod::Bezier:		return Bifrost::Math::FCurve::CurveInterpolationMethod::Bezier;
+//			case FCurveCurveInterpolationMethod::Hermite:		return Bifrost::Math::FCurve::CurveInterpolationMethod::Hermite;
+//			case FCurveCurveInterpolationMethod::Sine:			return Bifrost::Math::FCurve::CurveInterpolationMethod::Sine;
+//			case FCurveCurveInterpolationMethod::Parabolic:		return Bifrost::Math::FCurve::CurveInterpolationMethod::Parabolic;
+//			case FCurveCurveInterpolationMethod::TangentLog:	return Bifrost::Math::FCurve::CurveInterpolationMethod::TangentLog;
+//			default:											return Bifrost::Math::FCurve::CurveInterpolationMethod::Bezier;
+//		}
+//	}
+//
+//	enum class AMINO_ANNOTATE("Amino::Enum") FCurveExtrapolationMode {
+//		Constant,
+//		Linear,
+//		Cycle,
+//		RelativeRepeat,
+//		Oscillate
+//	};
+//
+//	struct AMINO_ANNOTATE("Amino::Struct") FCurvePoint {
+//		Bifrost::Math::float2 in_handle_cp, cp, out_handle_cp;
+//		FCurveSpanInterpolationMethod spanInterpMethod;
+//		FCurveCurveInterpolationMethod curveMethod;
+//		bool lock;
+//    };
 
 	TKCM_DECL
 	void construct_fcurve_core(
-		const	Amino::Ptr<Amino::Array<FCurvePoint>>& cps,
-		const	FCurveExtrapolationMode& preExtrapolation,
-		const	FCurveExtrapolationMode& postExtrapolation,
-		Amino::MutablePtr<Bifrost::Math::FCurve>& fcurve
+		//const	Amino::Ptr<Amino::Array<FCurvePoint>>& cps,
+		//const	FCurveExtrapolationMode& preExtrapolation,
+		//const	FCurveExtrapolationMode& postExtrapolation,
+		////Amino::MutablePtr<Bifrost::Math::FCurve>& fcurve,
+		Amino::MutablePtr<Amino::Array<float>>& result
 	) AMINO_ANNOTATE(
 		"Amino::Node "
 		"name=Math::construct_fcurve_core "
