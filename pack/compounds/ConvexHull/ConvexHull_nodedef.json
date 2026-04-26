@@ -131,7 +131,7 @@
                 }
             ],
             "libraryDependencies": {
-                "Amino": "3.0.0.1"
+                "Amino": "3.1.0.8"
             }
         },
         {
@@ -183,7 +183,7 @@
                 }
             ],
             "libraryDependencies": {
-                "Amino": "3.0.0.1"
+                "Amino": "3.1.0.8"
             }
         },
         {
@@ -235,7 +235,7 @@
                 }
             ],
             "libraryDependencies": {
-                "Amino": "3.0.0.1"
+                "Amino": "3.1.0.8"
             }
         }
     ]
