@@ -69,7 +69,7 @@ Option additional version - "include_all_face_points"
 
 ## mesh_edge_to_strands
 
-## get_mesh_uv_number 
+## get_mesh_uv_number
 
 ## set_geo_color
 
