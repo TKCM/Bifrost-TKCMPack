@@ -39,3 +39,5 @@ oss/
 src/array_test/out/
 src/array_test/.vs/
 *.zip
+src/ConstructFCurve/.vs/
+src/ConstructFCurve/out/

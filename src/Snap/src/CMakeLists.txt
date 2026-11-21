@@ -2,8 +2,8 @@
 set( OPS_NAME ${PRJ_NAME}Ops)
 add_library( ${OPS_NAME} SHARED)
 set( source_files
-    "Snap_nodedef.cpp"
-    "Snap_nodedef.h"
+    Snap_nodedef.cpp
+    Snap_nodedef.h
 )
 target_compile_definitions( ${OPS_NAME} PRIVATE TKCM_BUILD_NODEDEF_DLL )
 target_sources( ${OPS_NAME} PRIVATE ${source_files})
@@ -19,12 +19,21 @@ set( headers_to_parse
     Snap_nodedef.h
 )
 
-bifrost_header_parser( 
-    ${PRJ_NAME}JsonFiles  # Name of the target.
-    "json/${PROJECT_NAME}" # Install and build dirs - relative to install prefix
-                           # and build directory
-    INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}
-    HEADER_FILES ${headers_to_parse})
+amino_cpp2json(
+                    ${PRJ_NAME}JsonFiles
+    CPP2JSON        ${BIFROST_LOCATION}/bin/cpp2json.exe
+    HEADER_FILES    ${headers_to_parse}
+    INCLUDE_DIRS    ${CMAKE_CURRENT_SOURCE_DIR}
+    INCLUDE_DIRS    ${BIFROST_LOCATION}/sdk/include
+    INCLUDE_DIRS    ${BIFROST_LOCATION}/sdk/include/Amino
+    DEFINITIONS     "_MT"
+    PATH            ${BIFROST_LOCATION}/thirdparty/bin/tbb.dll                       
+)
+
+add_dependencies(
+    ${OPS_NAME}
+    ${PRJ_NAME}JsonFiles
+)
 
 # Create config json file to load the bifrost pack
 set( CONFIG_PACK_VERSION    "${PROJECT_VERSION}")
@@ -37,8 +46,22 @@ configure_file(${common_config_json}.in ${config_json} )
 install(FILES ${config_json} DESTINATION . )
 
 # duplicate dll/json to pack dir 
+set(PACK_BIN_DIR
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/bin"
+)
+set(PACK_JSON_DIR
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/compounds/${PRJ_NAME}"
+)
 add_custom_command(
-  TARGET ${OPS_NAME} POST_BUILD
-  COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/../out/build/x64-Release/src/${OPS_NAME}.dll" "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/bin"
-  COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/../out/build/x64-Release/json/${PRJ_NAME}/${PRJ_NAME}_nodedef.json" "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/compounds/${PRJ_NAME}"
+    TARGET ${OPS_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory
+        "${PACK_BIN_DIR}"
+        "${PACK_JSON_DIR}"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "$<TARGET_FILE:${OPS_NAME}>"
+        "${PACK_BIN_DIR}"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${CMAKE_CURRENT_BINARY_DIR}/${PRJ_NAME}_nodedef.json"
+        "${PACK_JSON_DIR}"
+    VERBATIM
 )

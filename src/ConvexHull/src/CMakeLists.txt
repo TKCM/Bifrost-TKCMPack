@@ -2,7 +2,6 @@
 set( OPS_NAME ${PRJ_NAME}Ops)
 add_library( ${OPS_NAME} SHARED)
 set( source_files
-    
 	ConvexHull_functions.h
     ConvexHull_nodedef.cpp
 	ConvexHull_nodedef.h
@@ -22,15 +21,20 @@ set( headers_to_parse
 )
 
 amino_cpp2json(
-    TARGET          ${PRJ_NAME}JsonFiles
+                    ${PRJ_NAME}JsonFiles
     CPP2JSON        ${BIFROST_LOCATION}/bin/cpp2json.exe
-    INPUT           ${headers_to_parse}
-    INCLUDES        ${CMAKE_CURRENT_SOURCE_DIR}
-    INCLUDES        ${BIFROST_LOCATION}/sdk/include
-    INCLUDES        ${BIFROST_LOCATION}/sdk/include/Amino
-    INCLUDES        "${CMAKE_CURRENT_SOURCE_DIR}/../../../"
-    DEFINES         "_MT"
+    HEADER_FILES    ${headers_to_parse}
+    INCLUDE_DIRS    ${CMAKE_CURRENT_SOURCE_DIR}
+    INCLUDE_DIRS    ${BIFROST_LOCATION}/sdk/include
+    INCLUDE_DIRS    ${BIFROST_LOCATION}/sdk/include/Amino
+    INCLUDE_DIRS    "${CMAKE_CURRENT_SOURCE_DIR}/../../../"
+    DEFINITIONS     "_MT"
     PATH            ${BIFROST_LOCATION}/thirdparty/bin/tbb.dll                       
+)
+
+add_dependencies(
+    ${OPS_NAME}
+    ${PRJ_NAME}JsonFiles
 )
 
 # Create config json file to load the bifrost pack
@@ -44,8 +48,22 @@ configure_file(${common_config_json}.in ${config_json} )
 install(FILES ${config_json} DESTINATION . )
 
 # duplicate dll/json to pack dir 
+set(PACK_BIN_DIR
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/bin"
+)
+set(PACK_JSON_DIR
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/compounds/${PRJ_NAME}"
+)
 add_custom_command(
-  TARGET ${OPS_NAME} POST_BUILD
-  COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/../out/build/x64-Release/src/${OPS_NAME}.dll" "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/bin"
-  COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/../out/build/x64-Release/src/${PRJ_NAME}_nodedef.json" "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/compounds/${PRJ_NAME}"
+    TARGET ${OPS_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory
+        "${PACK_BIN_DIR}"
+        "${PACK_JSON_DIR}"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "$<TARGET_FILE:${OPS_NAME}>"
+        "${PACK_BIN_DIR}"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${CMAKE_CURRENT_BINARY_DIR}/${PRJ_NAME}_nodedef.json"
+        "${PACK_JSON_DIR}"
+    VERBATIM
 )

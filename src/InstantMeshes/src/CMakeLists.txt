@@ -24,15 +24,20 @@ set( headers_to_parse
 )
 
 amino_cpp2json(
-    TARGET          ${PRJ_NAME}JsonFiles
+              ${PRJ_NAME}JsonFiles
     CPP2JSON        ${BIFROST_LOCATION}/bin/cpp2json.exe
-    INPUT           ${headers_to_parse}
-    INCLUDES        ${CMAKE_CURRENT_SOURCE_DIR}
-    INCLUDES        ${BIFROST_LOCATION}/sdk/include
-    INCLUDES        ${BIFROST_LOCATION}/sdk/include/Amino
-    INCLUDES        ${CMAKE_CURRENT_SOURCE_DIR}/../../../oss/eigen
-    INCLUDES        "C:/Program Files/Autodesk/Maya${MAYA_VERSION}/include"
-    DEFINES         "_MT"                     
+    HEADER_FILES    ${headers_to_parse}
+    INCLUDE_DIRS    ${CMAKE_CURRENT_SOURCE_DIR}
+    INCLUDE_DIRS    ${BIFROST_LOCATION}/sdk/include
+    INCLUDE_DIRS    ${BIFROST_LOCATION}/sdk/include/Amino
+    INCLUDE_DIRS    ${CMAKE_CURRENT_SOURCE_DIR}/../../../oss/eigen
+    INCLUDE_DIRS    "C:/Program Files/Autodesk/Maya${MAYA_VERSION}/include"
+    DEFINITIONS     "_MT"                     
+)
+
+add_dependencies(
+    ${OPS_NAME}
+    ${PRJ_NAME}JsonFiles
 )
 
 # Create config json file to load the bifrost pack
@@ -47,7 +52,7 @@ install(FILES ${config_json} DESTINATION . )
 
 # duplicate dll/json to pack dir 
 add_custom_command(
-  TARGET ${OPS_NAME} POST_BUILD
-  COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/../out/build/x64-Release/src/${OPS_NAME}.dll" "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/bin"
-  COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/../out/build/x64-Release/src/${PRJ_NAME}_nodedef.json" "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/compounds/${PRJ_NAME}"
+    TARGET ${OPS_NAME} POST_BUILD 
+    COMMAND ${CMAKE_COMMAND} -E copy "$<TARGET_FILE_DIR:${OPS_NAME}>/${OPS_NAME}.dll" "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/bin"
+    COMMAND ${CMAKE_COMMAND} -E copy "$<TARGET_FILE_DIR:${OPS_NAME}>/${PRJ_NAME}_nodedef.json" "${CMAKE_CURRENT_SOURCE_DIR}/../../../pack/compounds/${PRJ_NAME}"
 )
