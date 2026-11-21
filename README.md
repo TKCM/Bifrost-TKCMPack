@@ -71,6 +71,8 @@ Option additional version - "include_all_face_points"
 
 ## get_mesh_uv_number 
 
+## set_geo_color
+
 # Known issues
 [split_edge]  
 : Due to a bug in the transfer_properties_by_weighted_sum node, the transfer of point_component/face_vertex_component properties is not performed correctly.  
