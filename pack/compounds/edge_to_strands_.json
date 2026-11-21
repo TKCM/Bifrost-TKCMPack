@@ -12,102 +12,107 @@
     "compounds": [
         {
             "name": "TKCM::Geometry::edge_to_strands_",
-            "metadata": [
+          "metadata": [
+            {
+              "metaName": "io_nodes",
+              "metadata": [
                 {
-                    "metaName": "io_nodes",
-                    "metadata": [
+                  "metaName": "io_inodes",
+                  "metadata": [
+                    {
+                      "metaName": "input",
+                      "metadata": [
                         {
-                            "metaName": "io_inodes",
-                            "metadata": [
-                                {
-                                    "metaName": "input",
-                                    "metadata": [
-                                        {
-                                            "metaName": "DisplayMode",
-                                            "metaType": "string",
-                                            "metaValue": "2"
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-704 -110.024"
-                                        },
-                                        {
-                                            "metaName": "io_ports",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "mesh"
-                                                },
-                                                {
-                                                    "metaName": "point_mask"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "metaName": "zValue",
-                                            "metaType": "string",
-                                            "metaValue": "31.000000"
-                                        }
-                                    ]
-                                }
-                            ]
+                          "metaName": "DisplayMode",
+                          "metaType": "string",
+                          "metaValue": "2"
                         },
                         {
-                            "metaName": "io_onodes",
-                            "metadata": [
-                                {
-                                    "metaName": "output",
-                                    "metadata": [
-                                        {
-                                            "metaName": "io_ports",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "strands"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "metaName": "DisplayMode",
-                                            "metaType": "string",
-                                            "metaValue": "2"
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "1481.56 -110.024"
-                                        },
-                                        {
-                                            "metaName": "zValue",
-                                            "metaType": "string",
-                                            "metaValue": "32.000000"
-                                        }
-                                    ]
-                                }
-                            ]
+                          "metaName": "LayoutPos",
+                          "metaType": "string",
+                          "metaValue": "-704 -110.024"
+                        },
+                        {
+                          "metaName": "io_ports",
+                          "metadata": [
+                            {
+                              "metaName": "mesh"
+                            },
+                            {
+                              "metaName": "point_mask"
+                            }
+                          ]
+                        },
+                        {
+                          "metaName": "zValue",
+                          "metaType": "string",
+                          "metaValue": "31.000000"
                         }
-                    ]
+                      ]
+                    }
+                  ]
                 },
                 {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "-718.761 -333 1654.52 718"
-                },
-                {
-                    "metaName": "DisplayMode",
-                    "metaType": "string",
-                    "metaValue": "2"
-                },
-                {
-                    "metaName": "LayoutPos",
-                    "metaType": "string",
-                    "metaValue": "-437.033 -478.519"
-                },
-                {
-                    "metaName": "zValue",
-                    "metaType": "string",
-                    "metaValue": "183.000000"
+                  "metaName": "io_onodes",
+                  "metadata": [
+                    {
+                      "metaName": "output",
+                      "metadata": [
+                        {
+                          "metaName": "io_ports",
+                          "metadata": [
+                            {
+                              "metaName": "strands"
+                            }
+                          ]
+                        },
+                        {
+                          "metaName": "DisplayMode",
+                          "metaType": "string",
+                          "metaValue": "2"
+                        },
+                        {
+                          "metaName": "LayoutPos",
+                          "metaType": "string",
+                          "metaValue": "1481.56 -110.024"
+                        },
+                        {
+                          "metaName": "zValue",
+                          "metaType": "string",
+                          "metaValue": "32.000000"
+                        }
+                      ]
+                    }
+                  ]
                 }
-            ],
+              ]
+            },
+            {
+              "metaName": "ViewportRect",
+              "metaType": "string",
+              "metaValue": "-718.761 -333 1654.52 718"
+            },
+            {
+              "metaName": "DisplayMode",
+              "metaType": "string",
+              "metaValue": "2"
+            },
+            {
+              "metaName": "LayoutPos",
+              "metaType": "string",
+              "metaValue": "-437.033 -478.519"
+            },
+            {
+              "metaName": "zValue",
+              "metaType": "string",
+              "metaValue": "183.000000"
+            },
+            {
+              "metaName": "icon",
+              "metaType": "string",
+              "metaValue": "icon/tkcm.png"
+            }
+          ],
             "terminalStates": [
                 {
                     "name": "Core::Graph::terminal::diagnostic",
