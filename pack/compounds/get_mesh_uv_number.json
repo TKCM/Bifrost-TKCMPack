@@ -1,0 +1,813 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "TKCM::Geometry::Mesh::get_mesh_uv_number",
+          "metadata": [
+            {
+              "metaName": "io_nodes",
+              "metadata": [
+                {
+                  "metaName": "io_inodes",
+                  "metadata": [
+                    {
+                      "metaName": "input",
+                      "metadata": [
+                        {
+                          "metaName": "DisplayMode",
+                          "metaType": "string",
+                          "metaValue": "2"
+                        },
+                        {
+                          "metaName": "io_ports",
+                          "metadata": [
+                            {
+                              "metaName": "mesh"
+                            }
+                          ]
+                        },
+                        {
+                          "metaName": "zValue",
+                          "metaType": "string",
+                          "metaValue": "44.000000"
+                        },
+                        {
+                          "metaName": "LayoutPos",
+                          "metaType": "string",
+                          "metaValue": "-613.057 -773.441"
+                        }
+                      ]
+                    },
+                    {
+                      "metaName": "input1",
+                      "metadata": [
+                        {
+                          "metaName": "io_ports",
+                          "metadata": [
+                            {
+                              "metaName": "uv_name"
+                            }
+                          ]
+                        },
+                        {
+                          "metaName": "DisplayMode",
+                          "metaType": "string",
+                          "metaValue": "2"
+                        },
+                        {
+                          "metaName": "zValue",
+                          "metaType": "string",
+                          "metaValue": "43.000000"
+                        },
+                        {
+                          "metaName": "LayoutPos",
+                          "metaType": "string",
+                          "metaValue": "913.576 -351.088"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "metaName": "io_onodes",
+                  "metadata": [
+                    {
+                      "metaName": "output",
+                      "metadata": [
+                        {
+                          "metaName": "DisplayMode",
+                          "metaType": "string",
+                          "metaValue": "2"
+                        },
+                        {
+                          "metaName": "zValue",
+                          "metaType": "string",
+                          "metaValue": "45.000000"
+                        },
+                        {
+                          "metaName": "LayoutPos",
+                          "metaType": "string",
+                          "metaValue": "1664.27 -895.528"
+                        },
+                        {
+                          "metaName": "io_ports",
+                          "metadata": [
+                            {
+                              "metaName": "uv_number"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "metaName": "ViewportRect",
+              "metaType": "string",
+              "metaValue": "-691 -1730.48 2731 2212.96"
+            },
+            {
+              "metaName": "DisplayMode",
+              "metaType": "string",
+              "metaValue": "2"
+            },
+            {
+              "metaName": "LayoutPos",
+              "metaType": "string",
+              "metaValue": "35.4547 -794.486"
+            },
+            {
+              "metaName": "zValue",
+              "metaType": "string",
+              "metaValue": "211.000000"
+            },
+            {
+              "metaName": "icon",
+              "metaType": "string",
+              "metaValue": "icon/tkcm.png"
+            }
+          ],
+            "ports": [
+                {
+                    "portName": "mesh",
+                    "portDirection": "input",
+                    "portType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "uv_number",
+                    "portDirection": "output",
+                    "portType": "long"
+                },
+                {
+                    "portName": "uv_name",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "map1"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "do_while",
+                    "metadata": [
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                        },
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-1186.67 40.7635"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "34.000000"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "mesh"
+                                                        },
+                                                        {
+                                                            "metaName": "uv_prop_names"
+                                                        },
+                                                        {
+                                                            "metaName": "uv_name"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "input1",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "current_index"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "48.000000"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "290.514 260.327"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "looping_condition"
+                                                        },
+                                                        {
+                                                            "metaName": "find"
+                                                        },
+                                                        {
+                                                            "metaName": "uv_number"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "zValue",
+                                                    "metaType": "string",
+                                                    "metaValue": "49.000000"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "576.861 21.2743"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-1168.2 -870 2200.39 1783"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "current_index",
+                            "portDirection": "input",
+                            "portType": "long",
+                            "portIterationCounter": "true"
+                        },
+                        {
+                            "portName": "mesh",
+                            "portDirection": "input",
+                            "portType": "Object"
+                        },
+                        {
+                            "portName": "uv_prop_names",
+                            "portDirection": "input",
+                            "portType": "array<string>",
+                            "portIterationTarget": "true"
+                        },
+                        {
+                            "portName": "uv_name",
+                            "portDirection": "input",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "find",
+                            "portDirection": "output",
+                            "portType": "bool"
+                        },
+                        {
+                            "portName": "uv_number",
+                            "portDirection": "output",
+                            "portType": "long"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "get_property_any1",
+                            "nodeType": "Core::Object::get_property_any",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-563.96 -93.8629"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "32.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "get_property",
+                            "nodeType": "Core::Object::get_property",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-856.944 -138.747"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "31.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "from_type_any1",
+                            "nodeType": "Core::Type_Conversion::from_type_any",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-290.01 -118.198"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "33.000000"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "equal",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "45.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "10.1215 40.5656"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "not",
+                            "nodeType": "Core::Logic::not",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "zValue",
+                                    "metaType": "string",
+                                    "metaValue": "47.000000"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "282.645 -49.5456"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "get_property_any1.value_any",
+                            "target": "from_type_any1.value_any"
+                        },
+                        {
+                            "source": "get_property.value",
+                            "target": "get_property_any1.object"
+                        },
+                        {
+                            "source": "from_type_any1.converted",
+                            "target": "equal.first"
+                        },
+                        {
+                            "source": "equal.output",
+                            "target": "not.value"
+                        },
+                        {
+                            "source": "not.output",
+                            "target": ".looping_condition"
+                        },
+                        {
+                            "source": "equal.output",
+                            "target": ".find"
+                        },
+                        {
+                            "source": ".current_index",
+                            "target": ".uv_number"
+                        },
+                        {
+                            "source": ".uv_name",
+                            "target": "equal.second"
+                        },
+                        {
+                            "source": ".uv_prop_names",
+                            "target": "get_property.key"
+                        },
+                        {
+                            "source": ".mesh",
+                            "target": "get_property.object"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "get_property_any1.key",
+                            "valueType": "string",
+                            "value": "dcc_name"
+                        },
+                        {
+                            "valueName": "get_property.default_and_type",
+                            "valueType": "Object",
+                            "value": {}
+                        },
+                        {
+                            "valueName": "get_property.key",
+                            "valueType": "string",
+                            "value": "face_vertex_uv1"
+                        },
+                        {
+                            "valueName": "from_type_any1.to_type",
+                            "valueType": "string",
+                            "value": " "
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        },
+                        {
+                            "name": "input1"
+                        }
+                    ],
+                    "whileCompound": {
+                        "ports": []
+                    },
+                    "libraryDependencies": {
+                        "Amino": "3.3.0.16",
+                        "bif": "3.3.0.16"
+                    }
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "do_while",
+                    "nodeType": "do_while",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1185.09 -873.849"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "41.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "filter_face_vertex_uv",
+                    "nodeType": "Core::Array::filter_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "198.629 -620.856"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "34.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "filter_index",
+                    "nodeType": "Core::Array::filter_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "NodeWidthOffset",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "911.421 -671.583"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "38.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_property_keys",
+                    "nodeType": "Core::Object::get_property_keys",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-305.857 -573.773"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "33.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1428.56 -897.017"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "not",
+                    "nodeType": "Core::Logic::not",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "684.886 -484.182"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "37.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "string_find",
+                    "nodeType": "Core::String::string_find",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-64.1424 -473.885"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "35.000000"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "string_find1",
+                    "nodeType": "Core::String::string_find",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "442.854 -484.182"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "36.000000"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "get_property_keys.keys",
+                    "target": "filter_face_vertex_uv.array"
+                },
+                {
+                    "source": "string_find.found",
+                    "target": "filter_face_vertex_uv.boolean_array"
+                },
+                {
+                    "source": "filter_face_vertex_uv.filtered_array",
+                    "target": "string_find1.string"
+                },
+                {
+                    "source": "filter_face_vertex_uv.filtered_array",
+                    "target": "filter_index.array"
+                },
+                {
+                    "source": "not.output",
+                    "target": "filter_index.boolean_array"
+                },
+                {
+                    "source": "get_property_keys.keys",
+                    "target": "string_find.string"
+                },
+                {
+                    "source": "string_find1.found",
+                    "target": "not.value"
+                },
+                {
+                    "source": "do_while.find",
+                    "target": "if.condition"
+                },
+                {
+                    "source": "do_while.uv_number",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": "filter_index.filtered_array",
+                    "target": "do_while.uv_prop_names"
+                },
+                {
+                    "source": ".mesh",
+                    "target": "get_property_keys.object"
+                },
+                {
+                    "source": ".mesh",
+                    "target": "do_while.mesh"
+                },
+                {
+                    "source": "if.output",
+                    "target": ".uv_number"
+                },
+                {
+                    "source": ".uv_name",
+                    "target": "do_while.uv_name"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "do_while.mesh",
+                    "valueType": "Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "do_while.uv_prop_names",
+                    "valueType": "array<string>",
+                    "value": []
+                },
+                {
+                    "valueName": "do_while.uv_name",
+                    "valueType": "string",
+                    "value": "map1"
+                },
+                {
+                    "valueName": "filter_face_vertex_uv.boolean_array",
+                    "valueType": "array<bool>",
+                    "value": []
+                },
+                {
+                    "valueName": "filter_index.boolean_array",
+                    "valueType": "array<bool>",
+                    "value": []
+                },
+                {
+                    "valueName": "if.false_case",
+                    "valueType": "long",
+                    "value": "-1"
+                },
+                {
+                    "valueName": "string_find.find",
+                    "valueType": "string",
+                    "value": "face_vertex_uv"
+                },
+                {
+                    "valueName": "string_find.end",
+                    "valueType": "long",
+                    "value": "-1"
+                },
+                {
+                    "valueName": "string_find1.find",
+                    "valueType": "string",
+                    "value": "index"
+                },
+                {
+                    "valueName": "string_find1.end",
+                    "valueType": "long",
+                    "value": "-1"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                },
+                {
+                    "name": "input1"
+                }
+            ],
+            "libraryDependencies": {
+                "Amino": "3.3.0.16",
+                "bif": "3.3.0.16"
+            }
+        }
+    ]
+}
