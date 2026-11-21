@@ -67,6 +67,10 @@ https://vimeo.com/manage/videos/896561829
 ## update_point_neighbors_plus
 Option additional version - "include_all_face_points"
 
+## mesh_edge_to_strands
+
+## get_mesh_uv_number 
+
 # Known issues
 [split_edge]  
 : Due to a bug in the transfer_properties_by_weighted_sum node, the transfer of point_component/face_vertex_component properties is not performed correctly.  
